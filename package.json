@@ -1,0 +1,22 @@
+{
+    "name": "extract-interface-ts",
+    "version": "1.0.0",
+    "description": "Given a java class, it will generate a Interface.  This was ported from the Definitive Antlr 4 Reference and only intened for demo purposes.",
+    "main": "./out/src/index",
+    "scripts": {
+        "install": "npm run antlr4ts",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "tsc -watch -p ./",
+        "antlr4ts": "antlr4ts -visitor ./src/grammar/Python.g4"
+    },
+    "dependencies": {
+        "antlr4ts": "^0.4.0-alpha.4"
+    },
+    "devDependencies": {
+        "@types/node": "^6.0.40",
+        "antlr4ts-cli": "^0.4.0-alpha.4",
+        "typescript": "^2.0.3"
+    },
+    "author": "",
+    "license": "ISC"
+}
