@@ -6,7 +6,7 @@ class Visitor extends Python3Visitor {
     memory = new Map();
     visitSingle_input(ctx) {
         console.log("visitSingle_input");
-        return this.visit(ctx.simple_stmt(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#file_input.
@@ -84,25 +84,25 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#simple_stmt.
     visitSimple_stmt(ctx) {
         console.log("visitSimple_stmt");
-        return this.visit(ctx.small_stmt(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#small_stmt.
     visitSmall_stmt(ctx) {
         console.log("visitSmall_stmt");
-        return this.visit(ctx.expr_stmt(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#expr_stmt.
     visitExpr_stmt(ctx) {
         console.log("visitExpr_stmt");
-        return this.visit(ctx.testlist_star_expr(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#testlist_star_expr.
     visitTestlist_star_expr(ctx) {
         console.log("visitTestlist_star_expr");
-        return this.visit(ctx.test(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#augassign.
@@ -282,7 +282,7 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#test.
     visitTest(ctx) {
         console.log("visitTest");
-        return this.visit(ctx.or_test(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#test_nocond.
@@ -306,236 +306,90 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#or_test.
     visitOr_test(ctx) {
         console.log("visitOr_test");
-        return this.visit(ctx.and_test(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#and_test.
     visitAnd_test(ctx) {
         console.log("visitAnd_test");
-        return this.visit(ctx.not_test(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#not_test.
     visitNot_test(ctx) {
         console.log("visitNot_test");
-        return this.visit(ctx.comparison(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#comparison.
     visitComparison(ctx) {
         console.log("visitComparison");
-        let length = ctx.getChildCount();
-        let value = this.visit(ctx.star_expr(0));
-        for (var i = 1; i * 2 < length; i = i + 1) {
-            if (this.visit(ctx.comp_op(i - 1)) === "<") {
-                console.log("INININININ");
-                value = value < this.visit(ctx.star_expr(i));
-            } else if (this.visit(ctx.comp_op(i - 1)) === ">") {
-                value = value > this.visit(ctx.star_expr(i));
-            } else if (this.visit(ctx.comp_op(i - 1)) === "==") {
-                value = value === this.visit(ctx.star_expr(i));
-            } else if (this.visit(ctx.comp_op(i - 1)) === ">=") {
-                value = value >= this.visit(ctx.star_expr(i));
-            } else if (this.visit(ctx.comp_op(i - 1)) === "<=") {
-                value = value <= this.visit(ctx.star_expr(i));
-            } else if (this.visit(ctx.comp_op(i - 1)) === "<>") {
-                value = value !== this.visit(ctx.star_expr(i));
-            } else if (this.visit(ctx.comp_op(i - 1)) === "!=") {
-                value = value !== this.visit(ctx.star_expr(i));
-            } else if (this.visit(ctx.comp_op(i - 1)) === "in") {
-                //TODO: IN
-            } else if (this.visit(ctx.comp_op(i - 1)) === "not in") {
-                //TODO: NOT IN
-            } else if (this.visit(ctx.comp_op(i - 1)) === "is") {
-                //TODO: IS
-            } else if (this.visit(ctx.comp_op(i - 1)) === "is not") {
-                //TODO: IS NOT
-            }
-        }
-        console.log(value);
-        return value;
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#comp_op.
     visitComp_op(ctx) {
         console.log("visitComp_op");
-        let length = ctx.getChildCount();
-        if (length === 1) {
-            if (ctx.getChild(0).getText() === "<") {
-                console.log("INININININN");
-                return "<";
-            } else if (ctx.getChild(0).getText() === ">") {
-                return ">";
-            } else if (ctx.getChild(0).getText() === "==") {
-                return "==";
-            } else if (ctx.getChild(0).getText() === ">=") {
-                return ">=";
-            } else if (ctx.getChild(0).getText() === "<=") {
-                return "<=";
-            } else if (ctx.getChild(0).getText() === "<>") {
-                return "<>";
-            } else if (ctx.getChild(0).getText() === "!=") {
-                return "!=";
-            } else if (ctx.getChild(0).getText() === "is") {
-                return "is";
-            } else if (ctx.getChild(0).getText() === "in") {
-                return "in";
-            }
-        } else {
-            if (ctx.getChild(0).getText() === "not") {
-                return "not in";
-            } else if (ctx.getChild(0).getText() === "is") {
-                return "is not";
-            }
-        }
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#star_expr.
     visitStar_expr(ctx) {
         console.log("visitStar_expr");
-        return this.visit(ctx.expr(0));
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#expr.
     visitExpr(ctx) {
         console.log("visitExpr");
-        let length = ctx.getChildCount();
-        let value = this.visit(ctx.xor_expr(0));
-        for (var i = 1; i * 2 < length; i = i + 1) {
-            if (ctx.getChild(i * 2 - 1).getText() === "|") {
-                value = value | this.visit(ctx.xor_expr(i));
-            }
-        }
-        console.log(value);
-        return value;
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#xor_expr.
     visitXor_expr(ctx) {
         console.log("visitXor_expr");
-        let length = ctx.getChildCount();
-        let value = this.visit(ctx.and_expr(0));
-        for (var i = 1; i * 2 < length; i = i + 1) {
-            if (ctx.getChild(i * 2 - 1).getText() === "^") {
-                value = value ^ this.visit(ctx.and_expr(i));
-            }
-        }
-        console.log(value);
-        return value;
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#and_expr.
     visitAnd_expr(ctx) {
         console.log("visitAnd_expr");
-        let length = ctx.getChildCount();
-        let value = this.visit(ctx.shift_expr(0));
-        for (var i = 1; i * 2 < length; i = i + 1) {
-            if (ctx.getChild(i * 2 - 1).getText() === "&") {
-                value = value & this.visit(ctx.shift_expr(i));
-            }
-        }
-        console.log(value);
-        return value;
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#shift_expr.
     visitShift_expr(ctx) {
         console.log("visitShift_expr");
-        let length = ctx.getChildCount();
-        let value = this.visit(ctx.arith_expr(0));
-        for (var i = 1; i * 2 < length; i = i + 1) {
-            if (ctx.getChild(i * 2 - 1).getText() === "<<") {
-                value = value << this.visit(ctx.arith_expr(i));
-            } else {
-                value = value >> this.visit(ctx.arith_expr(i));
-            }
-        }
-        console.log(value);
-        return value;
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#arith_expr.
     visitArith_expr(ctx) {
         console.log("visitArith_expr");
-        let length = ctx.getChildCount();
-        let value = this.visit(ctx.term(0));
-        for (var i = 1; i * 2 < length; i = i + 1) {
-            if (ctx.getChild(i * 2 - 1).getText() === "+") {
-                value = value + this.visit(ctx.term(i));
-            } else {
-                value = value - this.visit(ctx.term(i));
-            }
-        }
-        console.log(value);
-        return value;
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#term.
     visitTerm(ctx) {
         console.log("visitTerm");
-        let length = ctx.getChildCount();
-        let value = this.visit(ctx.factor(0));
-        for (var i = 1; i * 2 < length; i = i + 1) {
-            if (ctx.getChild(i * 2 - 1).getText() === "*") {
-                value = value * this.visit(ctx.factor(i));
-            } else if (ctx.getChild(i * 2 - 1).getText() === "/") {
-                value = value / this.visit(ctx.factor(i));
-            } else if (ctx.getChild(i * 2 - 1).getText() === "%") {
-                value = value % this.visit(ctx.factor(i));
-            } else if (ctx.getChild(i * 2 - 1).getText() === "//") {
-                value = Math.floor(value / this.visit(ctx.factor(i)));
-            } else if (ctx.getChild(i * 2 - 1).getText() === "@") {
-                throw "@ operator has not been implemented";
-            }
-        }
-        console.log(value);
-        return value;
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#factor.
     visitFactor(ctx) {
         console.log("visitFactor");
-
-        let length = ctx.getChildCount();
-        if (length === 1) {
-            return this.visit(ctx.power());
-        } else {
-            let value = this.visit(ctx.factor(0));
-            if (ctx.getChild(0).getText() === "+") {
-                return value;
-            } else if (ctx.getChild(0).getText() === "-") {
-                return -value;
-            } else if (ctx.getChild(0).getText() === "~") {
-                return ~value;
-            }
-        }
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#power.
     visitPower(ctx) {
         console.log("visitPower");
-        let length = ctx.getChildCount();
-        let value = this.visit(ctx.atom());
-        for (var i = 1; i * 2 < length; i = i + 1) {
-            if (ctx.getChild(i * 2 - 1).getText() === "**") {
-                value = value ** this.visit(ctx.factor(i));
-            }
-        }
-        return value;
+        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#atom.
     visitAtom(ctx) {
         console.log("visitAtom");
-        if (ctx.TRUE() !== null) {
-            return true;
-        } else if (ctx.FALSE() !== null) {
-            return false;
-        } else if (ctx.NONE() !== null) {
-            return null;
-        } else if (ctx.number() !== null) {
-            return this.visit(ctx.number())[0];
-        }
         return this.visitChildren(ctx);
     }
 
@@ -644,36 +498,13 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#number.
     visitNumber(ctx) {
         console.log("visitNumber");
-        let value = 0;
-        if (ctx.FLOAT_NUMBER() !== null) {
-            value = parseFloat(ctx.FLOAT_NUMBER().getText());
-        } else if (ctx.IMAG_NUMBER() !== null) {
-            value = ctx.IMAG_NUMBER().getText();
-            // TODO: Implement imaginary number
-        } else {
-            value = this.visit(ctx.integer());
-        }
-        console.log("Result: visitNumber");
-        console.log(value);
         return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#integer.
     visitInteger(ctx) {
         console.log("visitInteger");
-        let value = 0;
-        if (ctx.DECIMAL_INTEGER() !== null) {
-            value = ctx.DECIMAL_INTEGER().getText();
-        } else if (ctx.OCT_INTEGER() !== null) {
-            value = ctx.OCT_INTEGER().getText();
-        } else if (ctx.HEX_INTEGER() !== null) {
-            value = ctx.HEX_INTEGER().getText();
-        } else {
-            value = ctx.BIN_INTEGER().getText();
-        }
-        console.log("Result: visitInteger");
-        console.log(Number(value));
-        return Number(value);
+        return this.visitChildren(ctx);
     }
 }
 module.exports = Visitor;

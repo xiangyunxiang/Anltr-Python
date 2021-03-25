@@ -1,4 +1,4 @@
-// Generated from e:\4215proj\4215Python\grammar\Python3.g4 by ANTLR 4.8
+// Generated from e:\4215proj\Antlr-Python\grammar\Python3.g4 by ANTLR 4.8
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
