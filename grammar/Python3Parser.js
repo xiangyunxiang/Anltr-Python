@@ -1,11 +1,11 @@
 // Generated from grammar/Python3.g4 by ANTLR 4.9.1
 // jshint ignore: start
-const antlr4 = require('antlr4');
-const Python3Listener = require('./Python3Listener.js');
-const Python3Visitor = require('./Python3Visitor.js');
+const antlr4 = require("antlr4");
+const Python3Listener = require("./Python3Listener.js");
+const Python3Visitor = require("./Python3Visitor.js");
 
-
-const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
+const serializedATN = [
+    "\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u5964\u0003`\u0422\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004",
     "\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007",
     "\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f",
@@ -14,8 +14,8 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\t\u0014\u0004\u0015\t\u0015\u0004\u0016\t\u0016\u0004\u0017\t\u0017",
     "\u0004\u0018\t\u0018\u0004\u0019\t\u0019\u0004\u001a\t\u001a\u0004\u001b",
     "\t\u001b\u0004\u001c\t\u001c\u0004\u001d\t\u001d\u0004\u001e\t\u001e",
-    "\u0004\u001f\t\u001f\u0004 \t \u0004!\t!\u0004\"\t\"\u0004#\t#\u0004",
-    "$\t$\u0004%\t%\u0004&\t&\u0004\'\t\'\u0004(\t(\u0004)\t)\u0004*\t*\u0004",
+    '\u0004\u001f\t\u001f\u0004 \t \u0004!\t!\u0004"\t"\u0004#\t#\u0004',
+    "$\t$\u0004%\t%\u0004&\t&\u0004'\t'\u0004(\t(\u0004)\t)\u0004*\t*\u0004",
     "+\t+\u0004,\t,\u0004-\t-\u0004.\t.\u0004/\t/\u00040\t0\u00041\t1\u0004",
     "2\t2\u00043\t3\u00044\t4\u00045\t5\u00046\t6\u00047\t7\u00048\t8\u0004",
     "9\t9\u0004:\t:\u0004;\t;\u0004<\t<\u0004=\t=\u0004>\t>\u0004?\t?\u0004",
@@ -74,13 +74,13 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u001e\u0003\u001e\u0003\u001e\u0005\u001e\u01f1\n\u001e\u0003\u001f",
     "\u0003\u001f\u0003\u001f\u0005\u001f\u01f6\n\u001f\u0003 \u0003 \u0003",
     " \u0005 \u01fb\n \u0003!\u0003!\u0003!\u0007!\u0200\n!\f!\u000e!\u0203",
-    "\u000b!\u0003!\u0005!\u0206\n!\u0003\"\u0003\"\u0003\"\u0007\"\u020b",
-    "\n\"\f\"\u000e\"\u020e\u000b\"\u0003#\u0003#\u0003#\u0007#\u0213\n#",
+    '\u000b!\u0003!\u0005!\u0206\n!\u0003"\u0003"\u0003"\u0007"\u020b',
+    '\n"\f"\u000e"\u020e\u000b"\u0003#\u0003#\u0003#\u0007#\u0213\n#',
     "\f#\u000e#\u0216\u000b#\u0003$\u0003$\u0003$\u0003$\u0007$\u021c\n$",
     "\f$\u000e$\u021f\u000b$\u0003%\u0003%\u0003%\u0003%\u0007%\u0225\n%",
     "\f%\u000e%\u0228\u000b%\u0003&\u0003&\u0003&\u0003&\u0005&\u022e\n&",
-    "\u0003\'\u0003\'\u0003\'\u0003\'\u0003\'\u0003\'\u0003\'\u0003\'\u0005",
-    "\'\u0238\n\'\u0003(\u0003(\u0003(\u0003(\u0003(\u0003(\u0003(\u0003",
+    "\u0003'\u0003'\u0003'\u0003'\u0003'\u0003'\u0003'\u0003'\u0005",
+    "'\u0238\n'\u0003(\u0003(\u0003(\u0003(\u0003(\u0003(\u0003(\u0003",
     "(\u0003(\u0007(\u0243\n(\f(\u000e(\u0246\u000b(\u0003(\u0003(\u0003",
     "(\u0005(\u024b\n(\u0003)\u0003)\u0003)\u0003)\u0003)\u0003)\u0003)\u0005",
     ")\u0254\n)\u0003*\u0003*\u0003*\u0003*\u0003*\u0003*\u0003*\u0003*\u0003",
@@ -134,10 +134,10 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "P\u0003Q\u0003Q\u0005Q\u0412\nQ\u0003R\u0003R\u0003R\u0005R\u0417\n",
     "R\u0003S\u0003S\u0003T\u0003T\u0003T\u0005T\u041e\nT\u0003U\u0003U\u0003",
     "U\u0002\u0002V\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0016",
-    "\u0018\u001a\u001c\u001e \"$&(*,.02468:<>@BDFHJLNPRTVXZ\\^`bdfhjlnp",
+    '\u0018\u001a\u001c\u001e "$&(*,.02468:<>@BDFHJLNPRTVXZ\\^`bdfhjlnp',
     "rtvxz|~\u0080\u0082\u0084\u0086\u0088\u008a\u008c\u008e\u0090\u0092",
     "\u0094\u0096\u0098\u009a\u009c\u009e\u00a0\u00a2\u00a4\u00a6\u00a8\u0002",
-    "\u0006\u0003\u0002P\\\u0003\u0002./\u0003\u0002&\'\u0003\u0002(+\u0002",
+    "\u0006\u0003\u0002P\\\u0003\u0002./\u0003\u0002&'\u0003\u0002(+\u0002",
     "\u0492\u0002\u00af\u0003\u0002\u0002\u0002\u0004\u00b5\u0003\u0002\u0002",
     "\u0002\u0006\u00ba\u0003\u0002\u0002\u0002\b\u00c3\u0003\u0002\u0002",
     "\u0002\n\u00cf\u0003\u0002\u0002\u0002\f\u00d3\u0003\u0002\u0002\u0002",
@@ -146,7 +146,7 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u0016\u0171\u0003\u0002\u0002\u0002\u0018\u0173\u0003\u0002\u0002\u0002",
     "\u001a\u0177\u0003\u0002\u0002\u0002\u001c\u0179\u0003\u0002\u0002\u0002",
     "\u001e\u018e\u0003\u0002\u0002\u0002 \u0190\u0003\u0002\u0002\u0002",
-    "\"\u01a4\u0003\u0002\u0002\u0002$\u01b3\u0003\u0002\u0002\u0002&\u01b5",
+    '"\u01a4\u0003\u0002\u0002\u0002$\u01b3\u0003\u0002\u0002\u0002&\u01b5',
     "\u0003\u0002\u0002\u0002(\u01b8\u0003\u0002\u0002\u0002*\u01bf\u0003",
     "\u0002\u0002\u0002,\u01c1\u0003\u0002\u0002\u0002.\u01c3\u0003\u0002",
     "\u0002\u00020\u01c5\u0003\u0002\u0002\u00022\u01c9\u0003\u0002\u0002",
@@ -179,7 +179,7 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u0003\u0002\u0002\u0002\u00a4\u0418\u0003\u0002\u0002\u0002\u00a6\u041d",
     "\u0003\u0002\u0002\u0002\u00a8\u041f\u0003\u0002\u0002\u0002\u00aa\u00b0",
     "\u0007$\u0002\u0002\u00ab\u00b0\u0005\u001c\u000f\u0002\u00ac\u00ad",
-    "\u0005L\'\u0002\u00ad\u00ae\u0007$\u0002\u0002\u00ae\u00b0\u0003\u0002",
+    "\u0005L'\u0002\u00ad\u00ae\u0007$\u0002\u0002\u00ae\u00b0\u0003\u0002",
     "\u0002\u0002\u00af\u00aa\u0003\u0002\u0002\u0002\u00af\u00ab\u0003\u0002",
     "\u0002\u0002\u00af\u00ac\u0003\u0002\u0002\u0002\u00b0\u0003\u0003\u0002",
     "\u0002\u0002\u00b1\u00b4\u0007$\u0002\u0002\u00b2\u00b4\u0005\u001a",
@@ -299,7 +299,7 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u0002\u0002\u0171\u016f\u0003\u0002\u0002\u0002\u0172\u0017\u0003\u0002",
     "\u0002\u0002\u0173\u0174\u0007%\u0002\u0002\u0174\u0019\u0003\u0002",
     "\u0002\u0002\u0175\u0178\u0005\u001c\u000f\u0002\u0176\u0178\u0005L",
-    "\'\u0002\u0177\u0175\u0003\u0002\u0002\u0002\u0177\u0176\u0003\u0002",
+    "'\u0002\u0177\u0175\u0003\u0002\u0002\u0002\u0177\u0176\u0003\u0002",
     "\u0002\u0002\u0178\u001b\u0003\u0002\u0002\u0002\u0179\u017e\u0005\u001e",
     "\u0010\u0002\u017a\u017b\u00075\u0002\u0002\u017b\u017d\u0005\u001e",
     "\u0010\u0002\u017c\u017a\u0003\u0002\u0002\u0002\u017d\u0180\u0003\u0002",
@@ -316,11 +316,11 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u0002\u018e\u0189\u0003\u0002\u0002\u0002\u018e\u018a\u0003\u0002\u0002",
     "\u0002\u018e\u018b\u0003\u0002\u0002\u0002\u018e\u018c\u0003\u0002\u0002",
     "\u0002\u018e\u018d\u0003\u0002\u0002\u0002\u018f\u001f\u0003\u0002\u0002",
-    "\u0002\u0190\u01a0\u0005\"\u0012\u0002\u0191\u0194\u0005$\u0013\u0002",
+    '\u0002\u0190\u01a0\u0005"\u0012\u0002\u0191\u0194\u0005$\u0013\u0002',
     "\u0192\u0195\u0005\u00a0Q\u0002\u0193\u0195\u0005\u0090I\u0002\u0194",
     "\u0192\u0003\u0002\u0002\u0002\u0194\u0193\u0003\u0002\u0002\u0002\u0195",
     "\u01a1\u0003\u0002\u0002\u0002\u0196\u0199\u00077\u0002\u0002\u0197",
-    "\u019a\u0005\u00a0Q\u0002\u0198\u019a\u0005\"\u0012\u0002\u0199\u0197",
+    '\u019a\u0005\u00a0Q\u0002\u0198\u019a\u0005"\u0012\u0002\u0199\u0197',
     "\u0003\u0002\u0002\u0002\u0199\u0198\u0003\u0002\u0002\u0002\u019a\u019c",
     "\u0003\u0002\u0002\u0002\u019b\u0196\u0003\u0002\u0002\u0002\u019c\u019f",
     "\u0003\u0002\u0002\u0002\u019d\u019b\u0003\u0002\u0002\u0002\u019d\u019e",
@@ -338,7 +338,7 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u00073\u0002\u0002\u01b1\u01b0\u0003\u0002\u0002\u0002\u01b1\u01b2",
     "\u0003\u0002\u0002\u0002\u01b2#\u0003\u0002\u0002\u0002\u01b3\u01b4",
     "\t\u0002\u0002\u0002\u01b4%\u0003\u0002\u0002\u0002\u01b5\u01b6\u0007",
-    " \u0002\u0002\u01b6\u01b7\u0005\u008eH\u0002\u01b7\'\u0003\u0002\u0002",
+    " \u0002\u0002\u01b6\u01b7\u0005\u008eH\u0002\u01b7'\u0003\u0002\u0002",
     "\u0002\u01b8\u01b9\u0007!\u0002\u0002\u01b9)\u0003\u0002\u0002\u0002",
     "\u01ba\u01c0\u0005,\u0017\u0002\u01bb\u01c0\u0005.\u0018\u0002\u01bc",
     "\u01c0\u00050\u0019\u0002\u01bd\u01c0\u00054\u001b\u0002\u01be\u01c0",
@@ -346,7 +346,7 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u0003\u0002\u0002\u0002\u01bf\u01bc\u0003\u0002\u0002\u0002\u01bf\u01bd",
     "\u0003\u0002\u0002\u0002\u01bf\u01be\u0003\u0002\u0002\u0002\u01c0+",
     "\u0003\u0002\u0002\u0002\u01c1\u01c2\u0007#\u0002\u0002\u01c2-\u0003",
-    "\u0002\u0002\u0002\u01c3\u01c4\u0007\"\u0002\u0002\u01c4/\u0003\u0002",
+    '\u0002\u0002\u0002\u01c3\u01c4\u0007"\u0002\u0002\u01c4/\u0003\u0002',
     "\u0002\u0002\u01c5\u01c7\u0007\u0004\u0002\u0002\u01c6\u01c8\u0005\u0090",
     "I\u0002\u01c7\u01c6\u0003\u0002\u0002\u0002\u01c7\u01c8\u0003\u0002",
     "\u0002\u0002\u01c81\u0003\u0002\u0002\u0002\u01c9\u01ca\u0005\u00a0",
@@ -358,7 +358,7 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "5\u0003\u0002\u0002\u0002\u01d3\u01d6\u00058\u001d\u0002\u01d4\u01d6",
     "\u0005:\u001e\u0002\u01d5\u01d3\u0003\u0002\u0002\u0002\u01d5\u01d4",
     "\u0003\u0002\u0002\u0002\u01d67\u0003\u0002\u0002\u0002\u01d7\u01d8",
-    "\u0007\u0007\u0002\u0002\u01d8\u01d9\u0005B\"\u0002\u01d99\u0003\u0002",
+    '\u0007\u0007\u0002\u0002\u01d8\u01d9\u0005B"\u0002\u01d99\u0003\u0002',
     "\u0002\u0002\u01da\u01e7\u0007\u0006\u0002\u0002\u01db\u01dd\t\u0003",
     "\u0002\u0002\u01dc\u01db\u0003\u0002\u0002\u0002\u01dd\u01e0\u0003\u0002",
     "\u0002\u0002\u01de\u01dc\u0003\u0002\u0002\u0002\u01de\u01df\u0003\u0002",
@@ -710,81 +710,304 @@ const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
     "\u0361\u0365\u0367\u036b\u0374\u037b\u037f\u0383\u0387\u038a\u038c\u0390",
     "\u0397\u039b\u03a2\u03a6\u03b3\u03b7\u03b9\u03c1\u03c5\u03c7\u03c9\u03cf",
     "\u03d2\u03dc\u03e1\u03e9\u03ef\u03f3\u03f7\u03fd\u0401\u0408\u040d\u0411",
-    "\u0416\u041d"].join("");
-
+    "\u0416\u041d",
+].join("");
 
 const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
 
-const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
+const decisionsToDFA = atn.decisionToState.map(
+    (ds, index) => new antlr4.dfa.DFA(ds, index)
+);
 
 const sharedContextCache = new antlr4.PredictionContextCache();
 
 class Python3Parser extends antlr4.Parser {
-
     static grammarFileName = "Python3.g4";
-    static literalNames = [ null, "'def'", "'return'", "'raise'", "'from'", 
-                            "'import'", "'as'", "'global'", "'nonlocal'", 
-                            "'assert'", "'if'", "'elif'", "'else'", "'while'", 
-                            "'for'", "'in'", "'try'", "'finally'", "'with'", 
-                            "'except'", "'lambda'", "'or'", "'and'", "'not'", 
-                            "'is'", "'None'", "'True'", "'False'", "'class'", 
-                            "'yield'", "'del'", "'pass'", "'continue'", 
-                            "'break'", null, null, null, null, null, null, 
-                            null, null, null, null, "'.'", "'...'", "'*'", 
-                            "'('", "')'", "','", "':'", "';'", "'**'", "'='", 
-                            "'['", "']'", "'|'", "'^'", "'&'", "'<<'", "'>>'", 
-                            "'+'", "'-'", "'/'", "'%'", "'//'", "'~'", "'{'", 
-                            "'}'", "'<'", "'>'", "'=='", "'>='", "'<='", 
-                            "'<>'", "'!='", "'@'", "'->'", "'+='", "'-='", 
-                            "'*='", "'@='", "'/='", "'%='", "'&='", "'|='", 
-                            "'^='", "'<<='", "'>>='", "'**='", "'//='" ];
-    static symbolicNames = [ null, "DEF", "RETURN", "RAISE", "FROM", "IMPORT", 
-                             "AS", "GLOBAL", "NONLOCAL", "ASSERT", "IF", 
-                             "ELIF", "ELSE", "WHILE", "FOR", "IN", "TRY", 
-                             "FINALLY", "WITH", "EXCEPT", "LAMBDA", "OR", 
-                             "AND", "NOT", "IS", "NONE", "TRUE", "FALSE", 
-                             "CLASS", "YIELD", "DEL", "PASS", "CONTINUE", 
-                             "BREAK", "NEWLINE", "NAME", "STRING_LITERAL", 
-                             "BYTES_LITERAL", "DECIMAL_INTEGER", "OCT_INTEGER", 
-                             "HEX_INTEGER", "BIN_INTEGER", "FLOAT_NUMBER", 
-                             "IMAG_NUMBER", "DOT", "ELLIPSIS", "STAR", "OPEN_PAREN", 
-                             "CLOSE_PAREN", "COMMA", "COLON", "SEMI_COLON", 
-                             "POWER", "ASSIGN", "OPEN_BRACK", "CLOSE_BRACK", 
-                             "OR_OP", "XOR", "AND_OP", "LEFT_SHIFT", "RIGHT_SHIFT", 
-                             "ADD", "MINUS", "DIV", "MOD", "IDIV", "NOT_OP", 
-                             "OPEN_BRACE", "CLOSE_BRACE", "LESS_THAN", "GREATER_THAN", 
-                             "EQUALS", "GT_EQ", "LT_EQ", "NOT_EQ_1", "NOT_EQ_2", 
-                             "AT", "ARROW", "ADD_ASSIGN", "SUB_ASSIGN", 
-                             "MULT_ASSIGN", "AT_ASSIGN", "DIV_ASSIGN", "MOD_ASSIGN", 
-                             "AND_ASSIGN", "OR_ASSIGN", "XOR_ASSIGN", "LEFT_SHIFT_ASSIGN", 
-                             "RIGHT_SHIFT_ASSIGN", "POWER_ASSIGN", "IDIV_ASSIGN", 
-                             "SKIP_", "UNKNOWN_CHAR", "INDENT", "DEDENT" ];
-    static ruleNames = [ "single_input", "file_input", "eval_input", "decorator", 
-                         "decorators", "decorated", "funcdef", "parameters", 
-                         "typedargslist", "tfpdef", "varargslist", "vfpdef", 
-                         "stmt", "simple_stmt", "small_stmt", "expr_stmt", 
-                         "testlist_star_expr", "augassign", "del_stmt", 
-                         "pass_stmt", "flow_stmt", "break_stmt", "continue_stmt", 
-                         "return_stmt", "yield_stmt", "raise_stmt", "import_stmt", 
-                         "import_name", "import_from", "import_as_name", 
-                         "dotted_as_name", "import_as_names", "dotted_as_names", 
-                         "dotted_name", "global_stmt", "nonlocal_stmt", 
-                         "assert_stmt", "compound_stmt", "if_stmt", "while_stmt", 
-                         "for_stmt", "try_stmt", "with_stmt", "with_item", 
-                         "except_clause", "suite", "test", "test_nocond", 
-                         "lambdef", "lambdef_nocond", "or_test", "and_test", 
-                         "not_test", "comparison", "comp_op", "star_expr", 
-                         "expr", "xor_expr", "and_expr", "shift_expr", "arith_expr", 
-                         "term", "factor", "power", "atom", "testlist_comp", 
-                         "trailer", "subscriptlist", "subscript", "sliceop", 
-                         "exprlist", "testlist", "dictorsetmaker", "classdef", 
-                         "arglist", "argument", "comp_iter", "comp_for", 
-                         "comp_if", "yield_expr", "yield_arg", "str", "number", 
-                         "integer" ];
+    static literalNames = [
+        null,
+        "'def'",
+        "'return'",
+        "'raise'",
+        "'from'",
+        "'import'",
+        "'as'",
+        "'global'",
+        "'nonlocal'",
+        "'assert'",
+        "'if'",
+        "'elif'",
+        "'else'",
+        "'while'",
+        "'for'",
+        "'in'",
+        "'try'",
+        "'finally'",
+        "'with'",
+        "'except'",
+        "'lambda'",
+        "'or'",
+        "'and'",
+        "'not'",
+        "'is'",
+        "'None'",
+        "'True'",
+        "'False'",
+        "'class'",
+        "'yield'",
+        "'del'",
+        "'pass'",
+        "'continue'",
+        "'break'",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "'.'",
+        "'...'",
+        "'*'",
+        "'('",
+        "')'",
+        "','",
+        "':'",
+        "';'",
+        "'**'",
+        "'='",
+        "'['",
+        "']'",
+        "'|'",
+        "'^'",
+        "'&'",
+        "'<<'",
+        "'>>'",
+        "'+'",
+        "'-'",
+        "'/'",
+        "'%'",
+        "'//'",
+        "'~'",
+        "'{'",
+        "'}'",
+        "'<'",
+        "'>'",
+        "'=='",
+        "'>='",
+        "'<='",
+        "'<>'",
+        "'!='",
+        "'@'",
+        "'->'",
+        "'+='",
+        "'-='",
+        "'*='",
+        "'@='",
+        "'/='",
+        "'%='",
+        "'&='",
+        "'|='",
+        "'^='",
+        "'<<='",
+        "'>>='",
+        "'**='",
+        "'//='",
+    ];
+    static symbolicNames = [
+        null,
+        "DEF",
+        "RETURN",
+        "RAISE",
+        "FROM",
+        "IMPORT",
+        "AS",
+        "GLOBAL",
+        "NONLOCAL",
+        "ASSERT",
+        "IF",
+        "ELIF",
+        "ELSE",
+        "WHILE",
+        "FOR",
+        "IN",
+        "TRY",
+        "FINALLY",
+        "WITH",
+        "EXCEPT",
+        "LAMBDA",
+        "OR",
+        "AND",
+        "NOT",
+        "IS",
+        "NONE",
+        "TRUE",
+        "FALSE",
+        "CLASS",
+        "YIELD",
+        "DEL",
+        "PASS",
+        "CONTINUE",
+        "BREAK",
+        "NEWLINE",
+        "NAME",
+        "STRING_LITERAL",
+        "BYTES_LITERAL",
+        "DECIMAL_INTEGER",
+        "OCT_INTEGER",
+        "HEX_INTEGER",
+        "BIN_INTEGER",
+        "FLOAT_NUMBER",
+        "IMAG_NUMBER",
+        "DOT",
+        "ELLIPSIS",
+        "STAR",
+        "OPEN_PAREN",
+        "CLOSE_PAREN",
+        "COMMA",
+        "COLON",
+        "SEMI_COLON",
+        "POWER",
+        "ASSIGN",
+        "OPEN_BRACK",
+        "CLOSE_BRACK",
+        "OR_OP",
+        "XOR",
+        "AND_OP",
+        "LEFT_SHIFT",
+        "RIGHT_SHIFT",
+        "ADD",
+        "MINUS",
+        "DIV",
+        "MOD",
+        "IDIV",
+        "NOT_OP",
+        "OPEN_BRACE",
+        "CLOSE_BRACE",
+        "LESS_THAN",
+        "GREATER_THAN",
+        "EQUALS",
+        "GT_EQ",
+        "LT_EQ",
+        "NOT_EQ_1",
+        "NOT_EQ_2",
+        "AT",
+        "ARROW",
+        "ADD_ASSIGN",
+        "SUB_ASSIGN",
+        "MULT_ASSIGN",
+        "AT_ASSIGN",
+        "DIV_ASSIGN",
+        "MOD_ASSIGN",
+        "AND_ASSIGN",
+        "OR_ASSIGN",
+        "XOR_ASSIGN",
+        "LEFT_SHIFT_ASSIGN",
+        "RIGHT_SHIFT_ASSIGN",
+        "POWER_ASSIGN",
+        "IDIV_ASSIGN",
+        "SKIP_",
+        "UNKNOWN_CHAR",
+        "INDENT",
+        "DEDENT",
+    ];
+    static ruleNames = [
+        "single_input",
+        "file_input",
+        "eval_input",
+        "decorator",
+        "decorators",
+        "decorated",
+        "funcdef",
+        "parameters",
+        "typedargslist",
+        "tfpdef",
+        "varargslist",
+        "vfpdef",
+        "stmt",
+        "simple_stmt",
+        "small_stmt",
+        "expr_stmt",
+        "testlist_star_expr",
+        "augassign",
+        "del_stmt",
+        "pass_stmt",
+        "flow_stmt",
+        "break_stmt",
+        "continue_stmt",
+        "return_stmt",
+        "yield_stmt",
+        "raise_stmt",
+        "import_stmt",
+        "import_name",
+        "import_from",
+        "import_as_name",
+        "dotted_as_name",
+        "import_as_names",
+        "dotted_as_names",
+        "dotted_name",
+        "global_stmt",
+        "nonlocal_stmt",
+        "assert_stmt",
+        "compound_stmt",
+        "if_stmt",
+        "while_stmt",
+        "for_stmt",
+        "try_stmt",
+        "with_stmt",
+        "with_item",
+        "except_clause",
+        "suite",
+        "test",
+        "test_nocond",
+        "lambdef",
+        "lambdef_nocond",
+        "or_test",
+        "and_test",
+        "not_test",
+        "comparison",
+        "comp_op",
+        "star_expr",
+        "expr",
+        "xor_expr",
+        "and_expr",
+        "shift_expr",
+        "arith_expr",
+        "term",
+        "factor",
+        "power",
+        "atom",
+        "testlist_comp",
+        "trailer",
+        "subscriptlist",
+        "subscript",
+        "sliceop",
+        "exprlist",
+        "testlist",
+        "dictorsetmaker",
+        "classdef",
+        "arglist",
+        "argument",
+        "comp_iter",
+        "comp_for",
+        "comp_if",
+        "yield_expr",
+        "yield_arg",
+        "str",
+        "number",
+        "integer",
+    ];
 
     constructor(input) {
         super(input);
-        this._interp = new antlr4.atn.ParserATNSimulator(this, atn, decisionsToDFA, sharedContextCache);
+        this._interp = new antlr4.atn.ParserATNSimulator(
+            this,
+            atn,
+            decisionsToDFA,
+            sharedContextCache
+        );
         this.ruleNames = Python3Parser.ruleNames;
         this.literalNames = Python3Parser.literalNames;
         this.symbolicNames = Python3Parser.symbolicNames;
@@ -794,4494 +1017,5007 @@ class Python3Parser extends antlr4.Parser {
         return atn;
     }
 
-
-
-	single_input() {
-	    let localctx = new Single_inputContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 0, Python3Parser.RULE_single_input);
-	    try {
-	        this.state = 173;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.NEWLINE:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 168;
-	            this.match(Python3Parser.NEWLINE);
-	            break;
-	        case Python3Parser.RETURN:
-	        case Python3Parser.RAISE:
-	        case Python3Parser.FROM:
-	        case Python3Parser.IMPORT:
-	        case Python3Parser.GLOBAL:
-	        case Python3Parser.NONLOCAL:
-	        case Python3Parser.ASSERT:
-	        case Python3Parser.LAMBDA:
-	        case Python3Parser.NOT:
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.YIELD:
-	        case Python3Parser.DEL:
-	        case Python3Parser.PASS:
-	        case Python3Parser.CONTINUE:
-	        case Python3Parser.BREAK:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.STAR:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.ADD:
-	        case Python3Parser.MINUS:
-	        case Python3Parser.NOT_OP:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 169;
-	            this.simple_stmt();
-	            break;
-	        case Python3Parser.DEF:
-	        case Python3Parser.IF:
-	        case Python3Parser.WHILE:
-	        case Python3Parser.FOR:
-	        case Python3Parser.TRY:
-	        case Python3Parser.WITH:
-	        case Python3Parser.CLASS:
-	        case Python3Parser.AT:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 170;
-	            this.compound_stmt();
-	            this.state = 171;
-	            this.match(Python3Parser.NEWLINE);
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	file_input() {
-	    let localctx = new File_inputContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 2, Python3Parser.RULE_file_input);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 179;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << Python3Parser.DEF) | (1 << Python3Parser.RETURN) | (1 << Python3Parser.RAISE) | (1 << Python3Parser.FROM) | (1 << Python3Parser.IMPORT) | (1 << Python3Parser.GLOBAL) | (1 << Python3Parser.NONLOCAL) | (1 << Python3Parser.ASSERT) | (1 << Python3Parser.IF) | (1 << Python3Parser.WHILE) | (1 << Python3Parser.FOR) | (1 << Python3Parser.TRY) | (1 << Python3Parser.WITH) | (1 << Python3Parser.LAMBDA) | (1 << Python3Parser.NOT) | (1 << Python3Parser.NONE) | (1 << Python3Parser.TRUE) | (1 << Python3Parser.FALSE) | (1 << Python3Parser.CLASS) | (1 << Python3Parser.YIELD) | (1 << Python3Parser.DEL) | (1 << Python3Parser.PASS))) !== 0) || ((((_la - 32)) & ~0x1f) == 0 && ((1 << (_la - 32)) & ((1 << (Python3Parser.CONTINUE - 32)) | (1 << (Python3Parser.BREAK - 32)) | (1 << (Python3Parser.NEWLINE - 32)) | (1 << (Python3Parser.NAME - 32)) | (1 << (Python3Parser.STRING_LITERAL - 32)) | (1 << (Python3Parser.BYTES_LITERAL - 32)) | (1 << (Python3Parser.DECIMAL_INTEGER - 32)) | (1 << (Python3Parser.OCT_INTEGER - 32)) | (1 << (Python3Parser.HEX_INTEGER - 32)) | (1 << (Python3Parser.BIN_INTEGER - 32)) | (1 << (Python3Parser.FLOAT_NUMBER - 32)) | (1 << (Python3Parser.IMAG_NUMBER - 32)) | (1 << (Python3Parser.ELLIPSIS - 32)) | (1 << (Python3Parser.STAR - 32)) | (1 << (Python3Parser.OPEN_PAREN - 32)) | (1 << (Python3Parser.OPEN_BRACK - 32)) | (1 << (Python3Parser.ADD - 32)) | (1 << (Python3Parser.MINUS - 32)))) !== 0) || ((((_la - 66)) & ~0x1f) == 0 && ((1 << (_la - 66)) & ((1 << (Python3Parser.NOT_OP - 66)) | (1 << (Python3Parser.OPEN_BRACE - 66)) | (1 << (Python3Parser.AT - 66)))) !== 0)) {
-	            this.state = 177;
-	            this._errHandler.sync(this);
-	            switch(this._input.LA(1)) {
-	            case Python3Parser.NEWLINE:
-	                this.state = 175;
-	                this.match(Python3Parser.NEWLINE);
-	                break;
-	            case Python3Parser.DEF:
-	            case Python3Parser.RETURN:
-	            case Python3Parser.RAISE:
-	            case Python3Parser.FROM:
-	            case Python3Parser.IMPORT:
-	            case Python3Parser.GLOBAL:
-	            case Python3Parser.NONLOCAL:
-	            case Python3Parser.ASSERT:
-	            case Python3Parser.IF:
-	            case Python3Parser.WHILE:
-	            case Python3Parser.FOR:
-	            case Python3Parser.TRY:
-	            case Python3Parser.WITH:
-	            case Python3Parser.LAMBDA:
-	            case Python3Parser.NOT:
-	            case Python3Parser.NONE:
-	            case Python3Parser.TRUE:
-	            case Python3Parser.FALSE:
-	            case Python3Parser.CLASS:
-	            case Python3Parser.YIELD:
-	            case Python3Parser.DEL:
-	            case Python3Parser.PASS:
-	            case Python3Parser.CONTINUE:
-	            case Python3Parser.BREAK:
-	            case Python3Parser.NAME:
-	            case Python3Parser.STRING_LITERAL:
-	            case Python3Parser.BYTES_LITERAL:
-	            case Python3Parser.DECIMAL_INTEGER:
-	            case Python3Parser.OCT_INTEGER:
-	            case Python3Parser.HEX_INTEGER:
-	            case Python3Parser.BIN_INTEGER:
-	            case Python3Parser.FLOAT_NUMBER:
-	            case Python3Parser.IMAG_NUMBER:
-	            case Python3Parser.ELLIPSIS:
-	            case Python3Parser.STAR:
-	            case Python3Parser.OPEN_PAREN:
-	            case Python3Parser.OPEN_BRACK:
-	            case Python3Parser.ADD:
-	            case Python3Parser.MINUS:
-	            case Python3Parser.NOT_OP:
-	            case Python3Parser.OPEN_BRACE:
-	            case Python3Parser.AT:
-	                this.state = 176;
-	                this.stmt();
-	                break;
-	            default:
-	                throw new antlr4.error.NoViableAltException(this);
-	            }
-	            this.state = 181;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	        this.state = 182;
-	        this.match(Python3Parser.EOF);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	eval_input() {
-	    let localctx = new Eval_inputContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 4, Python3Parser.RULE_eval_input);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 184;
-	        this.testlist();
-	        this.state = 188;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.NEWLINE) {
-	            this.state = 185;
-	            this.match(Python3Parser.NEWLINE);
-	            this.state = 190;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	        this.state = 191;
-	        this.match(Python3Parser.EOF);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	decorator() {
-	    let localctx = new DecoratorContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 6, Python3Parser.RULE_decorator);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 193;
-	        this.match(Python3Parser.AT);
-	        this.state = 194;
-	        this.dotted_name();
-	        this.state = 200;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.OPEN_PAREN) {
-	            this.state = 195;
-	            this.match(Python3Parser.OPEN_PAREN);
-	            this.state = 197;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 52)) & ~0x1f) == 0 && ((1 << (_la - 52)) & ((1 << (Python3Parser.POWER - 52)) | (1 << (Python3Parser.OPEN_BRACK - 52)) | (1 << (Python3Parser.ADD - 52)) | (1 << (Python3Parser.MINUS - 52)) | (1 << (Python3Parser.NOT_OP - 52)) | (1 << (Python3Parser.OPEN_BRACE - 52)))) !== 0)) {
-	                this.state = 196;
-	                this.arglist();
-	            }
-
-	            this.state = 199;
-	            this.match(Python3Parser.CLOSE_PAREN);
-	        }
-
-	        this.state = 202;
-	        this.match(Python3Parser.NEWLINE);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	decorators() {
-	    let localctx = new DecoratorsContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 8, Python3Parser.RULE_decorators);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 205; 
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        do {
-	            this.state = 204;
-	            this.decorator();
-	            this.state = 207; 
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        } while(_la===Python3Parser.AT);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	decorated() {
-	    let localctx = new DecoratedContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 10, Python3Parser.RULE_decorated);
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 209;
-	        this.decorators();
-	        this.state = 212;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.CLASS:
-	            this.state = 210;
-	            this.classdef();
-	            break;
-	        case Python3Parser.DEF:
-	            this.state = 211;
-	            this.funcdef();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	funcdef() {
-	    let localctx = new FuncdefContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 12, Python3Parser.RULE_funcdef);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 214;
-	        this.match(Python3Parser.DEF);
-	        this.state = 215;
-	        this.match(Python3Parser.NAME);
-	        this.state = 216;
-	        this.parameters();
-	        this.state = 219;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.ARROW) {
-	            this.state = 217;
-	            this.match(Python3Parser.ARROW);
-	            this.state = 218;
-	            this.test();
-	        }
-
-	        this.state = 221;
-	        this.match(Python3Parser.COLON);
-	        this.state = 222;
-	        this.suite();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	parameters() {
-	    let localctx = new ParametersContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 14, Python3Parser.RULE_parameters);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 224;
-	        this.match(Python3Parser.OPEN_PAREN);
-	        this.state = 226;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(((((_la - 35)) & ~0x1f) == 0 && ((1 << (_la - 35)) & ((1 << (Python3Parser.NAME - 35)) | (1 << (Python3Parser.STAR - 35)) | (1 << (Python3Parser.POWER - 35)))) !== 0)) {
-	            this.state = 225;
-	            this.typedargslist();
-	        }
-
-	        this.state = 228;
-	        this.match(Python3Parser.CLOSE_PAREN);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	typedargslist() {
-	    let localctx = new TypedargslistContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 16, Python3Parser.RULE_typedargslist);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 295;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.NAME:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 230;
-	            this.tfpdef();
-	            this.state = 233;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.ASSIGN) {
-	                this.state = 231;
-	                this.match(Python3Parser.ASSIGN);
-	                this.state = 232;
-	                this.test();
-	            }
-
-	            this.state = 243;
-	            this._errHandler.sync(this);
-	            var _alt = this._interp.adaptivePredict(this._input,12,this._ctx)
-	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                if(_alt===1) {
-	                    this.state = 235;
-	                    this.match(Python3Parser.COMMA);
-	                    this.state = 236;
-	                    this.tfpdef();
-	                    this.state = 239;
-	                    this._errHandler.sync(this);
-	                    _la = this._input.LA(1);
-	                    if(_la===Python3Parser.ASSIGN) {
-	                        this.state = 237;
-	                        this.match(Python3Parser.ASSIGN);
-	                        this.state = 238;
-	                        this.test();
-	                    }
-	             
-	                }
-	                this.state = 245;
-	                this._errHandler.sync(this);
-	                _alt = this._interp.adaptivePredict(this._input,12,this._ctx);
-	            }
-
-	            this.state = 271;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.COMMA) {
-	                this.state = 246;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 269;
-	                this._errHandler.sync(this);
-	                switch (this._input.LA(1)) {
-	                case Python3Parser.STAR:
-	                	this.state = 247;
-	                	this.match(Python3Parser.STAR);
-	                	this.state = 249;
-	                	this._errHandler.sync(this);
-	                	_la = this._input.LA(1);
-	                	if(_la===Python3Parser.NAME) {
-	                	    this.state = 248;
-	                	    this.tfpdef();
-	                	}
-
-	                	this.state = 259;
-	                	this._errHandler.sync(this);
-	                	var _alt = this._interp.adaptivePredict(this._input,15,this._ctx)
-	                	while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                	    if(_alt===1) {
-	                	        this.state = 251;
-	                	        this.match(Python3Parser.COMMA);
-	                	        this.state = 252;
-	                	        this.tfpdef();
-	                	        this.state = 255;
-	                	        this._errHandler.sync(this);
-	                	        _la = this._input.LA(1);
-	                	        if(_la===Python3Parser.ASSIGN) {
-	                	            this.state = 253;
-	                	            this.match(Python3Parser.ASSIGN);
-	                	            this.state = 254;
-	                	            this.test();
-	                	        }
-	                	 
-	                	    }
-	                	    this.state = 261;
-	                	    this._errHandler.sync(this);
-	                	    _alt = this._interp.adaptivePredict(this._input,15,this._ctx);
-	                	}
-
-	                	this.state = 265;
-	                	this._errHandler.sync(this);
-	                	_la = this._input.LA(1);
-	                	if(_la===Python3Parser.COMMA) {
-	                	    this.state = 262;
-	                	    this.match(Python3Parser.COMMA);
-	                	    this.state = 263;
-	                	    this.match(Python3Parser.POWER);
-	                	    this.state = 264;
-	                	    this.tfpdef();
-	                	}
-
-	                	break;
-	                case Python3Parser.POWER:
-	                	this.state = 267;
-	                	this.match(Python3Parser.POWER);
-	                	this.state = 268;
-	                	this.tfpdef();
-	                	break;
-	                case Python3Parser.CLOSE_PAREN:
-	                	break;
-	                default:
-	                	break;
-	                }
-	            }
-
-	            break;
-	        case Python3Parser.STAR:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 273;
-	            this.match(Python3Parser.STAR);
-	            this.state = 275;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.NAME) {
-	                this.state = 274;
-	                this.tfpdef();
-	            }
-
-	            this.state = 285;
-	            this._errHandler.sync(this);
-	            var _alt = this._interp.adaptivePredict(this._input,21,this._ctx)
-	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                if(_alt===1) {
-	                    this.state = 277;
-	                    this.match(Python3Parser.COMMA);
-	                    this.state = 278;
-	                    this.tfpdef();
-	                    this.state = 281;
-	                    this._errHandler.sync(this);
-	                    _la = this._input.LA(1);
-	                    if(_la===Python3Parser.ASSIGN) {
-	                        this.state = 279;
-	                        this.match(Python3Parser.ASSIGN);
-	                        this.state = 280;
-	                        this.test();
-	                    }
-	             
-	                }
-	                this.state = 287;
-	                this._errHandler.sync(this);
-	                _alt = this._interp.adaptivePredict(this._input,21,this._ctx);
-	            }
-
-	            this.state = 291;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.COMMA) {
-	                this.state = 288;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 289;
-	                this.match(Python3Parser.POWER);
-	                this.state = 290;
-	                this.tfpdef();
-	            }
-
-	            break;
-	        case Python3Parser.POWER:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 293;
-	            this.match(Python3Parser.POWER);
-	            this.state = 294;
-	            this.tfpdef();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	tfpdef() {
-	    let localctx = new TfpdefContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 18, Python3Parser.RULE_tfpdef);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 297;
-	        this.match(Python3Parser.NAME);
-	        this.state = 300;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.COLON) {
-	            this.state = 298;
-	            this.match(Python3Parser.COLON);
-	            this.state = 299;
-	            this.test();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	varargslist() {
-	    let localctx = new VarargslistContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 20, Python3Parser.RULE_varargslist);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 367;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.NAME:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 302;
-	            this.vfpdef();
-	            this.state = 305;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.ASSIGN) {
-	                this.state = 303;
-	                this.match(Python3Parser.ASSIGN);
-	                this.state = 304;
-	                this.test();
-	            }
-
-	            this.state = 315;
-	            this._errHandler.sync(this);
-	            var _alt = this._interp.adaptivePredict(this._input,27,this._ctx)
-	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                if(_alt===1) {
-	                    this.state = 307;
-	                    this.match(Python3Parser.COMMA);
-	                    this.state = 308;
-	                    this.vfpdef();
-	                    this.state = 311;
-	                    this._errHandler.sync(this);
-	                    _la = this._input.LA(1);
-	                    if(_la===Python3Parser.ASSIGN) {
-	                        this.state = 309;
-	                        this.match(Python3Parser.ASSIGN);
-	                        this.state = 310;
-	                        this.test();
-	                    }
-	             
-	                }
-	                this.state = 317;
-	                this._errHandler.sync(this);
-	                _alt = this._interp.adaptivePredict(this._input,27,this._ctx);
-	            }
-
-	            this.state = 343;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.COMMA) {
-	                this.state = 318;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 341;
-	                this._errHandler.sync(this);
-	                switch (this._input.LA(1)) {
-	                case Python3Parser.STAR:
-	                	this.state = 319;
-	                	this.match(Python3Parser.STAR);
-	                	this.state = 321;
-	                	this._errHandler.sync(this);
-	                	_la = this._input.LA(1);
-	                	if(_la===Python3Parser.NAME) {
-	                	    this.state = 320;
-	                	    this.vfpdef();
-	                	}
-
-	                	this.state = 331;
-	                	this._errHandler.sync(this);
-	                	var _alt = this._interp.adaptivePredict(this._input,30,this._ctx)
-	                	while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                	    if(_alt===1) {
-	                	        this.state = 323;
-	                	        this.match(Python3Parser.COMMA);
-	                	        this.state = 324;
-	                	        this.vfpdef();
-	                	        this.state = 327;
-	                	        this._errHandler.sync(this);
-	                	        _la = this._input.LA(1);
-	                	        if(_la===Python3Parser.ASSIGN) {
-	                	            this.state = 325;
-	                	            this.match(Python3Parser.ASSIGN);
-	                	            this.state = 326;
-	                	            this.test();
-	                	        }
-	                	 
-	                	    }
-	                	    this.state = 333;
-	                	    this._errHandler.sync(this);
-	                	    _alt = this._interp.adaptivePredict(this._input,30,this._ctx);
-	                	}
-
-	                	this.state = 337;
-	                	this._errHandler.sync(this);
-	                	_la = this._input.LA(1);
-	                	if(_la===Python3Parser.COMMA) {
-	                	    this.state = 334;
-	                	    this.match(Python3Parser.COMMA);
-	                	    this.state = 335;
-	                	    this.match(Python3Parser.POWER);
-	                	    this.state = 336;
-	                	    this.vfpdef();
-	                	}
-
-	                	break;
-	                case Python3Parser.POWER:
-	                	this.state = 339;
-	                	this.match(Python3Parser.POWER);
-	                	this.state = 340;
-	                	this.vfpdef();
-	                	break;
-	                case Python3Parser.COLON:
-	                	break;
-	                default:
-	                	break;
-	                }
-	            }
-
-	            break;
-	        case Python3Parser.STAR:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 345;
-	            this.match(Python3Parser.STAR);
-	            this.state = 347;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.NAME) {
-	                this.state = 346;
-	                this.vfpdef();
-	            }
-
-	            this.state = 357;
-	            this._errHandler.sync(this);
-	            var _alt = this._interp.adaptivePredict(this._input,36,this._ctx)
-	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                if(_alt===1) {
-	                    this.state = 349;
-	                    this.match(Python3Parser.COMMA);
-	                    this.state = 350;
-	                    this.vfpdef();
-	                    this.state = 353;
-	                    this._errHandler.sync(this);
-	                    _la = this._input.LA(1);
-	                    if(_la===Python3Parser.ASSIGN) {
-	                        this.state = 351;
-	                        this.match(Python3Parser.ASSIGN);
-	                        this.state = 352;
-	                        this.test();
-	                    }
-	             
-	                }
-	                this.state = 359;
-	                this._errHandler.sync(this);
-	                _alt = this._interp.adaptivePredict(this._input,36,this._ctx);
-	            }
-
-	            this.state = 363;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.COMMA) {
-	                this.state = 360;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 361;
-	                this.match(Python3Parser.POWER);
-	                this.state = 362;
-	                this.vfpdef();
-	            }
-
-	            break;
-	        case Python3Parser.POWER:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 365;
-	            this.match(Python3Parser.POWER);
-	            this.state = 366;
-	            this.vfpdef();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	vfpdef() {
-	    let localctx = new VfpdefContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 22, Python3Parser.RULE_vfpdef);
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 369;
-	        this.match(Python3Parser.NAME);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	stmt() {
-	    let localctx = new StmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 24, Python3Parser.RULE_stmt);
-	    try {
-	        this.state = 373;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.RETURN:
-	        case Python3Parser.RAISE:
-	        case Python3Parser.FROM:
-	        case Python3Parser.IMPORT:
-	        case Python3Parser.GLOBAL:
-	        case Python3Parser.NONLOCAL:
-	        case Python3Parser.ASSERT:
-	        case Python3Parser.LAMBDA:
-	        case Python3Parser.NOT:
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.YIELD:
-	        case Python3Parser.DEL:
-	        case Python3Parser.PASS:
-	        case Python3Parser.CONTINUE:
-	        case Python3Parser.BREAK:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.STAR:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.ADD:
-	        case Python3Parser.MINUS:
-	        case Python3Parser.NOT_OP:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 371;
-	            this.simple_stmt();
-	            break;
-	        case Python3Parser.DEF:
-	        case Python3Parser.IF:
-	        case Python3Parser.WHILE:
-	        case Python3Parser.FOR:
-	        case Python3Parser.TRY:
-	        case Python3Parser.WITH:
-	        case Python3Parser.CLASS:
-	        case Python3Parser.AT:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 372;
-	            this.compound_stmt();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	simple_stmt() {
-	    let localctx = new Simple_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 26, Python3Parser.RULE_simple_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 375;
-	        this.small_stmt();
-	        this.state = 380;
-	        this._errHandler.sync(this);
-	        var _alt = this._interp.adaptivePredict(this._input,40,this._ctx)
-	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	            if(_alt===1) {
-	                this.state = 376;
-	                this.match(Python3Parser.SEMI_COLON);
-	                this.state = 377;
-	                this.small_stmt(); 
-	            }
-	            this.state = 382;
-	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,40,this._ctx);
-	        }
-
-	        this.state = 384;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.SEMI_COLON) {
-	            this.state = 383;
-	            this.match(Python3Parser.SEMI_COLON);
-	        }
-
-	        this.state = 386;
-	        this.match(Python3Parser.NEWLINE);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	small_stmt() {
-	    let localctx = new Small_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 28, Python3Parser.RULE_small_stmt);
-	    try {
-	        this.state = 396;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.LAMBDA:
-	        case Python3Parser.NOT:
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.STAR:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.ADD:
-	        case Python3Parser.MINUS:
-	        case Python3Parser.NOT_OP:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 388;
-	            this.expr_stmt();
-	            break;
-	        case Python3Parser.DEL:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 389;
-	            this.del_stmt();
-	            break;
-	        case Python3Parser.PASS:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 390;
-	            this.pass_stmt();
-	            break;
-	        case Python3Parser.RETURN:
-	        case Python3Parser.RAISE:
-	        case Python3Parser.YIELD:
-	        case Python3Parser.CONTINUE:
-	        case Python3Parser.BREAK:
-	            this.enterOuterAlt(localctx, 4);
-	            this.state = 391;
-	            this.flow_stmt();
-	            break;
-	        case Python3Parser.FROM:
-	        case Python3Parser.IMPORT:
-	            this.enterOuterAlt(localctx, 5);
-	            this.state = 392;
-	            this.import_stmt();
-	            break;
-	        case Python3Parser.GLOBAL:
-	            this.enterOuterAlt(localctx, 6);
-	            this.state = 393;
-	            this.global_stmt();
-	            break;
-	        case Python3Parser.NONLOCAL:
-	            this.enterOuterAlt(localctx, 7);
-	            this.state = 394;
-	            this.nonlocal_stmt();
-	            break;
-	        case Python3Parser.ASSERT:
-	            this.enterOuterAlt(localctx, 8);
-	            this.state = 395;
-	            this.assert_stmt();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	expr_stmt() {
-	    let localctx = new Expr_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 30, Python3Parser.RULE_expr_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 398;
-	        this.testlist_star_expr();
-	        this.state = 414;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.ADD_ASSIGN:
-	        case Python3Parser.SUB_ASSIGN:
-	        case Python3Parser.MULT_ASSIGN:
-	        case Python3Parser.AT_ASSIGN:
-	        case Python3Parser.DIV_ASSIGN:
-	        case Python3Parser.MOD_ASSIGN:
-	        case Python3Parser.AND_ASSIGN:
-	        case Python3Parser.OR_ASSIGN:
-	        case Python3Parser.XOR_ASSIGN:
-	        case Python3Parser.LEFT_SHIFT_ASSIGN:
-	        case Python3Parser.RIGHT_SHIFT_ASSIGN:
-	        case Python3Parser.POWER_ASSIGN:
-	        case Python3Parser.IDIV_ASSIGN:
-	            this.state = 399;
-	            this.augassign();
-	            this.state = 402;
-	            this._errHandler.sync(this);
-	            switch(this._input.LA(1)) {
-	            case Python3Parser.YIELD:
-	                this.state = 400;
-	                this.yield_expr();
-	                break;
-	            case Python3Parser.LAMBDA:
-	            case Python3Parser.NOT:
-	            case Python3Parser.NONE:
-	            case Python3Parser.TRUE:
-	            case Python3Parser.FALSE:
-	            case Python3Parser.NAME:
-	            case Python3Parser.STRING_LITERAL:
-	            case Python3Parser.BYTES_LITERAL:
-	            case Python3Parser.DECIMAL_INTEGER:
-	            case Python3Parser.OCT_INTEGER:
-	            case Python3Parser.HEX_INTEGER:
-	            case Python3Parser.BIN_INTEGER:
-	            case Python3Parser.FLOAT_NUMBER:
-	            case Python3Parser.IMAG_NUMBER:
-	            case Python3Parser.ELLIPSIS:
-	            case Python3Parser.STAR:
-	            case Python3Parser.OPEN_PAREN:
-	            case Python3Parser.OPEN_BRACK:
-	            case Python3Parser.ADD:
-	            case Python3Parser.MINUS:
-	            case Python3Parser.NOT_OP:
-	            case Python3Parser.OPEN_BRACE:
-	                this.state = 401;
-	                this.testlist();
-	                break;
-	            default:
-	                throw new antlr4.error.NoViableAltException(this);
-	            }
-	            break;
-	        case Python3Parser.NEWLINE:
-	        case Python3Parser.SEMI_COLON:
-	        case Python3Parser.ASSIGN:
-	            this.state = 411;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            while(_la===Python3Parser.ASSIGN) {
-	                this.state = 404;
-	                this.match(Python3Parser.ASSIGN);
-	                this.state = 407;
-	                this._errHandler.sync(this);
-	                switch(this._input.LA(1)) {
-	                case Python3Parser.YIELD:
-	                    this.state = 405;
-	                    this.yield_expr();
-	                    break;
-	                case Python3Parser.LAMBDA:
-	                case Python3Parser.NOT:
-	                case Python3Parser.NONE:
-	                case Python3Parser.TRUE:
-	                case Python3Parser.FALSE:
-	                case Python3Parser.NAME:
-	                case Python3Parser.STRING_LITERAL:
-	                case Python3Parser.BYTES_LITERAL:
-	                case Python3Parser.DECIMAL_INTEGER:
-	                case Python3Parser.OCT_INTEGER:
-	                case Python3Parser.HEX_INTEGER:
-	                case Python3Parser.BIN_INTEGER:
-	                case Python3Parser.FLOAT_NUMBER:
-	                case Python3Parser.IMAG_NUMBER:
-	                case Python3Parser.ELLIPSIS:
-	                case Python3Parser.STAR:
-	                case Python3Parser.OPEN_PAREN:
-	                case Python3Parser.OPEN_BRACK:
-	                case Python3Parser.ADD:
-	                case Python3Parser.MINUS:
-	                case Python3Parser.NOT_OP:
-	                case Python3Parser.OPEN_BRACE:
-	                    this.state = 406;
-	                    this.testlist_star_expr();
-	                    break;
-	                default:
-	                    throw new antlr4.error.NoViableAltException(this);
-	                }
-	                this.state = 413;
-	                this._errHandler.sync(this);
-	                _la = this._input.LA(1);
-	            }
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	testlist_star_expr() {
-	    let localctx = new Testlist_star_exprContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 32, Python3Parser.RULE_testlist_star_expr);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 418;
-	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,47,this._ctx);
-	        switch(la_) {
-	        case 1:
-	            this.state = 416;
-	            this.test();
-	            break;
-
-	        case 2:
-	            this.state = 417;
-	            this.star_expr();
-	            break;
-
-	        }
-	        this.state = 427;
-	        this._errHandler.sync(this);
-	        var _alt = this._interp.adaptivePredict(this._input,49,this._ctx)
-	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	            if(_alt===1) {
-	                this.state = 420;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 423;
-	                this._errHandler.sync(this);
-	                var la_ = this._interp.adaptivePredict(this._input,48,this._ctx);
-	                switch(la_) {
-	                case 1:
-	                    this.state = 421;
-	                    this.test();
-	                    break;
-
-	                case 2:
-	                    this.state = 422;
-	                    this.star_expr();
-	                    break;
-
-	                } 
-	            }
-	            this.state = 429;
-	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,49,this._ctx);
-	        }
-
-	        this.state = 431;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.COMMA) {
-	            this.state = 430;
-	            this.match(Python3Parser.COMMA);
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	augassign() {
-	    let localctx = new AugassignContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 34, Python3Parser.RULE_augassign);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 433;
-	        _la = this._input.LA(1);
-	        if(!(((((_la - 78)) & ~0x1f) == 0 && ((1 << (_la - 78)) & ((1 << (Python3Parser.ADD_ASSIGN - 78)) | (1 << (Python3Parser.SUB_ASSIGN - 78)) | (1 << (Python3Parser.MULT_ASSIGN - 78)) | (1 << (Python3Parser.AT_ASSIGN - 78)) | (1 << (Python3Parser.DIV_ASSIGN - 78)) | (1 << (Python3Parser.MOD_ASSIGN - 78)) | (1 << (Python3Parser.AND_ASSIGN - 78)) | (1 << (Python3Parser.OR_ASSIGN - 78)) | (1 << (Python3Parser.XOR_ASSIGN - 78)) | (1 << (Python3Parser.LEFT_SHIFT_ASSIGN - 78)) | (1 << (Python3Parser.RIGHT_SHIFT_ASSIGN - 78)) | (1 << (Python3Parser.POWER_ASSIGN - 78)) | (1 << (Python3Parser.IDIV_ASSIGN - 78)))) !== 0))) {
-	        this._errHandler.recoverInline(this);
-	        }
-	        else {
-	        	this._errHandler.reportMatch(this);
-	            this.consume();
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	del_stmt() {
-	    let localctx = new Del_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 36, Python3Parser.RULE_del_stmt);
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 435;
-	        this.match(Python3Parser.DEL);
-	        this.state = 436;
-	        this.exprlist();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	pass_stmt() {
-	    let localctx = new Pass_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 38, Python3Parser.RULE_pass_stmt);
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 438;
-	        this.match(Python3Parser.PASS);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	flow_stmt() {
-	    let localctx = new Flow_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 40, Python3Parser.RULE_flow_stmt);
-	    try {
-	        this.state = 445;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.BREAK:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 440;
-	            this.break_stmt();
-	            break;
-	        case Python3Parser.CONTINUE:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 441;
-	            this.continue_stmt();
-	            break;
-	        case Python3Parser.RETURN:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 442;
-	            this.return_stmt();
-	            break;
-	        case Python3Parser.RAISE:
-	            this.enterOuterAlt(localctx, 4);
-	            this.state = 443;
-	            this.raise_stmt();
-	            break;
-	        case Python3Parser.YIELD:
-	            this.enterOuterAlt(localctx, 5);
-	            this.state = 444;
-	            this.yield_stmt();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	break_stmt() {
-	    let localctx = new Break_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 42, Python3Parser.RULE_break_stmt);
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 447;
-	        this.match(Python3Parser.BREAK);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	continue_stmt() {
-	    let localctx = new Continue_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 44, Python3Parser.RULE_continue_stmt);
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 449;
-	        this.match(Python3Parser.CONTINUE);
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	return_stmt() {
-	    let localctx = new Return_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 46, Python3Parser.RULE_return_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 451;
-	        this.match(Python3Parser.RETURN);
-	        this.state = 453;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 54)) & ~0x1f) == 0 && ((1 << (_la - 54)) & ((1 << (Python3Parser.OPEN_BRACK - 54)) | (1 << (Python3Parser.ADD - 54)) | (1 << (Python3Parser.MINUS - 54)) | (1 << (Python3Parser.NOT_OP - 54)) | (1 << (Python3Parser.OPEN_BRACE - 54)))) !== 0)) {
-	            this.state = 452;
-	            this.testlist();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	yield_stmt() {
-	    let localctx = new Yield_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 48, Python3Parser.RULE_yield_stmt);
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 455;
-	        this.yield_expr();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	raise_stmt() {
-	    let localctx = new Raise_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 50, Python3Parser.RULE_raise_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 457;
-	        this.match(Python3Parser.RAISE);
-	        this.state = 463;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 54)) & ~0x1f) == 0 && ((1 << (_la - 54)) & ((1 << (Python3Parser.OPEN_BRACK - 54)) | (1 << (Python3Parser.ADD - 54)) | (1 << (Python3Parser.MINUS - 54)) | (1 << (Python3Parser.NOT_OP - 54)) | (1 << (Python3Parser.OPEN_BRACE - 54)))) !== 0)) {
-	            this.state = 458;
-	            this.test();
-	            this.state = 461;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.FROM) {
-	                this.state = 459;
-	                this.match(Python3Parser.FROM);
-	                this.state = 460;
-	                this.test();
-	            }
-
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	import_stmt() {
-	    let localctx = new Import_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 52, Python3Parser.RULE_import_stmt);
-	    try {
-	        this.state = 467;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.IMPORT:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 465;
-	            this.import_name();
-	            break;
-	        case Python3Parser.FROM:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 466;
-	            this.import_from();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	import_name() {
-	    let localctx = new Import_nameContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 54, Python3Parser.RULE_import_name);
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 469;
-	        this.match(Python3Parser.IMPORT);
-	        this.state = 470;
-	        this.dotted_as_names();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	import_from() {
-	    let localctx = new Import_fromContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 56, Python3Parser.RULE_import_from);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 472;
-	        this.match(Python3Parser.FROM);
-	        this.state = 485;
-	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,58,this._ctx);
-	        switch(la_) {
-	        case 1:
-	            this.state = 476;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            while(_la===Python3Parser.DOT || _la===Python3Parser.ELLIPSIS) {
-	                this.state = 473;
-	                _la = this._input.LA(1);
-	                if(!(_la===Python3Parser.DOT || _la===Python3Parser.ELLIPSIS)) {
-	                this._errHandler.recoverInline(this);
-	                }
-	                else {
-	                	this._errHandler.reportMatch(this);
-	                    this.consume();
-	                }
-	                this.state = 478;
-	                this._errHandler.sync(this);
-	                _la = this._input.LA(1);
-	            }
-	            this.state = 479;
-	            this.dotted_name();
-	            break;
-
-	        case 2:
-	            this.state = 481; 
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            do {
-	                this.state = 480;
-	                _la = this._input.LA(1);
-	                if(!(_la===Python3Parser.DOT || _la===Python3Parser.ELLIPSIS)) {
-	                this._errHandler.recoverInline(this);
-	                }
-	                else {
-	                	this._errHandler.reportMatch(this);
-	                    this.consume();
-	                }
-	                this.state = 483; 
-	                this._errHandler.sync(this);
-	                _la = this._input.LA(1);
-	            } while(_la===Python3Parser.DOT || _la===Python3Parser.ELLIPSIS);
-	            break;
-
-	        }
-	        this.state = 487;
-	        this.match(Python3Parser.IMPORT);
-	        this.state = 494;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.STAR:
-	            this.state = 488;
-	            this.match(Python3Parser.STAR);
-	            break;
-	        case Python3Parser.OPEN_PAREN:
-	            this.state = 489;
-	            this.match(Python3Parser.OPEN_PAREN);
-	            this.state = 490;
-	            this.import_as_names();
-	            this.state = 491;
-	            this.match(Python3Parser.CLOSE_PAREN);
-	            break;
-	        case Python3Parser.NAME:
-	            this.state = 493;
-	            this.import_as_names();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	import_as_name() {
-	    let localctx = new Import_as_nameContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 58, Python3Parser.RULE_import_as_name);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 496;
-	        this.match(Python3Parser.NAME);
-	        this.state = 499;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.AS) {
-	            this.state = 497;
-	            this.match(Python3Parser.AS);
-	            this.state = 498;
-	            this.match(Python3Parser.NAME);
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	dotted_as_name() {
-	    let localctx = new Dotted_as_nameContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 60, Python3Parser.RULE_dotted_as_name);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 501;
-	        this.dotted_name();
-	        this.state = 504;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.AS) {
-	            this.state = 502;
-	            this.match(Python3Parser.AS);
-	            this.state = 503;
-	            this.match(Python3Parser.NAME);
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	import_as_names() {
-	    let localctx = new Import_as_namesContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 62, Python3Parser.RULE_import_as_names);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 506;
-	        this.import_as_name();
-	        this.state = 511;
-	        this._errHandler.sync(this);
-	        var _alt = this._interp.adaptivePredict(this._input,62,this._ctx)
-	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	            if(_alt===1) {
-	                this.state = 507;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 508;
-	                this.import_as_name(); 
-	            }
-	            this.state = 513;
-	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,62,this._ctx);
-	        }
-
-	        this.state = 515;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.COMMA) {
-	            this.state = 514;
-	            this.match(Python3Parser.COMMA);
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	dotted_as_names() {
-	    let localctx = new Dotted_as_namesContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 64, Python3Parser.RULE_dotted_as_names);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 517;
-	        this.dotted_as_name();
-	        this.state = 522;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.COMMA) {
-	            this.state = 518;
-	            this.match(Python3Parser.COMMA);
-	            this.state = 519;
-	            this.dotted_as_name();
-	            this.state = 524;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	dotted_name() {
-	    let localctx = new Dotted_nameContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 66, Python3Parser.RULE_dotted_name);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 525;
-	        this.match(Python3Parser.NAME);
-	        this.state = 530;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.DOT) {
-	            this.state = 526;
-	            this.match(Python3Parser.DOT);
-	            this.state = 527;
-	            this.match(Python3Parser.NAME);
-	            this.state = 532;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	global_stmt() {
-	    let localctx = new Global_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 68, Python3Parser.RULE_global_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 533;
-	        this.match(Python3Parser.GLOBAL);
-	        this.state = 534;
-	        this.match(Python3Parser.NAME);
-	        this.state = 539;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.COMMA) {
-	            this.state = 535;
-	            this.match(Python3Parser.COMMA);
-	            this.state = 536;
-	            this.match(Python3Parser.NAME);
-	            this.state = 541;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	nonlocal_stmt() {
-	    let localctx = new Nonlocal_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 70, Python3Parser.RULE_nonlocal_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 542;
-	        this.match(Python3Parser.NONLOCAL);
-	        this.state = 543;
-	        this.match(Python3Parser.NAME);
-	        this.state = 548;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.COMMA) {
-	            this.state = 544;
-	            this.match(Python3Parser.COMMA);
-	            this.state = 545;
-	            this.match(Python3Parser.NAME);
-	            this.state = 550;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	assert_stmt() {
-	    let localctx = new Assert_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 72, Python3Parser.RULE_assert_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 551;
-	        this.match(Python3Parser.ASSERT);
-	        this.state = 552;
-	        this.test();
-	        this.state = 555;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.COMMA) {
-	            this.state = 553;
-	            this.match(Python3Parser.COMMA);
-	            this.state = 554;
-	            this.test();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	compound_stmt() {
-	    let localctx = new Compound_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 74, Python3Parser.RULE_compound_stmt);
-	    try {
-	        this.state = 565;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.IF:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 557;
-	            this.if_stmt();
-	            break;
-	        case Python3Parser.WHILE:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 558;
-	            this.while_stmt();
-	            break;
-	        case Python3Parser.FOR:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 559;
-	            this.for_stmt();
-	            break;
-	        case Python3Parser.TRY:
-	            this.enterOuterAlt(localctx, 4);
-	            this.state = 560;
-	            this.try_stmt();
-	            break;
-	        case Python3Parser.WITH:
-	            this.enterOuterAlt(localctx, 5);
-	            this.state = 561;
-	            this.with_stmt();
-	            break;
-	        case Python3Parser.DEF:
-	            this.enterOuterAlt(localctx, 6);
-	            this.state = 562;
-	            this.funcdef();
-	            break;
-	        case Python3Parser.CLASS:
-	            this.enterOuterAlt(localctx, 7);
-	            this.state = 563;
-	            this.classdef();
-	            break;
-	        case Python3Parser.AT:
-	            this.enterOuterAlt(localctx, 8);
-	            this.state = 564;
-	            this.decorated();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	if_stmt() {
-	    let localctx = new If_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 76, Python3Parser.RULE_if_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 567;
-	        this.match(Python3Parser.IF);
-	        this.state = 568;
-	        this.test();
-	        this.state = 569;
-	        this.match(Python3Parser.COLON);
-	        this.state = 570;
-	        this.suite();
-	        this.state = 578;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.ELIF) {
-	            this.state = 571;
-	            this.match(Python3Parser.ELIF);
-	            this.state = 572;
-	            this.test();
-	            this.state = 573;
-	            this.match(Python3Parser.COLON);
-	            this.state = 574;
-	            this.suite();
-	            this.state = 580;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	        this.state = 584;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.ELSE) {
-	            this.state = 581;
-	            this.match(Python3Parser.ELSE);
-	            this.state = 582;
-	            this.match(Python3Parser.COLON);
-	            this.state = 583;
-	            this.suite();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	while_stmt() {
-	    let localctx = new While_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 78, Python3Parser.RULE_while_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 586;
-	        this.match(Python3Parser.WHILE);
-	        this.state = 587;
-	        this.test();
-	        this.state = 588;
-	        this.match(Python3Parser.COLON);
-	        this.state = 589;
-	        this.suite();
-	        this.state = 593;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.ELSE) {
-	            this.state = 590;
-	            this.match(Python3Parser.ELSE);
-	            this.state = 591;
-	            this.match(Python3Parser.COLON);
-	            this.state = 592;
-	            this.suite();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	for_stmt() {
-	    let localctx = new For_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 80, Python3Parser.RULE_for_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 595;
-	        this.match(Python3Parser.FOR);
-	        this.state = 596;
-	        this.exprlist();
-	        this.state = 597;
-	        this.match(Python3Parser.IN);
-	        this.state = 598;
-	        this.testlist();
-	        this.state = 599;
-	        this.match(Python3Parser.COLON);
-	        this.state = 600;
-	        this.suite();
-	        this.state = 604;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.ELSE) {
-	            this.state = 601;
-	            this.match(Python3Parser.ELSE);
-	            this.state = 602;
-	            this.match(Python3Parser.COLON);
-	            this.state = 603;
-	            this.suite();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	try_stmt() {
-	    let localctx = new Try_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 82, Python3Parser.RULE_try_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 606;
-	        this.match(Python3Parser.TRY);
-	        this.state = 607;
-	        this.match(Python3Parser.COLON);
-	        this.state = 608;
-	        this.suite();
-	        this.state = 630;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.EXCEPT:
-	            this.state = 613; 
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            do {
-	                this.state = 609;
-	                this.except_clause();
-	                this.state = 610;
-	                this.match(Python3Parser.COLON);
-	                this.state = 611;
-	                this.suite();
-	                this.state = 615; 
-	                this._errHandler.sync(this);
-	                _la = this._input.LA(1);
-	            } while(_la===Python3Parser.EXCEPT);
-	            this.state = 620;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.ELSE) {
-	                this.state = 617;
-	                this.match(Python3Parser.ELSE);
-	                this.state = 618;
-	                this.match(Python3Parser.COLON);
-	                this.state = 619;
-	                this.suite();
-	            }
-
-	            this.state = 625;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.FINALLY) {
-	                this.state = 622;
-	                this.match(Python3Parser.FINALLY);
-	                this.state = 623;
-	                this.match(Python3Parser.COLON);
-	                this.state = 624;
-	                this.suite();
-	            }
-
-	            break;
-	        case Python3Parser.FINALLY:
-	            this.state = 627;
-	            this.match(Python3Parser.FINALLY);
-	            this.state = 628;
-	            this.match(Python3Parser.COLON);
-	            this.state = 629;
-	            this.suite();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	with_stmt() {
-	    let localctx = new With_stmtContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 84, Python3Parser.RULE_with_stmt);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 632;
-	        this.match(Python3Parser.WITH);
-	        this.state = 633;
-	        this.with_item();
-	        this.state = 638;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.COMMA) {
-	            this.state = 634;
-	            this.match(Python3Parser.COMMA);
-	            this.state = 635;
-	            this.with_item();
-	            this.state = 640;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	        this.state = 641;
-	        this.match(Python3Parser.COLON);
-	        this.state = 642;
-	        this.suite();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	with_item() {
-	    let localctx = new With_itemContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 86, Python3Parser.RULE_with_item);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 644;
-	        this.test();
-	        this.state = 647;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.AS) {
-	            this.state = 645;
-	            this.match(Python3Parser.AS);
-	            this.state = 646;
-	            this.expr();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	except_clause() {
-	    let localctx = new Except_clauseContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 88, Python3Parser.RULE_except_clause);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 649;
-	        this.match(Python3Parser.EXCEPT);
-	        this.state = 655;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 54)) & ~0x1f) == 0 && ((1 << (_la - 54)) & ((1 << (Python3Parser.OPEN_BRACK - 54)) | (1 << (Python3Parser.ADD - 54)) | (1 << (Python3Parser.MINUS - 54)) | (1 << (Python3Parser.NOT_OP - 54)) | (1 << (Python3Parser.OPEN_BRACE - 54)))) !== 0)) {
-	            this.state = 650;
-	            this.test();
-	            this.state = 653;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.AS) {
-	                this.state = 651;
-	                this.match(Python3Parser.AS);
-	                this.state = 652;
-	                this.match(Python3Parser.NAME);
-	            }
-
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	suite() {
-	    let localctx = new SuiteContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 90, Python3Parser.RULE_suite);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 667;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.RETURN:
-	        case Python3Parser.RAISE:
-	        case Python3Parser.FROM:
-	        case Python3Parser.IMPORT:
-	        case Python3Parser.GLOBAL:
-	        case Python3Parser.NONLOCAL:
-	        case Python3Parser.ASSERT:
-	        case Python3Parser.LAMBDA:
-	        case Python3Parser.NOT:
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.YIELD:
-	        case Python3Parser.DEL:
-	        case Python3Parser.PASS:
-	        case Python3Parser.CONTINUE:
-	        case Python3Parser.BREAK:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.STAR:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.ADD:
-	        case Python3Parser.MINUS:
-	        case Python3Parser.NOT_OP:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 657;
-	            this.simple_stmt();
-	            break;
-	        case Python3Parser.NEWLINE:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 658;
-	            this.match(Python3Parser.NEWLINE);
-	            this.state = 659;
-	            this.match(Python3Parser.INDENT);
-	            this.state = 661; 
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            do {
-	                this.state = 660;
-	                this.stmt();
-	                this.state = 663; 
-	                this._errHandler.sync(this);
-	                _la = this._input.LA(1);
-	            } while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << Python3Parser.DEF) | (1 << Python3Parser.RETURN) | (1 << Python3Parser.RAISE) | (1 << Python3Parser.FROM) | (1 << Python3Parser.IMPORT) | (1 << Python3Parser.GLOBAL) | (1 << Python3Parser.NONLOCAL) | (1 << Python3Parser.ASSERT) | (1 << Python3Parser.IF) | (1 << Python3Parser.WHILE) | (1 << Python3Parser.FOR) | (1 << Python3Parser.TRY) | (1 << Python3Parser.WITH) | (1 << Python3Parser.LAMBDA) | (1 << Python3Parser.NOT) | (1 << Python3Parser.NONE) | (1 << Python3Parser.TRUE) | (1 << Python3Parser.FALSE) | (1 << Python3Parser.CLASS) | (1 << Python3Parser.YIELD) | (1 << Python3Parser.DEL) | (1 << Python3Parser.PASS))) !== 0) || ((((_la - 32)) & ~0x1f) == 0 && ((1 << (_la - 32)) & ((1 << (Python3Parser.CONTINUE - 32)) | (1 << (Python3Parser.BREAK - 32)) | (1 << (Python3Parser.NAME - 32)) | (1 << (Python3Parser.STRING_LITERAL - 32)) | (1 << (Python3Parser.BYTES_LITERAL - 32)) | (1 << (Python3Parser.DECIMAL_INTEGER - 32)) | (1 << (Python3Parser.OCT_INTEGER - 32)) | (1 << (Python3Parser.HEX_INTEGER - 32)) | (1 << (Python3Parser.BIN_INTEGER - 32)) | (1 << (Python3Parser.FLOAT_NUMBER - 32)) | (1 << (Python3Parser.IMAG_NUMBER - 32)) | (1 << (Python3Parser.ELLIPSIS - 32)) | (1 << (Python3Parser.STAR - 32)) | (1 << (Python3Parser.OPEN_PAREN - 32)) | (1 << (Python3Parser.OPEN_BRACK - 32)) | (1 << (Python3Parser.ADD - 32)) | (1 << (Python3Parser.MINUS - 32)))) !== 0) || ((((_la - 66)) & ~0x1f) == 0 && ((1 << (_la - 66)) & ((1 << (Python3Parser.NOT_OP - 66)) | (1 << (Python3Parser.OPEN_BRACE - 66)) | (1 << (Python3Parser.AT - 66)))) !== 0));
-	            this.state = 665;
-	            this.match(Python3Parser.DEDENT);
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	test() {
-	    let localctx = new TestContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 92, Python3Parser.RULE_test);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 678;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.NOT:
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.STAR:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.ADD:
-	        case Python3Parser.MINUS:
-	        case Python3Parser.NOT_OP:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 669;
-	            this.or_test();
-	            this.state = 675;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.IF) {
-	                this.state = 670;
-	                this.match(Python3Parser.IF);
-	                this.state = 671;
-	                this.or_test();
-	                this.state = 672;
-	                this.match(Python3Parser.ELSE);
-	                this.state = 673;
-	                this.test();
-	            }
-
-	            break;
-	        case Python3Parser.LAMBDA:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 677;
-	            this.lambdef();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	test_nocond() {
-	    let localctx = new Test_nocondContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 94, Python3Parser.RULE_test_nocond);
-	    try {
-	        this.state = 682;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.NOT:
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.STAR:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.ADD:
-	        case Python3Parser.MINUS:
-	        case Python3Parser.NOT_OP:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 680;
-	            this.or_test();
-	            break;
-	        case Python3Parser.LAMBDA:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 681;
-	            this.lambdef_nocond();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	lambdef() {
-	    let localctx = new LambdefContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 96, Python3Parser.RULE_lambdef);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 684;
-	        this.match(Python3Parser.LAMBDA);
-	        this.state = 686;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(((((_la - 35)) & ~0x1f) == 0 && ((1 << (_la - 35)) & ((1 << (Python3Parser.NAME - 35)) | (1 << (Python3Parser.STAR - 35)) | (1 << (Python3Parser.POWER - 35)))) !== 0)) {
-	            this.state = 685;
-	            this.varargslist();
-	        }
-
-	        this.state = 688;
-	        this.match(Python3Parser.COLON);
-	        this.state = 689;
-	        this.test();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	lambdef_nocond() {
-	    let localctx = new Lambdef_nocondContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 98, Python3Parser.RULE_lambdef_nocond);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 691;
-	        this.match(Python3Parser.LAMBDA);
-	        this.state = 693;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(((((_la - 35)) & ~0x1f) == 0 && ((1 << (_la - 35)) & ((1 << (Python3Parser.NAME - 35)) | (1 << (Python3Parser.STAR - 35)) | (1 << (Python3Parser.POWER - 35)))) !== 0)) {
-	            this.state = 692;
-	            this.varargslist();
-	        }
-
-	        this.state = 695;
-	        this.match(Python3Parser.COLON);
-	        this.state = 696;
-	        this.test_nocond();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	or_test() {
-	    let localctx = new Or_testContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 100, Python3Parser.RULE_or_test);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 698;
-	        this.and_test();
-	        this.state = 703;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.OR) {
-	            this.state = 699;
-	            this.match(Python3Parser.OR);
-	            this.state = 700;
-	            this.and_test();
-	            this.state = 705;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	and_test() {
-	    let localctx = new And_testContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 102, Python3Parser.RULE_and_test);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 706;
-	        this.not_test();
-	        this.state = 711;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.AND) {
-	            this.state = 707;
-	            this.match(Python3Parser.AND);
-	            this.state = 708;
-	            this.not_test();
-	            this.state = 713;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	not_test() {
-	    let localctx = new Not_testContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 104, Python3Parser.RULE_not_test);
-	    try {
-	        this.state = 717;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.NOT:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 714;
-	            this.match(Python3Parser.NOT);
-	            this.state = 715;
-	            this.not_test();
-	            break;
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.STAR:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.ADD:
-	        case Python3Parser.MINUS:
-	        case Python3Parser.NOT_OP:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 716;
-	            this.comparison();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	comparison() {
-	    let localctx = new ComparisonContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 106, Python3Parser.RULE_comparison);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 719;
-	        this.star_expr();
-	        this.state = 725;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << Python3Parser.IN) | (1 << Python3Parser.NOT) | (1 << Python3Parser.IS))) !== 0) || ((((_la - 69)) & ~0x1f) == 0 && ((1 << (_la - 69)) & ((1 << (Python3Parser.LESS_THAN - 69)) | (1 << (Python3Parser.GREATER_THAN - 69)) | (1 << (Python3Parser.EQUALS - 69)) | (1 << (Python3Parser.GT_EQ - 69)) | (1 << (Python3Parser.LT_EQ - 69)) | (1 << (Python3Parser.NOT_EQ_1 - 69)) | (1 << (Python3Parser.NOT_EQ_2 - 69)))) !== 0)) {
-	            this.state = 720;
-	            this.comp_op();
-	            this.state = 721;
-	            this.star_expr();
-	            this.state = 727;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	comp_op() {
-	    let localctx = new Comp_opContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 108, Python3Parser.RULE_comp_op);
-	    try {
-	        this.state = 741;
-	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,93,this._ctx);
-	        switch(la_) {
-	        case 1:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 728;
-	            this.match(Python3Parser.LESS_THAN);
-	            break;
-
-	        case 2:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 729;
-	            this.match(Python3Parser.GREATER_THAN);
-	            break;
-
-	        case 3:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 730;
-	            this.match(Python3Parser.EQUALS);
-	            break;
-
-	        case 4:
-	            this.enterOuterAlt(localctx, 4);
-	            this.state = 731;
-	            this.match(Python3Parser.GT_EQ);
-	            break;
-
-	        case 5:
-	            this.enterOuterAlt(localctx, 5);
-	            this.state = 732;
-	            this.match(Python3Parser.LT_EQ);
-	            break;
-
-	        case 6:
-	            this.enterOuterAlt(localctx, 6);
-	            this.state = 733;
-	            this.match(Python3Parser.NOT_EQ_1);
-	            break;
-
-	        case 7:
-	            this.enterOuterAlt(localctx, 7);
-	            this.state = 734;
-	            this.match(Python3Parser.NOT_EQ_2);
-	            break;
-
-	        case 8:
-	            this.enterOuterAlt(localctx, 8);
-	            this.state = 735;
-	            this.match(Python3Parser.IN);
-	            break;
-
-	        case 9:
-	            this.enterOuterAlt(localctx, 9);
-	            this.state = 736;
-	            this.match(Python3Parser.NOT);
-	            this.state = 737;
-	            this.match(Python3Parser.IN);
-	            break;
-
-	        case 10:
-	            this.enterOuterAlt(localctx, 10);
-	            this.state = 738;
-	            this.match(Python3Parser.IS);
-	            break;
-
-	        case 11:
-	            this.enterOuterAlt(localctx, 11);
-	            this.state = 739;
-	            this.match(Python3Parser.IS);
-	            this.state = 740;
-	            this.match(Python3Parser.NOT);
-	            break;
-
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	star_expr() {
-	    let localctx = new Star_exprContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 110, Python3Parser.RULE_star_expr);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 744;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.STAR) {
-	            this.state = 743;
-	            this.match(Python3Parser.STAR);
-	        }
-
-	        this.state = 746;
-	        this.expr();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	expr() {
-	    let localctx = new ExprContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 112, Python3Parser.RULE_expr);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 748;
-	        this.xor_expr();
-	        this.state = 753;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.OR_OP) {
-	            this.state = 749;
-	            this.match(Python3Parser.OR_OP);
-	            this.state = 750;
-	            this.xor_expr();
-	            this.state = 755;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	xor_expr() {
-	    let localctx = new Xor_exprContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 114, Python3Parser.RULE_xor_expr);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 756;
-	        this.and_expr();
-	        this.state = 761;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.XOR) {
-	            this.state = 757;
-	            this.match(Python3Parser.XOR);
-	            this.state = 758;
-	            this.and_expr();
-	            this.state = 763;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	and_expr() {
-	    let localctx = new And_exprContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 116, Python3Parser.RULE_and_expr);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 764;
-	        this.shift_expr();
-	        this.state = 769;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.AND_OP) {
-	            this.state = 765;
-	            this.match(Python3Parser.AND_OP);
-	            this.state = 766;
-	            this.shift_expr();
-	            this.state = 771;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	shift_expr() {
-	    let localctx = new Shift_exprContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 118, Python3Parser.RULE_shift_expr);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 772;
-	        this.arith_expr();
-	        this.state = 779;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.LEFT_SHIFT || _la===Python3Parser.RIGHT_SHIFT) {
-	            this.state = 777;
-	            this._errHandler.sync(this);
-	            switch(this._input.LA(1)) {
-	            case Python3Parser.LEFT_SHIFT:
-	                this.state = 773;
-	                this.match(Python3Parser.LEFT_SHIFT);
-	                this.state = 774;
-	                this.arith_expr();
-	                break;
-	            case Python3Parser.RIGHT_SHIFT:
-	                this.state = 775;
-	                this.match(Python3Parser.RIGHT_SHIFT);
-	                this.state = 776;
-	                this.arith_expr();
-	                break;
-	            default:
-	                throw new antlr4.error.NoViableAltException(this);
-	            }
-	            this.state = 781;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	arith_expr() {
-	    let localctx = new Arith_exprContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 120, Python3Parser.RULE_arith_expr);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 782;
-	        this.term();
-	        this.state = 789;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(_la===Python3Parser.ADD || _la===Python3Parser.MINUS) {
-	            this.state = 787;
-	            this._errHandler.sync(this);
-	            switch(this._input.LA(1)) {
-	            case Python3Parser.ADD:
-	                this.state = 783;
-	                this.match(Python3Parser.ADD);
-	                this.state = 784;
-	                this.term();
-	                break;
-	            case Python3Parser.MINUS:
-	                this.state = 785;
-	                this.match(Python3Parser.MINUS);
-	                this.state = 786;
-	                this.term();
-	                break;
-	            default:
-	                throw new antlr4.error.NoViableAltException(this);
-	            }
-	            this.state = 791;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	term() {
-	    let localctx = new TermContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 122, Python3Parser.RULE_term);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 792;
-	        this.factor();
-	        this.state = 805;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(((((_la - 46)) & ~0x1f) == 0 && ((1 << (_la - 46)) & ((1 << (Python3Parser.STAR - 46)) | (1 << (Python3Parser.DIV - 46)) | (1 << (Python3Parser.MOD - 46)) | (1 << (Python3Parser.IDIV - 46)) | (1 << (Python3Parser.AT - 46)))) !== 0)) {
-	            this.state = 803;
-	            this._errHandler.sync(this);
-	            switch(this._input.LA(1)) {
-	            case Python3Parser.STAR:
-	                this.state = 793;
-	                this.match(Python3Parser.STAR);
-	                this.state = 794;
-	                this.factor();
-	                break;
-	            case Python3Parser.DIV:
-	                this.state = 795;
-	                this.match(Python3Parser.DIV);
-	                this.state = 796;
-	                this.factor();
-	                break;
-	            case Python3Parser.MOD:
-	                this.state = 797;
-	                this.match(Python3Parser.MOD);
-	                this.state = 798;
-	                this.factor();
-	                break;
-	            case Python3Parser.IDIV:
-	                this.state = 799;
-	                this.match(Python3Parser.IDIV);
-	                this.state = 800;
-	                this.factor();
-	                break;
-	            case Python3Parser.AT:
-	                this.state = 801;
-	                this.match(Python3Parser.AT);
-	                this.state = 802;
-	                this.factor();
-	                break;
-	            default:
-	                throw new antlr4.error.NoViableAltException(this);
-	            }
-	            this.state = 807;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	factor() {
-	    let localctx = new FactorContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 124, Python3Parser.RULE_factor);
-	    try {
-	        this.state = 815;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.ADD:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 808;
-	            this.match(Python3Parser.ADD);
-	            this.state = 809;
-	            this.factor();
-	            break;
-	        case Python3Parser.MINUS:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 810;
-	            this.match(Python3Parser.MINUS);
-	            this.state = 811;
-	            this.factor();
-	            break;
-	        case Python3Parser.NOT_OP:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 812;
-	            this.match(Python3Parser.NOT_OP);
-	            this.state = 813;
-	            this.factor();
-	            break;
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 4);
-	            this.state = 814;
-	            this.power();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	power() {
-	    let localctx = new PowerContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 126, Python3Parser.RULE_power);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 817;
-	        this.atom();
-	        this.state = 821;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        while(((((_la - 44)) & ~0x1f) == 0 && ((1 << (_la - 44)) & ((1 << (Python3Parser.DOT - 44)) | (1 << (Python3Parser.OPEN_PAREN - 44)) | (1 << (Python3Parser.OPEN_BRACK - 44)))) !== 0)) {
-	            this.state = 818;
-	            this.trailer();
-	            this.state = 823;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	        }
-	        this.state = 826;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.POWER) {
-	            this.state = 824;
-	            this.match(Python3Parser.POWER);
-	            this.state = 825;
-	            this.factor();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	atom() {
-	    let localctx = new AtomContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 128, Python3Parser.RULE_atom);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 855;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.OPEN_PAREN:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 828;
-	            this.match(Python3Parser.OPEN_PAREN);
-	            this.state = 831;
-	            this._errHandler.sync(this);
-	            switch (this._input.LA(1)) {
-	            case Python3Parser.YIELD:
-	            	this.state = 829;
-	            	this.yield_expr();
-	            	break;
-	            case Python3Parser.LAMBDA:
-	            case Python3Parser.NOT:
-	            case Python3Parser.NONE:
-	            case Python3Parser.TRUE:
-	            case Python3Parser.FALSE:
-	            case Python3Parser.NAME:
-	            case Python3Parser.STRING_LITERAL:
-	            case Python3Parser.BYTES_LITERAL:
-	            case Python3Parser.DECIMAL_INTEGER:
-	            case Python3Parser.OCT_INTEGER:
-	            case Python3Parser.HEX_INTEGER:
-	            case Python3Parser.BIN_INTEGER:
-	            case Python3Parser.FLOAT_NUMBER:
-	            case Python3Parser.IMAG_NUMBER:
-	            case Python3Parser.ELLIPSIS:
-	            case Python3Parser.STAR:
-	            case Python3Parser.OPEN_PAREN:
-	            case Python3Parser.OPEN_BRACK:
-	            case Python3Parser.ADD:
-	            case Python3Parser.MINUS:
-	            case Python3Parser.NOT_OP:
-	            case Python3Parser.OPEN_BRACE:
-	            	this.state = 830;
-	            	this.testlist_comp();
-	            	break;
-	            case Python3Parser.CLOSE_PAREN:
-	            	break;
-	            default:
-	            	break;
-	            }
-	            this.state = 833;
-	            this.match(Python3Parser.CLOSE_PAREN);
-	            break;
-	        case Python3Parser.OPEN_BRACK:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 834;
-	            this.match(Python3Parser.OPEN_BRACK);
-	            this.state = 836;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 54)) & ~0x1f) == 0 && ((1 << (_la - 54)) & ((1 << (Python3Parser.OPEN_BRACK - 54)) | (1 << (Python3Parser.ADD - 54)) | (1 << (Python3Parser.MINUS - 54)) | (1 << (Python3Parser.NOT_OP - 54)) | (1 << (Python3Parser.OPEN_BRACE - 54)))) !== 0)) {
-	                this.state = 835;
-	                this.testlist_comp();
-	            }
-
-	            this.state = 838;
-	            this.match(Python3Parser.CLOSE_BRACK);
-	            break;
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 839;
-	            this.match(Python3Parser.OPEN_BRACE);
-	            this.state = 841;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 54)) & ~0x1f) == 0 && ((1 << (_la - 54)) & ((1 << (Python3Parser.OPEN_BRACK - 54)) | (1 << (Python3Parser.ADD - 54)) | (1 << (Python3Parser.MINUS - 54)) | (1 << (Python3Parser.NOT_OP - 54)) | (1 << (Python3Parser.OPEN_BRACE - 54)))) !== 0)) {
-	                this.state = 840;
-	                this.dictorsetmaker();
-	            }
-
-	            this.state = 843;
-	            this.match(Python3Parser.CLOSE_BRACE);
-	            break;
-	        case Python3Parser.NAME:
-	            this.enterOuterAlt(localctx, 4);
-	            this.state = 844;
-	            this.match(Python3Parser.NAME);
-	            break;
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	            this.enterOuterAlt(localctx, 5);
-	            this.state = 845;
-	            this.number();
-	            break;
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	            this.enterOuterAlt(localctx, 6);
-	            this.state = 847; 
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            do {
-	                this.state = 846;
-	                this.str();
-	                this.state = 849; 
-	                this._errHandler.sync(this);
-	                _la = this._input.LA(1);
-	            } while(_la===Python3Parser.STRING_LITERAL || _la===Python3Parser.BYTES_LITERAL);
-	            break;
-	        case Python3Parser.ELLIPSIS:
-	            this.enterOuterAlt(localctx, 7);
-	            this.state = 851;
-	            this.match(Python3Parser.ELLIPSIS);
-	            break;
-	        case Python3Parser.NONE:
-	            this.enterOuterAlt(localctx, 8);
-	            this.state = 852;
-	            this.match(Python3Parser.NONE);
-	            break;
-	        case Python3Parser.TRUE:
-	            this.enterOuterAlt(localctx, 9);
-	            this.state = 853;
-	            this.match(Python3Parser.TRUE);
-	            break;
-	        case Python3Parser.FALSE:
-	            this.enterOuterAlt(localctx, 10);
-	            this.state = 854;
-	            this.match(Python3Parser.FALSE);
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	testlist_comp() {
-	    let localctx = new Testlist_compContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 130, Python3Parser.RULE_testlist_comp);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 857;
-	        this.test();
-	        this.state = 869;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.FOR:
-	            this.state = 858;
-	            this.comp_for();
-	            break;
-	        case Python3Parser.CLOSE_PAREN:
-	        case Python3Parser.COMMA:
-	        case Python3Parser.CLOSE_BRACK:
-	            this.state = 863;
-	            this._errHandler.sync(this);
-	            var _alt = this._interp.adaptivePredict(this._input,112,this._ctx)
-	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                if(_alt===1) {
-	                    this.state = 859;
-	                    this.match(Python3Parser.COMMA);
-	                    this.state = 860;
-	                    this.test(); 
-	                }
-	                this.state = 865;
-	                this._errHandler.sync(this);
-	                _alt = this._interp.adaptivePredict(this._input,112,this._ctx);
-	            }
-
-	            this.state = 867;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.COMMA) {
-	                this.state = 866;
-	                this.match(Python3Parser.COMMA);
-	            }
-
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	trailer() {
-	    let localctx = new TrailerContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 132, Python3Parser.RULE_trailer);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 882;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.OPEN_PAREN:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 871;
-	            this.match(Python3Parser.OPEN_PAREN);
-	            this.state = 873;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 52)) & ~0x1f) == 0 && ((1 << (_la - 52)) & ((1 << (Python3Parser.POWER - 52)) | (1 << (Python3Parser.OPEN_BRACK - 52)) | (1 << (Python3Parser.ADD - 52)) | (1 << (Python3Parser.MINUS - 52)) | (1 << (Python3Parser.NOT_OP - 52)) | (1 << (Python3Parser.OPEN_BRACE - 52)))) !== 0)) {
-	                this.state = 872;
-	                this.arglist();
-	            }
-
-	            this.state = 875;
-	            this.match(Python3Parser.CLOSE_PAREN);
-	            break;
-	        case Python3Parser.OPEN_BRACK:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 876;
-	            this.match(Python3Parser.OPEN_BRACK);
-	            this.state = 877;
-	            this.subscriptlist();
-	            this.state = 878;
-	            this.match(Python3Parser.CLOSE_BRACK);
-	            break;
-	        case Python3Parser.DOT:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 880;
-	            this.match(Python3Parser.DOT);
-	            this.state = 881;
-	            this.match(Python3Parser.NAME);
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	subscriptlist() {
-	    let localctx = new SubscriptlistContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 134, Python3Parser.RULE_subscriptlist);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 884;
-	        this.subscript();
-	        this.state = 889;
-	        this._errHandler.sync(this);
-	        var _alt = this._interp.adaptivePredict(this._input,117,this._ctx)
-	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	            if(_alt===1) {
-	                this.state = 885;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 886;
-	                this.subscript(); 
-	            }
-	            this.state = 891;
-	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,117,this._ctx);
-	        }
-
-	        this.state = 893;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.COMMA) {
-	            this.state = 892;
-	            this.match(Python3Parser.COMMA);
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	subscript() {
-	    let localctx = new SubscriptContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 136, Python3Parser.RULE_subscript);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 906;
-	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,122,this._ctx);
-	        switch(la_) {
-	        case 1:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 895;
-	            this.test();
-	            break;
-
-	        case 2:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 897;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 54)) & ~0x1f) == 0 && ((1 << (_la - 54)) & ((1 << (Python3Parser.OPEN_BRACK - 54)) | (1 << (Python3Parser.ADD - 54)) | (1 << (Python3Parser.MINUS - 54)) | (1 << (Python3Parser.NOT_OP - 54)) | (1 << (Python3Parser.OPEN_BRACE - 54)))) !== 0)) {
-	                this.state = 896;
-	                this.test();
-	            }
-
-	            this.state = 899;
-	            this.match(Python3Parser.COLON);
-	            this.state = 901;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 54)) & ~0x1f) == 0 && ((1 << (_la - 54)) & ((1 << (Python3Parser.OPEN_BRACK - 54)) | (1 << (Python3Parser.ADD - 54)) | (1 << (Python3Parser.MINUS - 54)) | (1 << (Python3Parser.NOT_OP - 54)) | (1 << (Python3Parser.OPEN_BRACE - 54)))) !== 0)) {
-	                this.state = 900;
-	                this.test();
-	            }
-
-	            this.state = 904;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.COLON) {
-	                this.state = 903;
-	                this.sliceop();
-	            }
-
-	            break;
-
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	sliceop() {
-	    let localctx = new SliceopContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 138, Python3Parser.RULE_sliceop);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 908;
-	        this.match(Python3Parser.COLON);
-	        this.state = 910;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 54)) & ~0x1f) == 0 && ((1 << (_la - 54)) & ((1 << (Python3Parser.OPEN_BRACK - 54)) | (1 << (Python3Parser.ADD - 54)) | (1 << (Python3Parser.MINUS - 54)) | (1 << (Python3Parser.NOT_OP - 54)) | (1 << (Python3Parser.OPEN_BRACE - 54)))) !== 0)) {
-	            this.state = 909;
-	            this.test();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	exprlist() {
-	    let localctx = new ExprlistContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 140, Python3Parser.RULE_exprlist);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 912;
-	        this.star_expr();
-	        this.state = 917;
-	        this._errHandler.sync(this);
-	        var _alt = this._interp.adaptivePredict(this._input,124,this._ctx)
-	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	            if(_alt===1) {
-	                this.state = 913;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 914;
-	                this.star_expr(); 
-	            }
-	            this.state = 919;
-	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,124,this._ctx);
-	        }
-
-	        this.state = 921;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.COMMA) {
-	            this.state = 920;
-	            this.match(Python3Parser.COMMA);
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	testlist() {
-	    let localctx = new TestlistContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 142, Python3Parser.RULE_testlist);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 923;
-	        this.test();
-	        this.state = 928;
-	        this._errHandler.sync(this);
-	        var _alt = this._interp.adaptivePredict(this._input,126,this._ctx)
-	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	            if(_alt===1) {
-	                this.state = 924;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 925;
-	                this.test(); 
-	            }
-	            this.state = 930;
-	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,126,this._ctx);
-	        }
-
-	        this.state = 932;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.COMMA) {
-	            this.state = 931;
-	            this.match(Python3Parser.COMMA);
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	dictorsetmaker() {
-	    let localctx = new DictorsetmakerContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 144, Python3Parser.RULE_dictorsetmaker);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 967;
-	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,134,this._ctx);
-	        switch(la_) {
-	        case 1:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 934;
-	            this.test();
-	            this.state = 935;
-	            this.match(Python3Parser.COLON);
-	            this.state = 936;
-	            this.test();
-	            this.state = 951;
-	            this._errHandler.sync(this);
-	            switch(this._input.LA(1)) {
-	            case Python3Parser.FOR:
-	                this.state = 937;
-	                this.comp_for();
-	                break;
-	            case Python3Parser.COMMA:
-	            case Python3Parser.CLOSE_BRACE:
-	                this.state = 945;
-	                this._errHandler.sync(this);
-	                var _alt = this._interp.adaptivePredict(this._input,128,this._ctx)
-	                while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                    if(_alt===1) {
-	                        this.state = 938;
-	                        this.match(Python3Parser.COMMA);
-	                        this.state = 939;
-	                        this.test();
-	                        this.state = 940;
-	                        this.match(Python3Parser.COLON);
-	                        this.state = 941;
-	                        this.test(); 
-	                    }
-	                    this.state = 947;
-	                    this._errHandler.sync(this);
-	                    _alt = this._interp.adaptivePredict(this._input,128,this._ctx);
-	                }
-
-	                this.state = 949;
-	                this._errHandler.sync(this);
-	                _la = this._input.LA(1);
-	                if(_la===Python3Parser.COMMA) {
-	                    this.state = 948;
-	                    this.match(Python3Parser.COMMA);
-	                }
-
-	                break;
-	            default:
-	                throw new antlr4.error.NoViableAltException(this);
-	            }
-	            break;
-
-	        case 2:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 953;
-	            this.test();
-	            this.state = 965;
-	            this._errHandler.sync(this);
-	            switch(this._input.LA(1)) {
-	            case Python3Parser.FOR:
-	                this.state = 954;
-	                this.comp_for();
-	                break;
-	            case Python3Parser.COMMA:
-	            case Python3Parser.CLOSE_BRACE:
-	                this.state = 959;
-	                this._errHandler.sync(this);
-	                var _alt = this._interp.adaptivePredict(this._input,131,this._ctx)
-	                while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                    if(_alt===1) {
-	                        this.state = 955;
-	                        this.match(Python3Parser.COMMA);
-	                        this.state = 956;
-	                        this.test(); 
-	                    }
-	                    this.state = 961;
-	                    this._errHandler.sync(this);
-	                    _alt = this._interp.adaptivePredict(this._input,131,this._ctx);
-	                }
-
-	                this.state = 963;
-	                this._errHandler.sync(this);
-	                _la = this._input.LA(1);
-	                if(_la===Python3Parser.COMMA) {
-	                    this.state = 962;
-	                    this.match(Python3Parser.COMMA);
-	                }
-
-	                break;
-	            default:
-	                throw new antlr4.error.NoViableAltException(this);
-	            }
-	            break;
-
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	classdef() {
-	    let localctx = new ClassdefContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 146, Python3Parser.RULE_classdef);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 969;
-	        this.match(Python3Parser.CLASS);
-	        this.state = 970;
-	        this.match(Python3Parser.NAME);
-	        this.state = 976;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.OPEN_PAREN) {
-	            this.state = 971;
-	            this.match(Python3Parser.OPEN_PAREN);
-	            this.state = 973;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(((((_la - 20)) & ~0x1f) == 0 && ((1 << (_la - 20)) & ((1 << (Python3Parser.LAMBDA - 20)) | (1 << (Python3Parser.NOT - 20)) | (1 << (Python3Parser.NONE - 20)) | (1 << (Python3Parser.TRUE - 20)) | (1 << (Python3Parser.FALSE - 20)) | (1 << (Python3Parser.NAME - 20)) | (1 << (Python3Parser.STRING_LITERAL - 20)) | (1 << (Python3Parser.BYTES_LITERAL - 20)) | (1 << (Python3Parser.DECIMAL_INTEGER - 20)) | (1 << (Python3Parser.OCT_INTEGER - 20)) | (1 << (Python3Parser.HEX_INTEGER - 20)) | (1 << (Python3Parser.BIN_INTEGER - 20)) | (1 << (Python3Parser.FLOAT_NUMBER - 20)) | (1 << (Python3Parser.IMAG_NUMBER - 20)) | (1 << (Python3Parser.ELLIPSIS - 20)) | (1 << (Python3Parser.STAR - 20)) | (1 << (Python3Parser.OPEN_PAREN - 20)))) !== 0) || ((((_la - 52)) & ~0x1f) == 0 && ((1 << (_la - 52)) & ((1 << (Python3Parser.POWER - 52)) | (1 << (Python3Parser.OPEN_BRACK - 52)) | (1 << (Python3Parser.ADD - 52)) | (1 << (Python3Parser.MINUS - 52)) | (1 << (Python3Parser.NOT_OP - 52)) | (1 << (Python3Parser.OPEN_BRACE - 52)))) !== 0)) {
-	                this.state = 972;
-	                this.arglist();
-	            }
-
-	            this.state = 975;
-	            this.match(Python3Parser.CLOSE_PAREN);
-	        }
-
-	        this.state = 978;
-	        this.match(Python3Parser.COLON);
-	        this.state = 979;
-	        this.suite();
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	arglist() {
-	    let localctx = new ArglistContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 148, Python3Parser.RULE_arglist);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 986;
-	        this._errHandler.sync(this);
-	        var _alt = this._interp.adaptivePredict(this._input,137,this._ctx)
-	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	            if(_alt===1) {
-	                this.state = 981;
-	                this.argument();
-	                this.state = 982;
-	                this.match(Python3Parser.COMMA); 
-	            }
-	            this.state = 988;
-	            this._errHandler.sync(this);
-	            _alt = this._interp.adaptivePredict(this._input,137,this._ctx);
-	        }
-
-	        this.state = 1009;
-	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,141,this._ctx);
-	        switch(la_) {
-	        case 1:
-	            this.state = 989;
-	            this.argument();
-	            this.state = 991;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.COMMA) {
-	                this.state = 990;
-	                this.match(Python3Parser.COMMA);
-	            }
-
-	            break;
-
-	        case 2:
-	            this.state = 993;
-	            this.match(Python3Parser.STAR);
-	            this.state = 994;
-	            this.test();
-	            this.state = 999;
-	            this._errHandler.sync(this);
-	            var _alt = this._interp.adaptivePredict(this._input,139,this._ctx)
-	            while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-	                if(_alt===1) {
-	                    this.state = 995;
-	                    this.match(Python3Parser.COMMA);
-	                    this.state = 996;
-	                    this.argument(); 
-	                }
-	                this.state = 1001;
-	                this._errHandler.sync(this);
-	                _alt = this._interp.adaptivePredict(this._input,139,this._ctx);
-	            }
-
-	            this.state = 1005;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.COMMA) {
-	                this.state = 1002;
-	                this.match(Python3Parser.COMMA);
-	                this.state = 1003;
-	                this.match(Python3Parser.POWER);
-	                this.state = 1004;
-	                this.test();
-	            }
-
-	            break;
-
-	        case 3:
-	            this.state = 1007;
-	            this.match(Python3Parser.POWER);
-	            this.state = 1008;
-	            this.test();
-	            break;
-
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	argument() {
-	    let localctx = new ArgumentContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 150, Python3Parser.RULE_argument);
-	    var _la = 0; // Token type
-	    try {
-	        this.state = 1019;
-	        this._errHandler.sync(this);
-	        var la_ = this._interp.adaptivePredict(this._input,143,this._ctx);
-	        switch(la_) {
-	        case 1:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 1011;
-	            this.test();
-	            this.state = 1013;
-	            this._errHandler.sync(this);
-	            _la = this._input.LA(1);
-	            if(_la===Python3Parser.FOR) {
-	                this.state = 1012;
-	                this.comp_for();
-	            }
-
-	            break;
-
-	        case 2:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 1015;
-	            this.test();
-	            this.state = 1016;
-	            this.match(Python3Parser.ASSIGN);
-	            this.state = 1017;
-	            this.test();
-	            break;
-
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	comp_iter() {
-	    let localctx = new Comp_iterContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 152, Python3Parser.RULE_comp_iter);
-	    try {
-	        this.state = 1023;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.FOR:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 1021;
-	            this.comp_for();
-	            break;
-	        case Python3Parser.IF:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 1022;
-	            this.comp_if();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	comp_for() {
-	    let localctx = new Comp_forContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 154, Python3Parser.RULE_comp_for);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 1025;
-	        this.match(Python3Parser.FOR);
-	        this.state = 1026;
-	        this.exprlist();
-	        this.state = 1027;
-	        this.match(Python3Parser.IN);
-	        this.state = 1028;
-	        this.or_test();
-	        this.state = 1030;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.IF || _la===Python3Parser.FOR) {
-	            this.state = 1029;
-	            this.comp_iter();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	comp_if() {
-	    let localctx = new Comp_ifContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 156, Python3Parser.RULE_comp_if);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 1032;
-	        this.match(Python3Parser.IF);
-	        this.state = 1033;
-	        this.test_nocond();
-	        this.state = 1035;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(_la===Python3Parser.IF || _la===Python3Parser.FOR) {
-	            this.state = 1034;
-	            this.comp_iter();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	yield_expr() {
-	    let localctx = new Yield_exprContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 158, Python3Parser.RULE_yield_expr);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 1037;
-	        this.match(Python3Parser.YIELD);
-	        this.state = 1039;
-	        this._errHandler.sync(this);
-	        _la = this._input.LA(1);
-	        if(((((_la - 4)) & ~0x1f) == 0 && ((1 << (_la - 4)) & ((1 << (Python3Parser.FROM - 4)) | (1 << (Python3Parser.LAMBDA - 4)) | (1 << (Python3Parser.NOT - 4)) | (1 << (Python3Parser.NONE - 4)) | (1 << (Python3Parser.TRUE - 4)) | (1 << (Python3Parser.FALSE - 4)) | (1 << (Python3Parser.NAME - 4)))) !== 0) || ((((_la - 36)) & ~0x1f) == 0 && ((1 << (_la - 36)) & ((1 << (Python3Parser.STRING_LITERAL - 36)) | (1 << (Python3Parser.BYTES_LITERAL - 36)) | (1 << (Python3Parser.DECIMAL_INTEGER - 36)) | (1 << (Python3Parser.OCT_INTEGER - 36)) | (1 << (Python3Parser.HEX_INTEGER - 36)) | (1 << (Python3Parser.BIN_INTEGER - 36)) | (1 << (Python3Parser.FLOAT_NUMBER - 36)) | (1 << (Python3Parser.IMAG_NUMBER - 36)) | (1 << (Python3Parser.ELLIPSIS - 36)) | (1 << (Python3Parser.STAR - 36)) | (1 << (Python3Parser.OPEN_PAREN - 36)) | (1 << (Python3Parser.OPEN_BRACK - 36)) | (1 << (Python3Parser.ADD - 36)) | (1 << (Python3Parser.MINUS - 36)) | (1 << (Python3Parser.NOT_OP - 36)) | (1 << (Python3Parser.OPEN_BRACE - 36)))) !== 0)) {
-	            this.state = 1038;
-	            this.yield_arg();
-	        }
-
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	yield_arg() {
-	    let localctx = new Yield_argContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 160, Python3Parser.RULE_yield_arg);
-	    try {
-	        this.state = 1044;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.FROM:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 1041;
-	            this.match(Python3Parser.FROM);
-	            this.state = 1042;
-	            this.test();
-	            break;
-	        case Python3Parser.LAMBDA:
-	        case Python3Parser.NOT:
-	        case Python3Parser.NONE:
-	        case Python3Parser.TRUE:
-	        case Python3Parser.FALSE:
-	        case Python3Parser.NAME:
-	        case Python3Parser.STRING_LITERAL:
-	        case Python3Parser.BYTES_LITERAL:
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	        case Python3Parser.FLOAT_NUMBER:
-	        case Python3Parser.IMAG_NUMBER:
-	        case Python3Parser.ELLIPSIS:
-	        case Python3Parser.STAR:
-	        case Python3Parser.OPEN_PAREN:
-	        case Python3Parser.OPEN_BRACK:
-	        case Python3Parser.ADD:
-	        case Python3Parser.MINUS:
-	        case Python3Parser.NOT_OP:
-	        case Python3Parser.OPEN_BRACE:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 1043;
-	            this.testlist();
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	str() {
-	    let localctx = new StrContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 162, Python3Parser.RULE_str);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 1046;
-	        _la = this._input.LA(1);
-	        if(!(_la===Python3Parser.STRING_LITERAL || _la===Python3Parser.BYTES_LITERAL)) {
-	        this._errHandler.recoverInline(this);
-	        }
-	        else {
-	        	this._errHandler.reportMatch(this);
-	            this.consume();
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	number() {
-	    let localctx = new NumberContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 164, Python3Parser.RULE_number);
-	    try {
-	        this.state = 1051;
-	        this._errHandler.sync(this);
-	        switch(this._input.LA(1)) {
-	        case Python3Parser.DECIMAL_INTEGER:
-	        case Python3Parser.OCT_INTEGER:
-	        case Python3Parser.HEX_INTEGER:
-	        case Python3Parser.BIN_INTEGER:
-	            this.enterOuterAlt(localctx, 1);
-	            this.state = 1048;
-	            this.integer();
-	            break;
-	        case Python3Parser.FLOAT_NUMBER:
-	            this.enterOuterAlt(localctx, 2);
-	            this.state = 1049;
-	            this.match(Python3Parser.FLOAT_NUMBER);
-	            break;
-	        case Python3Parser.IMAG_NUMBER:
-	            this.enterOuterAlt(localctx, 3);
-	            this.state = 1050;
-	            this.match(Python3Parser.IMAG_NUMBER);
-	            break;
-	        default:
-	            throw new antlr4.error.NoViableAltException(this);
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
-
-	integer() {
-	    let localctx = new IntegerContext(this, this._ctx, this.state);
-	    this.enterRule(localctx, 166, Python3Parser.RULE_integer);
-	    var _la = 0; // Token type
-	    try {
-	        this.enterOuterAlt(localctx, 1);
-	        this.state = 1053;
-	        _la = this._input.LA(1);
-	        if(!(((((_la - 38)) & ~0x1f) == 0 && ((1 << (_la - 38)) & ((1 << (Python3Parser.DECIMAL_INTEGER - 38)) | (1 << (Python3Parser.OCT_INTEGER - 38)) | (1 << (Python3Parser.HEX_INTEGER - 38)) | (1 << (Python3Parser.BIN_INTEGER - 38)))) !== 0))) {
-	        this._errHandler.recoverInline(this);
-	        }
-	        else {
-	        	this._errHandler.reportMatch(this);
-	            this.consume();
-	        }
-	    } catch (re) {
-	    	if(re instanceof antlr4.error.RecognitionException) {
-		        localctx.exception = re;
-		        this._errHandler.reportError(this, re);
-		        this._errHandler.recover(this, re);
-		    } else {
-		    	throw re;
-		    }
-	    } finally {
-	        this.exitRule();
-	    }
-	    return localctx;
-	}
-
-
+    single_input() {
+        let localctx = new Single_inputContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 0, Python3Parser.RULE_single_input);
+        try {
+            this.state = 173;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.NEWLINE:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 168;
+                    this.match(Python3Parser.NEWLINE);
+                    break;
+                case Python3Parser.RETURN:
+                case Python3Parser.RAISE:
+                case Python3Parser.FROM:
+                case Python3Parser.IMPORT:
+                case Python3Parser.GLOBAL:
+                case Python3Parser.NONLOCAL:
+                case Python3Parser.ASSERT:
+                case Python3Parser.LAMBDA:
+                case Python3Parser.NOT:
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.YIELD:
+                case Python3Parser.DEL:
+                case Python3Parser.PASS:
+                case Python3Parser.CONTINUE:
+                case Python3Parser.BREAK:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.STAR:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.ADD:
+                case Python3Parser.MINUS:
+                case Python3Parser.NOT_OP:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 169;
+                    this.simple_stmt();
+                    break;
+                case Python3Parser.DEF:
+                case Python3Parser.IF:
+                case Python3Parser.WHILE:
+                case Python3Parser.FOR:
+                case Python3Parser.TRY:
+                case Python3Parser.WITH:
+                case Python3Parser.CLASS:
+                case Python3Parser.AT:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 170;
+                    this.compound_stmt();
+                    this.state = 171;
+                    this.match(Python3Parser.NEWLINE);
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    file_input() {
+        let localctx = new File_inputContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 2, Python3Parser.RULE_file_input);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 179;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (
+                ((_la & ~0x1f) == 0 &&
+                    ((1 << _la) &
+                        ((1 << Python3Parser.DEF) |
+                            (1 << Python3Parser.RETURN) |
+                            (1 << Python3Parser.RAISE) |
+                            (1 << Python3Parser.FROM) |
+                            (1 << Python3Parser.IMPORT) |
+                            (1 << Python3Parser.GLOBAL) |
+                            (1 << Python3Parser.NONLOCAL) |
+                            (1 << Python3Parser.ASSERT) |
+                            (1 << Python3Parser.IF) |
+                            (1 << Python3Parser.WHILE) |
+                            (1 << Python3Parser.FOR) |
+                            (1 << Python3Parser.TRY) |
+                            (1 << Python3Parser.WITH) |
+                            (1 << Python3Parser.LAMBDA) |
+                            (1 << Python3Parser.NOT) |
+                            (1 << Python3Parser.NONE) |
+                            (1 << Python3Parser.TRUE) |
+                            (1 << Python3Parser.FALSE) |
+                            (1 << Python3Parser.CLASS) |
+                            (1 << Python3Parser.YIELD) |
+                            (1 << Python3Parser.DEL) |
+                            (1 << Python3Parser.PASS))) !==
+                        0) ||
+                (((_la - 32) & ~0x1f) == 0 &&
+                    ((1 << (_la - 32)) &
+                        ((1 << (Python3Parser.CONTINUE - 32)) |
+                            (1 << (Python3Parser.BREAK - 32)) |
+                            (1 << (Python3Parser.NEWLINE - 32)) |
+                            (1 << (Python3Parser.NAME - 32)) |
+                            (1 << (Python3Parser.STRING_LITERAL - 32)) |
+                            (1 << (Python3Parser.BYTES_LITERAL - 32)) |
+                            (1 << (Python3Parser.DECIMAL_INTEGER - 32)) |
+                            (1 << (Python3Parser.OCT_INTEGER - 32)) |
+                            (1 << (Python3Parser.HEX_INTEGER - 32)) |
+                            (1 << (Python3Parser.BIN_INTEGER - 32)) |
+                            (1 << (Python3Parser.FLOAT_NUMBER - 32)) |
+                            (1 << (Python3Parser.IMAG_NUMBER - 32)) |
+                            (1 << (Python3Parser.ELLIPSIS - 32)) |
+                            (1 << (Python3Parser.STAR - 32)) |
+                            (1 << (Python3Parser.OPEN_PAREN - 32)) |
+                            (1 << (Python3Parser.OPEN_BRACK - 32)) |
+                            (1 << (Python3Parser.ADD - 32)) |
+                            (1 << (Python3Parser.MINUS - 32)))) !==
+                        0) ||
+                (((_la - 66) & ~0x1f) == 0 &&
+                    ((1 << (_la - 66)) &
+                        ((1 << (Python3Parser.NOT_OP - 66)) |
+                            (1 << (Python3Parser.OPEN_BRACE - 66)) |
+                            (1 << (Python3Parser.AT - 66)))) !==
+                        0)
+            ) {
+                this.state = 177;
+                this._errHandler.sync(this);
+                switch (this._input.LA(1)) {
+                    case Python3Parser.NEWLINE:
+                        this.state = 175;
+                        this.match(Python3Parser.NEWLINE);
+                        break;
+                    case Python3Parser.DEF:
+                    case Python3Parser.RETURN:
+                    case Python3Parser.RAISE:
+                    case Python3Parser.FROM:
+                    case Python3Parser.IMPORT:
+                    case Python3Parser.GLOBAL:
+                    case Python3Parser.NONLOCAL:
+                    case Python3Parser.ASSERT:
+                    case Python3Parser.IF:
+                    case Python3Parser.WHILE:
+                    case Python3Parser.FOR:
+                    case Python3Parser.TRY:
+                    case Python3Parser.WITH:
+                    case Python3Parser.LAMBDA:
+                    case Python3Parser.NOT:
+                    case Python3Parser.NONE:
+                    case Python3Parser.TRUE:
+                    case Python3Parser.FALSE:
+                    case Python3Parser.CLASS:
+                    case Python3Parser.YIELD:
+                    case Python3Parser.DEL:
+                    case Python3Parser.PASS:
+                    case Python3Parser.CONTINUE:
+                    case Python3Parser.BREAK:
+                    case Python3Parser.NAME:
+                    case Python3Parser.STRING_LITERAL:
+                    case Python3Parser.BYTES_LITERAL:
+                    case Python3Parser.DECIMAL_INTEGER:
+                    case Python3Parser.OCT_INTEGER:
+                    case Python3Parser.HEX_INTEGER:
+                    case Python3Parser.BIN_INTEGER:
+                    case Python3Parser.FLOAT_NUMBER:
+                    case Python3Parser.IMAG_NUMBER:
+                    case Python3Parser.ELLIPSIS:
+                    case Python3Parser.STAR:
+                    case Python3Parser.OPEN_PAREN:
+                    case Python3Parser.OPEN_BRACK:
+                    case Python3Parser.ADD:
+                    case Python3Parser.MINUS:
+                    case Python3Parser.NOT_OP:
+                    case Python3Parser.OPEN_BRACE:
+                    case Python3Parser.AT:
+                        this.state = 176;
+                        this.stmt();
+                        break;
+                    default:
+                        throw new antlr4.error.NoViableAltException(this);
+                }
+                this.state = 181;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+            this.state = 182;
+            this.match(Python3Parser.EOF);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    eval_input() {
+        let localctx = new Eval_inputContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 4, Python3Parser.RULE_eval_input);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 184;
+            this.testlist();
+            this.state = 188;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.NEWLINE) {
+                this.state = 185;
+                this.match(Python3Parser.NEWLINE);
+                this.state = 190;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+            this.state = 191;
+            this.match(Python3Parser.EOF);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    decorator() {
+        let localctx = new DecoratorContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 6, Python3Parser.RULE_decorator);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 193;
+            this.match(Python3Parser.AT);
+            this.state = 194;
+            this.dotted_name();
+            this.state = 200;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.OPEN_PAREN) {
+                this.state = 195;
+                this.match(Python3Parser.OPEN_PAREN);
+                this.state = 197;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+                if (
+                    (((_la - 20) & ~0x1f) == 0 &&
+                        ((1 << (_la - 20)) &
+                            ((1 << (Python3Parser.LAMBDA - 20)) |
+                                (1 << (Python3Parser.NOT - 20)) |
+                                (1 << (Python3Parser.NONE - 20)) |
+                                (1 << (Python3Parser.TRUE - 20)) |
+                                (1 << (Python3Parser.FALSE - 20)) |
+                                (1 << (Python3Parser.NAME - 20)) |
+                                (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                                (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                                (1 << (Python3Parser.DECIMAL_INTEGER - 20)) |
+                                (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                                (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                                (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                                (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                                (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                                (1 << (Python3Parser.ELLIPSIS - 20)) |
+                                (1 << (Python3Parser.STAR - 20)) |
+                                (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                            0) ||
+                    (((_la - 52) & ~0x1f) == 0 &&
+                        ((1 << (_la - 52)) &
+                            ((1 << (Python3Parser.POWER - 52)) |
+                                (1 << (Python3Parser.OPEN_BRACK - 52)) |
+                                (1 << (Python3Parser.ADD - 52)) |
+                                (1 << (Python3Parser.MINUS - 52)) |
+                                (1 << (Python3Parser.NOT_OP - 52)) |
+                                (1 << (Python3Parser.OPEN_BRACE - 52)))) !==
+                            0)
+                ) {
+                    this.state = 196;
+                    this.arglist();
+                }
+
+                this.state = 199;
+                this.match(Python3Parser.CLOSE_PAREN);
+            }
+
+            this.state = 202;
+            this.match(Python3Parser.NEWLINE);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    decorators() {
+        let localctx = new DecoratorsContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 8, Python3Parser.RULE_decorators);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 205;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            do {
+                this.state = 204;
+                this.decorator();
+                this.state = 207;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            } while (_la === Python3Parser.AT);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    decorated() {
+        let localctx = new DecoratedContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 10, Python3Parser.RULE_decorated);
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 209;
+            this.decorators();
+            this.state = 212;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.CLASS:
+                    this.state = 210;
+                    this.classdef();
+                    break;
+                case Python3Parser.DEF:
+                    this.state = 211;
+                    this.funcdef();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    funcdef() {
+        let localctx = new FuncdefContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 12, Python3Parser.RULE_funcdef);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 214;
+            this.match(Python3Parser.DEF);
+            this.state = 215;
+            this.match(Python3Parser.NAME);
+            this.state = 216;
+            this.parameters();
+            this.state = 219;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.ARROW) {
+                this.state = 217;
+                this.match(Python3Parser.ARROW);
+                this.state = 218;
+                this.test();
+            }
+
+            this.state = 221;
+            this.match(Python3Parser.COLON);
+            this.state = 222;
+            this.suite();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    parameters() {
+        let localctx = new ParametersContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 14, Python3Parser.RULE_parameters);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 224;
+            this.match(Python3Parser.OPEN_PAREN);
+            this.state = 226;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (
+                ((_la - 35) & ~0x1f) == 0 &&
+                ((1 << (_la - 35)) &
+                    ((1 << (Python3Parser.NAME - 35)) |
+                        (1 << (Python3Parser.STAR - 35)) |
+                        (1 << (Python3Parser.POWER - 35)))) !==
+                    0
+            ) {
+                this.state = 225;
+                this.typedargslist();
+            }
+
+            this.state = 228;
+            this.match(Python3Parser.CLOSE_PAREN);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    typedargslist() {
+        let localctx = new TypedargslistContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 16, Python3Parser.RULE_typedargslist);
+        var _la = 0; // Token type
+        try {
+            this.state = 295;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.NAME:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 230;
+                    this.tfpdef();
+                    this.state = 233;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.ASSIGN) {
+                        this.state = 231;
+                        this.match(Python3Parser.ASSIGN);
+                        this.state = 232;
+                        this.test();
+                    }
+
+                    this.state = 243;
+                    this._errHandler.sync(this);
+                    var _alt = this._interp.adaptivePredict(
+                        this._input,
+                        12,
+                        this._ctx
+                    );
+                    while (
+                        _alt != 2 &&
+                        _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                    ) {
+                        if (_alt === 1) {
+                            this.state = 235;
+                            this.match(Python3Parser.COMMA);
+                            this.state = 236;
+                            this.tfpdef();
+                            this.state = 239;
+                            this._errHandler.sync(this);
+                            _la = this._input.LA(1);
+                            if (_la === Python3Parser.ASSIGN) {
+                                this.state = 237;
+                                this.match(Python3Parser.ASSIGN);
+                                this.state = 238;
+                                this.test();
+                            }
+                        }
+                        this.state = 245;
+                        this._errHandler.sync(this);
+                        _alt = this._interp.adaptivePredict(
+                            this._input,
+                            12,
+                            this._ctx
+                        );
+                    }
+
+                    this.state = 271;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.COMMA) {
+                        this.state = 246;
+                        this.match(Python3Parser.COMMA);
+                        this.state = 269;
+                        this._errHandler.sync(this);
+                        switch (this._input.LA(1)) {
+                            case Python3Parser.STAR:
+                                this.state = 247;
+                                this.match(Python3Parser.STAR);
+                                this.state = 249;
+                                this._errHandler.sync(this);
+                                _la = this._input.LA(1);
+                                if (_la === Python3Parser.NAME) {
+                                    this.state = 248;
+                                    this.tfpdef();
+                                }
+
+                                this.state = 259;
+                                this._errHandler.sync(this);
+                                var _alt = this._interp.adaptivePredict(
+                                    this._input,
+                                    15,
+                                    this._ctx
+                                );
+                                while (
+                                    _alt != 2 &&
+                                    _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                                ) {
+                                    if (_alt === 1) {
+                                        this.state = 251;
+                                        this.match(Python3Parser.COMMA);
+                                        this.state = 252;
+                                        this.tfpdef();
+                                        this.state = 255;
+                                        this._errHandler.sync(this);
+                                        _la = this._input.LA(1);
+                                        if (_la === Python3Parser.ASSIGN) {
+                                            this.state = 253;
+                                            this.match(Python3Parser.ASSIGN);
+                                            this.state = 254;
+                                            this.test();
+                                        }
+                                    }
+                                    this.state = 261;
+                                    this._errHandler.sync(this);
+                                    _alt = this._interp.adaptivePredict(
+                                        this._input,
+                                        15,
+                                        this._ctx
+                                    );
+                                }
+
+                                this.state = 265;
+                                this._errHandler.sync(this);
+                                _la = this._input.LA(1);
+                                if (_la === Python3Parser.COMMA) {
+                                    this.state = 262;
+                                    this.match(Python3Parser.COMMA);
+                                    this.state = 263;
+                                    this.match(Python3Parser.POWER);
+                                    this.state = 264;
+                                    this.tfpdef();
+                                }
+
+                                break;
+                            case Python3Parser.POWER:
+                                this.state = 267;
+                                this.match(Python3Parser.POWER);
+                                this.state = 268;
+                                this.tfpdef();
+                                break;
+                            case Python3Parser.CLOSE_PAREN:
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+
+                    break;
+                case Python3Parser.STAR:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 273;
+                    this.match(Python3Parser.STAR);
+                    this.state = 275;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.NAME) {
+                        this.state = 274;
+                        this.tfpdef();
+                    }
+
+                    this.state = 285;
+                    this._errHandler.sync(this);
+                    var _alt = this._interp.adaptivePredict(
+                        this._input,
+                        21,
+                        this._ctx
+                    );
+                    while (
+                        _alt != 2 &&
+                        _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                    ) {
+                        if (_alt === 1) {
+                            this.state = 277;
+                            this.match(Python3Parser.COMMA);
+                            this.state = 278;
+                            this.tfpdef();
+                            this.state = 281;
+                            this._errHandler.sync(this);
+                            _la = this._input.LA(1);
+                            if (_la === Python3Parser.ASSIGN) {
+                                this.state = 279;
+                                this.match(Python3Parser.ASSIGN);
+                                this.state = 280;
+                                this.test();
+                            }
+                        }
+                        this.state = 287;
+                        this._errHandler.sync(this);
+                        _alt = this._interp.adaptivePredict(
+                            this._input,
+                            21,
+                            this._ctx
+                        );
+                    }
+
+                    this.state = 291;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.COMMA) {
+                        this.state = 288;
+                        this.match(Python3Parser.COMMA);
+                        this.state = 289;
+                        this.match(Python3Parser.POWER);
+                        this.state = 290;
+                        this.tfpdef();
+                    }
+
+                    break;
+                case Python3Parser.POWER:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 293;
+                    this.match(Python3Parser.POWER);
+                    this.state = 294;
+                    this.tfpdef();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    tfpdef() {
+        let localctx = new TfpdefContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 18, Python3Parser.RULE_tfpdef);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 297;
+            this.match(Python3Parser.NAME);
+            this.state = 300;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.COLON) {
+                this.state = 298;
+                this.match(Python3Parser.COLON);
+                this.state = 299;
+                this.test();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    varargslist() {
+        let localctx = new VarargslistContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 20, Python3Parser.RULE_varargslist);
+        var _la = 0; // Token type
+        try {
+            this.state = 367;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.NAME:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 302;
+                    this.vfpdef();
+                    this.state = 305;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.ASSIGN) {
+                        this.state = 303;
+                        this.match(Python3Parser.ASSIGN);
+                        this.state = 304;
+                        this.test();
+                    }
+
+                    this.state = 315;
+                    this._errHandler.sync(this);
+                    var _alt = this._interp.adaptivePredict(
+                        this._input,
+                        27,
+                        this._ctx
+                    );
+                    while (
+                        _alt != 2 &&
+                        _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                    ) {
+                        if (_alt === 1) {
+                            this.state = 307;
+                            this.match(Python3Parser.COMMA);
+                            this.state = 308;
+                            this.vfpdef();
+                            this.state = 311;
+                            this._errHandler.sync(this);
+                            _la = this._input.LA(1);
+                            if (_la === Python3Parser.ASSIGN) {
+                                this.state = 309;
+                                this.match(Python3Parser.ASSIGN);
+                                this.state = 310;
+                                this.test();
+                            }
+                        }
+                        this.state = 317;
+                        this._errHandler.sync(this);
+                        _alt = this._interp.adaptivePredict(
+                            this._input,
+                            27,
+                            this._ctx
+                        );
+                    }
+
+                    this.state = 343;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.COMMA) {
+                        this.state = 318;
+                        this.match(Python3Parser.COMMA);
+                        this.state = 341;
+                        this._errHandler.sync(this);
+                        switch (this._input.LA(1)) {
+                            case Python3Parser.STAR:
+                                this.state = 319;
+                                this.match(Python3Parser.STAR);
+                                this.state = 321;
+                                this._errHandler.sync(this);
+                                _la = this._input.LA(1);
+                                if (_la === Python3Parser.NAME) {
+                                    this.state = 320;
+                                    this.vfpdef();
+                                }
+
+                                this.state = 331;
+                                this._errHandler.sync(this);
+                                var _alt = this._interp.adaptivePredict(
+                                    this._input,
+                                    30,
+                                    this._ctx
+                                );
+                                while (
+                                    _alt != 2 &&
+                                    _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                                ) {
+                                    if (_alt === 1) {
+                                        this.state = 323;
+                                        this.match(Python3Parser.COMMA);
+                                        this.state = 324;
+                                        this.vfpdef();
+                                        this.state = 327;
+                                        this._errHandler.sync(this);
+                                        _la = this._input.LA(1);
+                                        if (_la === Python3Parser.ASSIGN) {
+                                            this.state = 325;
+                                            this.match(Python3Parser.ASSIGN);
+                                            this.state = 326;
+                                            this.test();
+                                        }
+                                    }
+                                    this.state = 333;
+                                    this._errHandler.sync(this);
+                                    _alt = this._interp.adaptivePredict(
+                                        this._input,
+                                        30,
+                                        this._ctx
+                                    );
+                                }
+
+                                this.state = 337;
+                                this._errHandler.sync(this);
+                                _la = this._input.LA(1);
+                                if (_la === Python3Parser.COMMA) {
+                                    this.state = 334;
+                                    this.match(Python3Parser.COMMA);
+                                    this.state = 335;
+                                    this.match(Python3Parser.POWER);
+                                    this.state = 336;
+                                    this.vfpdef();
+                                }
+
+                                break;
+                            case Python3Parser.POWER:
+                                this.state = 339;
+                                this.match(Python3Parser.POWER);
+                                this.state = 340;
+                                this.vfpdef();
+                                break;
+                            case Python3Parser.COLON:
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+
+                    break;
+                case Python3Parser.STAR:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 345;
+                    this.match(Python3Parser.STAR);
+                    this.state = 347;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.NAME) {
+                        this.state = 346;
+                        this.vfpdef();
+                    }
+
+                    this.state = 357;
+                    this._errHandler.sync(this);
+                    var _alt = this._interp.adaptivePredict(
+                        this._input,
+                        36,
+                        this._ctx
+                    );
+                    while (
+                        _alt != 2 &&
+                        _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                    ) {
+                        if (_alt === 1) {
+                            this.state = 349;
+                            this.match(Python3Parser.COMMA);
+                            this.state = 350;
+                            this.vfpdef();
+                            this.state = 353;
+                            this._errHandler.sync(this);
+                            _la = this._input.LA(1);
+                            if (_la === Python3Parser.ASSIGN) {
+                                this.state = 351;
+                                this.match(Python3Parser.ASSIGN);
+                                this.state = 352;
+                                this.test();
+                            }
+                        }
+                        this.state = 359;
+                        this._errHandler.sync(this);
+                        _alt = this._interp.adaptivePredict(
+                            this._input,
+                            36,
+                            this._ctx
+                        );
+                    }
+
+                    this.state = 363;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.COMMA) {
+                        this.state = 360;
+                        this.match(Python3Parser.COMMA);
+                        this.state = 361;
+                        this.match(Python3Parser.POWER);
+                        this.state = 362;
+                        this.vfpdef();
+                    }
+
+                    break;
+                case Python3Parser.POWER:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 365;
+                    this.match(Python3Parser.POWER);
+                    this.state = 366;
+                    this.vfpdef();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    vfpdef() {
+        let localctx = new VfpdefContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 22, Python3Parser.RULE_vfpdef);
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 369;
+            this.match(Python3Parser.NAME);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    stmt() {
+        let localctx = new StmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 24, Python3Parser.RULE_stmt);
+        try {
+            this.state = 373;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.RETURN:
+                case Python3Parser.RAISE:
+                case Python3Parser.FROM:
+                case Python3Parser.IMPORT:
+                case Python3Parser.GLOBAL:
+                case Python3Parser.NONLOCAL:
+                case Python3Parser.ASSERT:
+                case Python3Parser.LAMBDA:
+                case Python3Parser.NOT:
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.YIELD:
+                case Python3Parser.DEL:
+                case Python3Parser.PASS:
+                case Python3Parser.CONTINUE:
+                case Python3Parser.BREAK:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.STAR:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.ADD:
+                case Python3Parser.MINUS:
+                case Python3Parser.NOT_OP:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 371;
+                    this.simple_stmt();
+                    break;
+                case Python3Parser.DEF:
+                case Python3Parser.IF:
+                case Python3Parser.WHILE:
+                case Python3Parser.FOR:
+                case Python3Parser.TRY:
+                case Python3Parser.WITH:
+                case Python3Parser.CLASS:
+                case Python3Parser.AT:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 372;
+                    this.compound_stmt();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    simple_stmt() {
+        let localctx = new Simple_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 26, Python3Parser.RULE_simple_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 375;
+            this.small_stmt();
+            this.state = 380;
+            this._errHandler.sync(this);
+            var _alt = this._interp.adaptivePredict(this._input, 40, this._ctx);
+            while (_alt != 2 && _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+                if (_alt === 1) {
+                    this.state = 376;
+                    this.match(Python3Parser.SEMI_COLON);
+                    this.state = 377;
+                    this.small_stmt();
+                }
+                this.state = 382;
+                this._errHandler.sync(this);
+                _alt = this._interp.adaptivePredict(this._input, 40, this._ctx);
+            }
+
+            this.state = 384;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.SEMI_COLON) {
+                this.state = 383;
+                this.match(Python3Parser.SEMI_COLON);
+            }
+
+            this.state = 386;
+            this.match(Python3Parser.NEWLINE);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    small_stmt() {
+        let localctx = new Small_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 28, Python3Parser.RULE_small_stmt);
+        try {
+            this.state = 396;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.LAMBDA:
+                case Python3Parser.NOT:
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.STAR:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.ADD:
+                case Python3Parser.MINUS:
+                case Python3Parser.NOT_OP:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 388;
+                    this.expr_stmt();
+                    break;
+                case Python3Parser.DEL:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 389;
+                    this.del_stmt();
+                    break;
+                case Python3Parser.PASS:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 390;
+                    this.pass_stmt();
+                    break;
+                case Python3Parser.RETURN:
+                case Python3Parser.RAISE:
+                case Python3Parser.YIELD:
+                case Python3Parser.CONTINUE:
+                case Python3Parser.BREAK:
+                    this.enterOuterAlt(localctx, 4);
+                    this.state = 391;
+                    this.flow_stmt();
+                    break;
+                case Python3Parser.FROM:
+                case Python3Parser.IMPORT:
+                    this.enterOuterAlt(localctx, 5);
+                    this.state = 392;
+                    this.import_stmt();
+                    break;
+                case Python3Parser.GLOBAL:
+                    this.enterOuterAlt(localctx, 6);
+                    this.state = 393;
+                    this.global_stmt();
+                    break;
+                case Python3Parser.NONLOCAL:
+                    this.enterOuterAlt(localctx, 7);
+                    this.state = 394;
+                    this.nonlocal_stmt();
+                    break;
+                case Python3Parser.ASSERT:
+                    this.enterOuterAlt(localctx, 8);
+                    this.state = 395;
+                    this.assert_stmt();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    expr_stmt() {
+        let localctx = new Expr_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 30, Python3Parser.RULE_expr_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 398;
+            this.testlist_star_expr();
+            this.state = 414;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.ADD_ASSIGN:
+                case Python3Parser.SUB_ASSIGN:
+                case Python3Parser.MULT_ASSIGN:
+                case Python3Parser.AT_ASSIGN:
+                case Python3Parser.DIV_ASSIGN:
+                case Python3Parser.MOD_ASSIGN:
+                case Python3Parser.AND_ASSIGN:
+                case Python3Parser.OR_ASSIGN:
+                case Python3Parser.XOR_ASSIGN:
+                case Python3Parser.LEFT_SHIFT_ASSIGN:
+                case Python3Parser.RIGHT_SHIFT_ASSIGN:
+                case Python3Parser.POWER_ASSIGN:
+                case Python3Parser.IDIV_ASSIGN:
+                    this.state = 399;
+                    this.augassign();
+                    this.state = 402;
+                    this._errHandler.sync(this);
+                    switch (this._input.LA(1)) {
+                        case Python3Parser.YIELD:
+                            this.state = 400;
+                            this.yield_expr();
+                            break;
+                        case Python3Parser.LAMBDA:
+                        case Python3Parser.NOT:
+                        case Python3Parser.NONE:
+                        case Python3Parser.TRUE:
+                        case Python3Parser.FALSE:
+                        case Python3Parser.NAME:
+                        case Python3Parser.STRING_LITERAL:
+                        case Python3Parser.BYTES_LITERAL:
+                        case Python3Parser.DECIMAL_INTEGER:
+                        case Python3Parser.OCT_INTEGER:
+                        case Python3Parser.HEX_INTEGER:
+                        case Python3Parser.BIN_INTEGER:
+                        case Python3Parser.FLOAT_NUMBER:
+                        case Python3Parser.IMAG_NUMBER:
+                        case Python3Parser.ELLIPSIS:
+                        case Python3Parser.STAR:
+                        case Python3Parser.OPEN_PAREN:
+                        case Python3Parser.OPEN_BRACK:
+                        case Python3Parser.ADD:
+                        case Python3Parser.MINUS:
+                        case Python3Parser.NOT_OP:
+                        case Python3Parser.OPEN_BRACE:
+                            this.state = 401;
+                            this.testlist();
+                            break;
+                        default:
+                            throw new antlr4.error.NoViableAltException(this);
+                    }
+                    break;
+                case Python3Parser.NEWLINE:
+                case Python3Parser.SEMI_COLON:
+                case Python3Parser.ASSIGN:
+                    this.state = 411;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    while (_la === Python3Parser.ASSIGN) {
+                        this.state = 404;
+                        this.match(Python3Parser.ASSIGN);
+                        this.state = 407;
+                        this._errHandler.sync(this);
+                        switch (this._input.LA(1)) {
+                            case Python3Parser.YIELD:
+                                this.state = 405;
+                                this.yield_expr();
+                                break;
+                            case Python3Parser.LAMBDA:
+                            case Python3Parser.NOT:
+                            case Python3Parser.NONE:
+                            case Python3Parser.TRUE:
+                            case Python3Parser.FALSE:
+                            case Python3Parser.NAME:
+                            case Python3Parser.STRING_LITERAL:
+                            case Python3Parser.BYTES_LITERAL:
+                            case Python3Parser.DECIMAL_INTEGER:
+                            case Python3Parser.OCT_INTEGER:
+                            case Python3Parser.HEX_INTEGER:
+                            case Python3Parser.BIN_INTEGER:
+                            case Python3Parser.FLOAT_NUMBER:
+                            case Python3Parser.IMAG_NUMBER:
+                            case Python3Parser.ELLIPSIS:
+                            case Python3Parser.STAR:
+                            case Python3Parser.OPEN_PAREN:
+                            case Python3Parser.OPEN_BRACK:
+                            case Python3Parser.ADD:
+                            case Python3Parser.MINUS:
+                            case Python3Parser.NOT_OP:
+                            case Python3Parser.OPEN_BRACE:
+                                this.state = 406;
+                                this.testlist_star_expr();
+                                break;
+                            default:
+                                throw new antlr4.error.NoViableAltException(
+                                    this
+                                );
+                        }
+                        this.state = 413;
+                        this._errHandler.sync(this);
+                        _la = this._input.LA(1);
+                    }
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    testlist_star_expr() {
+        let localctx = new Testlist_star_exprContext(
+            this,
+            this._ctx,
+            this.state
+        );
+        this.enterRule(localctx, 32, Python3Parser.RULE_testlist_star_expr);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 418;
+            this._errHandler.sync(this);
+            var la_ = this._interp.adaptivePredict(this._input, 47, this._ctx);
+            switch (la_) {
+                case 1:
+                    this.state = 416;
+                    this.test();
+                    break;
+
+                case 2:
+                    this.state = 417;
+                    this.star_expr();
+                    break;
+            }
+            this.state = 427;
+            this._errHandler.sync(this);
+            var _alt = this._interp.adaptivePredict(this._input, 49, this._ctx);
+            while (_alt != 2 && _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+                if (_alt === 1) {
+                    this.state = 420;
+                    this.match(Python3Parser.COMMA);
+                    this.state = 423;
+                    this._errHandler.sync(this);
+                    var la_ = this._interp.adaptivePredict(
+                        this._input,
+                        48,
+                        this._ctx
+                    );
+                    switch (la_) {
+                        case 1:
+                            this.state = 421;
+                            this.test();
+                            break;
+
+                        case 2:
+                            this.state = 422;
+                            this.star_expr();
+                            break;
+                    }
+                }
+                this.state = 429;
+                this._errHandler.sync(this);
+                _alt = this._interp.adaptivePredict(this._input, 49, this._ctx);
+            }
+
+            this.state = 431;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.COMMA) {
+                this.state = 430;
+                this.match(Python3Parser.COMMA);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    augassign() {
+        let localctx = new AugassignContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 34, Python3Parser.RULE_augassign);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 433;
+            _la = this._input.LA(1);
+            if (
+                !(
+                    ((_la - 78) & ~0x1f) == 0 &&
+                    ((1 << (_la - 78)) &
+                        ((1 << (Python3Parser.ADD_ASSIGN - 78)) |
+                            (1 << (Python3Parser.SUB_ASSIGN - 78)) |
+                            (1 << (Python3Parser.MULT_ASSIGN - 78)) |
+                            (1 << (Python3Parser.AT_ASSIGN - 78)) |
+                            (1 << (Python3Parser.DIV_ASSIGN - 78)) |
+                            (1 << (Python3Parser.MOD_ASSIGN - 78)) |
+                            (1 << (Python3Parser.AND_ASSIGN - 78)) |
+                            (1 << (Python3Parser.OR_ASSIGN - 78)) |
+                            (1 << (Python3Parser.XOR_ASSIGN - 78)) |
+                            (1 << (Python3Parser.LEFT_SHIFT_ASSIGN - 78)) |
+                            (1 << (Python3Parser.RIGHT_SHIFT_ASSIGN - 78)) |
+                            (1 << (Python3Parser.POWER_ASSIGN - 78)) |
+                            (1 << (Python3Parser.IDIV_ASSIGN - 78)))) !==
+                        0
+                )
+            ) {
+                this._errHandler.recoverInline(this);
+            } else {
+                this._errHandler.reportMatch(this);
+                this.consume();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    del_stmt() {
+        let localctx = new Del_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 36, Python3Parser.RULE_del_stmt);
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 435;
+            this.match(Python3Parser.DEL);
+            this.state = 436;
+            this.exprlist();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    pass_stmt() {
+        let localctx = new Pass_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 38, Python3Parser.RULE_pass_stmt);
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 438;
+            this.match(Python3Parser.PASS);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    flow_stmt() {
+        let localctx = new Flow_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 40, Python3Parser.RULE_flow_stmt);
+        try {
+            this.state = 445;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.BREAK:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 440;
+                    this.break_stmt();
+                    break;
+                case Python3Parser.CONTINUE:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 441;
+                    this.continue_stmt();
+                    break;
+                case Python3Parser.RETURN:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 442;
+                    this.return_stmt();
+                    break;
+                case Python3Parser.RAISE:
+                    this.enterOuterAlt(localctx, 4);
+                    this.state = 443;
+                    this.raise_stmt();
+                    break;
+                case Python3Parser.YIELD:
+                    this.enterOuterAlt(localctx, 5);
+                    this.state = 444;
+                    this.yield_stmt();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    break_stmt() {
+        let localctx = new Break_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 42, Python3Parser.RULE_break_stmt);
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 447;
+            this.match(Python3Parser.BREAK);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    continue_stmt() {
+        let localctx = new Continue_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 44, Python3Parser.RULE_continue_stmt);
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 449;
+            this.match(Python3Parser.CONTINUE);
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    return_stmt() {
+        let localctx = new Return_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 46, Python3Parser.RULE_return_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 451;
+            this.match(Python3Parser.RETURN);
+            this.state = 453;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (
+                (((_la - 20) & ~0x1f) == 0 &&
+                    ((1 << (_la - 20)) &
+                        ((1 << (Python3Parser.LAMBDA - 20)) |
+                            (1 << (Python3Parser.NOT - 20)) |
+                            (1 << (Python3Parser.NONE - 20)) |
+                            (1 << (Python3Parser.TRUE - 20)) |
+                            (1 << (Python3Parser.FALSE - 20)) |
+                            (1 << (Python3Parser.NAME - 20)) |
+                            (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                            (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                            (1 << (Python3Parser.DECIMAL_INTEGER - 20)) |
+                            (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                            (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                            (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                            (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                            (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                            (1 << (Python3Parser.ELLIPSIS - 20)) |
+                            (1 << (Python3Parser.STAR - 20)) |
+                            (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                        0) ||
+                (((_la - 54) & ~0x1f) == 0 &&
+                    ((1 << (_la - 54)) &
+                        ((1 << (Python3Parser.OPEN_BRACK - 54)) |
+                            (1 << (Python3Parser.ADD - 54)) |
+                            (1 << (Python3Parser.MINUS - 54)) |
+                            (1 << (Python3Parser.NOT_OP - 54)) |
+                            (1 << (Python3Parser.OPEN_BRACE - 54)))) !==
+                        0)
+            ) {
+                this.state = 452;
+                this.testlist();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    yield_stmt() {
+        let localctx = new Yield_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 48, Python3Parser.RULE_yield_stmt);
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 455;
+            this.yield_expr();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    raise_stmt() {
+        let localctx = new Raise_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 50, Python3Parser.RULE_raise_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 457;
+            this.match(Python3Parser.RAISE);
+            this.state = 463;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (
+                (((_la - 20) & ~0x1f) == 0 &&
+                    ((1 << (_la - 20)) &
+                        ((1 << (Python3Parser.LAMBDA - 20)) |
+                            (1 << (Python3Parser.NOT - 20)) |
+                            (1 << (Python3Parser.NONE - 20)) |
+                            (1 << (Python3Parser.TRUE - 20)) |
+                            (1 << (Python3Parser.FALSE - 20)) |
+                            (1 << (Python3Parser.NAME - 20)) |
+                            (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                            (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                            (1 << (Python3Parser.DECIMAL_INTEGER - 20)) |
+                            (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                            (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                            (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                            (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                            (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                            (1 << (Python3Parser.ELLIPSIS - 20)) |
+                            (1 << (Python3Parser.STAR - 20)) |
+                            (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                        0) ||
+                (((_la - 54) & ~0x1f) == 0 &&
+                    ((1 << (_la - 54)) &
+                        ((1 << (Python3Parser.OPEN_BRACK - 54)) |
+                            (1 << (Python3Parser.ADD - 54)) |
+                            (1 << (Python3Parser.MINUS - 54)) |
+                            (1 << (Python3Parser.NOT_OP - 54)) |
+                            (1 << (Python3Parser.OPEN_BRACE - 54)))) !==
+                        0)
+            ) {
+                this.state = 458;
+                this.test();
+                this.state = 461;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+                if (_la === Python3Parser.FROM) {
+                    this.state = 459;
+                    this.match(Python3Parser.FROM);
+                    this.state = 460;
+                    this.test();
+                }
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    import_stmt() {
+        let localctx = new Import_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 52, Python3Parser.RULE_import_stmt);
+        try {
+            this.state = 467;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.IMPORT:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 465;
+                    this.import_name();
+                    break;
+                case Python3Parser.FROM:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 466;
+                    this.import_from();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    import_name() {
+        let localctx = new Import_nameContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 54, Python3Parser.RULE_import_name);
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 469;
+            this.match(Python3Parser.IMPORT);
+            this.state = 470;
+            this.dotted_as_names();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    import_from() {
+        let localctx = new Import_fromContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 56, Python3Parser.RULE_import_from);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 472;
+            this.match(Python3Parser.FROM);
+            this.state = 485;
+            this._errHandler.sync(this);
+            var la_ = this._interp.adaptivePredict(this._input, 58, this._ctx);
+            switch (la_) {
+                case 1:
+                    this.state = 476;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    while (
+                        _la === Python3Parser.DOT ||
+                        _la === Python3Parser.ELLIPSIS
+                    ) {
+                        this.state = 473;
+                        _la = this._input.LA(1);
+                        if (
+                            !(
+                                _la === Python3Parser.DOT ||
+                                _la === Python3Parser.ELLIPSIS
+                            )
+                        ) {
+                            this._errHandler.recoverInline(this);
+                        } else {
+                            this._errHandler.reportMatch(this);
+                            this.consume();
+                        }
+                        this.state = 478;
+                        this._errHandler.sync(this);
+                        _la = this._input.LA(1);
+                    }
+                    this.state = 479;
+                    this.dotted_name();
+                    break;
+
+                case 2:
+                    this.state = 481;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    do {
+                        this.state = 480;
+                        _la = this._input.LA(1);
+                        if (
+                            !(
+                                _la === Python3Parser.DOT ||
+                                _la === Python3Parser.ELLIPSIS
+                            )
+                        ) {
+                            this._errHandler.recoverInline(this);
+                        } else {
+                            this._errHandler.reportMatch(this);
+                            this.consume();
+                        }
+                        this.state = 483;
+                        this._errHandler.sync(this);
+                        _la = this._input.LA(1);
+                    } while (
+                        _la === Python3Parser.DOT ||
+                        _la === Python3Parser.ELLIPSIS
+                    );
+                    break;
+            }
+            this.state = 487;
+            this.match(Python3Parser.IMPORT);
+            this.state = 494;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.STAR:
+                    this.state = 488;
+                    this.match(Python3Parser.STAR);
+                    break;
+                case Python3Parser.OPEN_PAREN:
+                    this.state = 489;
+                    this.match(Python3Parser.OPEN_PAREN);
+                    this.state = 490;
+                    this.import_as_names();
+                    this.state = 491;
+                    this.match(Python3Parser.CLOSE_PAREN);
+                    break;
+                case Python3Parser.NAME:
+                    this.state = 493;
+                    this.import_as_names();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    import_as_name() {
+        let localctx = new Import_as_nameContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 58, Python3Parser.RULE_import_as_name);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 496;
+            this.match(Python3Parser.NAME);
+            this.state = 499;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.AS) {
+                this.state = 497;
+                this.match(Python3Parser.AS);
+                this.state = 498;
+                this.match(Python3Parser.NAME);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    dotted_as_name() {
+        let localctx = new Dotted_as_nameContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 60, Python3Parser.RULE_dotted_as_name);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 501;
+            this.dotted_name();
+            this.state = 504;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.AS) {
+                this.state = 502;
+                this.match(Python3Parser.AS);
+                this.state = 503;
+                this.match(Python3Parser.NAME);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    import_as_names() {
+        let localctx = new Import_as_namesContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 62, Python3Parser.RULE_import_as_names);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 506;
+            this.import_as_name();
+            this.state = 511;
+            this._errHandler.sync(this);
+            var _alt = this._interp.adaptivePredict(this._input, 62, this._ctx);
+            while (_alt != 2 && _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+                if (_alt === 1) {
+                    this.state = 507;
+                    this.match(Python3Parser.COMMA);
+                    this.state = 508;
+                    this.import_as_name();
+                }
+                this.state = 513;
+                this._errHandler.sync(this);
+                _alt = this._interp.adaptivePredict(this._input, 62, this._ctx);
+            }
+
+            this.state = 515;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.COMMA) {
+                this.state = 514;
+                this.match(Python3Parser.COMMA);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    dotted_as_names() {
+        let localctx = new Dotted_as_namesContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 64, Python3Parser.RULE_dotted_as_names);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 517;
+            this.dotted_as_name();
+            this.state = 522;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.COMMA) {
+                this.state = 518;
+                this.match(Python3Parser.COMMA);
+                this.state = 519;
+                this.dotted_as_name();
+                this.state = 524;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    dotted_name() {
+        let localctx = new Dotted_nameContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 66, Python3Parser.RULE_dotted_name);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 525;
+            this.match(Python3Parser.NAME);
+            this.state = 530;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.DOT) {
+                this.state = 526;
+                this.match(Python3Parser.DOT);
+                this.state = 527;
+                this.match(Python3Parser.NAME);
+                this.state = 532;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    global_stmt() {
+        let localctx = new Global_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 68, Python3Parser.RULE_global_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 533;
+            this.match(Python3Parser.GLOBAL);
+            this.state = 534;
+            this.match(Python3Parser.NAME);
+            this.state = 539;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.COMMA) {
+                this.state = 535;
+                this.match(Python3Parser.COMMA);
+                this.state = 536;
+                this.match(Python3Parser.NAME);
+                this.state = 541;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    nonlocal_stmt() {
+        let localctx = new Nonlocal_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 70, Python3Parser.RULE_nonlocal_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 542;
+            this.match(Python3Parser.NONLOCAL);
+            this.state = 543;
+            this.match(Python3Parser.NAME);
+            this.state = 548;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.COMMA) {
+                this.state = 544;
+                this.match(Python3Parser.COMMA);
+                this.state = 545;
+                this.match(Python3Parser.NAME);
+                this.state = 550;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    assert_stmt() {
+        let localctx = new Assert_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 72, Python3Parser.RULE_assert_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 551;
+            this.match(Python3Parser.ASSERT);
+            this.state = 552;
+            this.test();
+            this.state = 555;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.COMMA) {
+                this.state = 553;
+                this.match(Python3Parser.COMMA);
+                this.state = 554;
+                this.test();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    compound_stmt() {
+        let localctx = new Compound_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 74, Python3Parser.RULE_compound_stmt);
+        try {
+            this.state = 565;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.IF:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 557;
+                    this.if_stmt();
+                    break;
+                case Python3Parser.WHILE:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 558;
+                    this.while_stmt();
+                    break;
+                case Python3Parser.FOR:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 559;
+                    this.for_stmt();
+                    break;
+                case Python3Parser.TRY:
+                    this.enterOuterAlt(localctx, 4);
+                    this.state = 560;
+                    this.try_stmt();
+                    break;
+                case Python3Parser.WITH:
+                    this.enterOuterAlt(localctx, 5);
+                    this.state = 561;
+                    this.with_stmt();
+                    break;
+                case Python3Parser.DEF:
+                    this.enterOuterAlt(localctx, 6);
+                    this.state = 562;
+                    this.funcdef();
+                    break;
+                case Python3Parser.CLASS:
+                    this.enterOuterAlt(localctx, 7);
+                    this.state = 563;
+                    this.classdef();
+                    break;
+                case Python3Parser.AT:
+                    this.enterOuterAlt(localctx, 8);
+                    this.state = 564;
+                    this.decorated();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    if_stmt() {
+        let localctx = new If_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 76, Python3Parser.RULE_if_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 567;
+            this.match(Python3Parser.IF);
+            this.state = 568;
+            this.test();
+            this.state = 569;
+            this.match(Python3Parser.COLON);
+            this.state = 570;
+            this.suite();
+            this.state = 578;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.ELIF) {
+                this.state = 571;
+                this.match(Python3Parser.ELIF);
+                this.state = 572;
+                this.test();
+                this.state = 573;
+                this.match(Python3Parser.COLON);
+                this.state = 574;
+                this.suite();
+                this.state = 580;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+            this.state = 584;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.ELSE) {
+                this.state = 581;
+                this.match(Python3Parser.ELSE);
+                this.state = 582;
+                this.match(Python3Parser.COLON);
+                this.state = 583;
+                this.suite();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    while_stmt() {
+        let localctx = new While_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 78, Python3Parser.RULE_while_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 586;
+            this.match(Python3Parser.WHILE);
+            this.state = 587;
+            this.test();
+            this.state = 588;
+            this.match(Python3Parser.COLON);
+            this.state = 589;
+            this.suite();
+            this.state = 593;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.ELSE) {
+                this.state = 590;
+                this.match(Python3Parser.ELSE);
+                this.state = 591;
+                this.match(Python3Parser.COLON);
+                this.state = 592;
+                this.suite();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    for_stmt() {
+        let localctx = new For_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 80, Python3Parser.RULE_for_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 595;
+            this.match(Python3Parser.FOR);
+            this.state = 596;
+            this.exprlist();
+            this.state = 597;
+            this.match(Python3Parser.IN);
+            this.state = 598;
+            this.testlist();
+            this.state = 599;
+            this.match(Python3Parser.COLON);
+            this.state = 600;
+            this.suite();
+            this.state = 604;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.ELSE) {
+                this.state = 601;
+                this.match(Python3Parser.ELSE);
+                this.state = 602;
+                this.match(Python3Parser.COLON);
+                this.state = 603;
+                this.suite();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    try_stmt() {
+        let localctx = new Try_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 82, Python3Parser.RULE_try_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 606;
+            this.match(Python3Parser.TRY);
+            this.state = 607;
+            this.match(Python3Parser.COLON);
+            this.state = 608;
+            this.suite();
+            this.state = 630;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.EXCEPT:
+                    this.state = 613;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    do {
+                        this.state = 609;
+                        this.except_clause();
+                        this.state = 610;
+                        this.match(Python3Parser.COLON);
+                        this.state = 611;
+                        this.suite();
+                        this.state = 615;
+                        this._errHandler.sync(this);
+                        _la = this._input.LA(1);
+                    } while (_la === Python3Parser.EXCEPT);
+                    this.state = 620;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.ELSE) {
+                        this.state = 617;
+                        this.match(Python3Parser.ELSE);
+                        this.state = 618;
+                        this.match(Python3Parser.COLON);
+                        this.state = 619;
+                        this.suite();
+                    }
+
+                    this.state = 625;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.FINALLY) {
+                        this.state = 622;
+                        this.match(Python3Parser.FINALLY);
+                        this.state = 623;
+                        this.match(Python3Parser.COLON);
+                        this.state = 624;
+                        this.suite();
+                    }
+
+                    break;
+                case Python3Parser.FINALLY:
+                    this.state = 627;
+                    this.match(Python3Parser.FINALLY);
+                    this.state = 628;
+                    this.match(Python3Parser.COLON);
+                    this.state = 629;
+                    this.suite();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    with_stmt() {
+        let localctx = new With_stmtContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 84, Python3Parser.RULE_with_stmt);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 632;
+            this.match(Python3Parser.WITH);
+            this.state = 633;
+            this.with_item();
+            this.state = 638;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.COMMA) {
+                this.state = 634;
+                this.match(Python3Parser.COMMA);
+                this.state = 635;
+                this.with_item();
+                this.state = 640;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+            this.state = 641;
+            this.match(Python3Parser.COLON);
+            this.state = 642;
+            this.suite();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    with_item() {
+        let localctx = new With_itemContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 86, Python3Parser.RULE_with_item);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 644;
+            this.test();
+            this.state = 647;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.AS) {
+                this.state = 645;
+                this.match(Python3Parser.AS);
+                this.state = 646;
+                this.expr();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    except_clause() {
+        let localctx = new Except_clauseContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 88, Python3Parser.RULE_except_clause);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 649;
+            this.match(Python3Parser.EXCEPT);
+            this.state = 655;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (
+                (((_la - 20) & ~0x1f) == 0 &&
+                    ((1 << (_la - 20)) &
+                        ((1 << (Python3Parser.LAMBDA - 20)) |
+                            (1 << (Python3Parser.NOT - 20)) |
+                            (1 << (Python3Parser.NONE - 20)) |
+                            (1 << (Python3Parser.TRUE - 20)) |
+                            (1 << (Python3Parser.FALSE - 20)) |
+                            (1 << (Python3Parser.NAME - 20)) |
+                            (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                            (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                            (1 << (Python3Parser.DECIMAL_INTEGER - 20)) |
+                            (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                            (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                            (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                            (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                            (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                            (1 << (Python3Parser.ELLIPSIS - 20)) |
+                            (1 << (Python3Parser.STAR - 20)) |
+                            (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                        0) ||
+                (((_la - 54) & ~0x1f) == 0 &&
+                    ((1 << (_la - 54)) &
+                        ((1 << (Python3Parser.OPEN_BRACK - 54)) |
+                            (1 << (Python3Parser.ADD - 54)) |
+                            (1 << (Python3Parser.MINUS - 54)) |
+                            (1 << (Python3Parser.NOT_OP - 54)) |
+                            (1 << (Python3Parser.OPEN_BRACE - 54)))) !==
+                        0)
+            ) {
+                this.state = 650;
+                this.test();
+                this.state = 653;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+                if (_la === Python3Parser.AS) {
+                    this.state = 651;
+                    this.match(Python3Parser.AS);
+                    this.state = 652;
+                    this.match(Python3Parser.NAME);
+                }
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    suite() {
+        let localctx = new SuiteContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 90, Python3Parser.RULE_suite);
+        var _la = 0; // Token type
+        try {
+            this.state = 667;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.RETURN:
+                case Python3Parser.RAISE:
+                case Python3Parser.FROM:
+                case Python3Parser.IMPORT:
+                case Python3Parser.GLOBAL:
+                case Python3Parser.NONLOCAL:
+                case Python3Parser.ASSERT:
+                case Python3Parser.LAMBDA:
+                case Python3Parser.NOT:
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.YIELD:
+                case Python3Parser.DEL:
+                case Python3Parser.PASS:
+                case Python3Parser.CONTINUE:
+                case Python3Parser.BREAK:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.STAR:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.ADD:
+                case Python3Parser.MINUS:
+                case Python3Parser.NOT_OP:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 657;
+                    this.simple_stmt();
+                    break;
+                case Python3Parser.NEWLINE:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 658;
+                    this.match(Python3Parser.NEWLINE);
+                    this.state = 659;
+                    this.match(Python3Parser.INDENT);
+                    this.state = 661;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    do {
+                        this.state = 660;
+                        this.stmt();
+                        this.state = 663;
+                        this._errHandler.sync(this);
+                        _la = this._input.LA(1);
+                    } while (
+                        ((_la & ~0x1f) == 0 &&
+                            ((1 << _la) &
+                                ((1 << Python3Parser.DEF) |
+                                    (1 << Python3Parser.RETURN) |
+                                    (1 << Python3Parser.RAISE) |
+                                    (1 << Python3Parser.FROM) |
+                                    (1 << Python3Parser.IMPORT) |
+                                    (1 << Python3Parser.GLOBAL) |
+                                    (1 << Python3Parser.NONLOCAL) |
+                                    (1 << Python3Parser.ASSERT) |
+                                    (1 << Python3Parser.IF) |
+                                    (1 << Python3Parser.WHILE) |
+                                    (1 << Python3Parser.FOR) |
+                                    (1 << Python3Parser.TRY) |
+                                    (1 << Python3Parser.WITH) |
+                                    (1 << Python3Parser.LAMBDA) |
+                                    (1 << Python3Parser.NOT) |
+                                    (1 << Python3Parser.NONE) |
+                                    (1 << Python3Parser.TRUE) |
+                                    (1 << Python3Parser.FALSE) |
+                                    (1 << Python3Parser.CLASS) |
+                                    (1 << Python3Parser.YIELD) |
+                                    (1 << Python3Parser.DEL) |
+                                    (1 << Python3Parser.PASS))) !==
+                                0) ||
+                        (((_la - 32) & ~0x1f) == 0 &&
+                            ((1 << (_la - 32)) &
+                                ((1 << (Python3Parser.CONTINUE - 32)) |
+                                    (1 << (Python3Parser.BREAK - 32)) |
+                                    (1 << (Python3Parser.NAME - 32)) |
+                                    (1 << (Python3Parser.STRING_LITERAL - 32)) |
+                                    (1 << (Python3Parser.BYTES_LITERAL - 32)) |
+                                    (1 <<
+                                        (Python3Parser.DECIMAL_INTEGER - 32)) |
+                                    (1 << (Python3Parser.OCT_INTEGER - 32)) |
+                                    (1 << (Python3Parser.HEX_INTEGER - 32)) |
+                                    (1 << (Python3Parser.BIN_INTEGER - 32)) |
+                                    (1 << (Python3Parser.FLOAT_NUMBER - 32)) |
+                                    (1 << (Python3Parser.IMAG_NUMBER - 32)) |
+                                    (1 << (Python3Parser.ELLIPSIS - 32)) |
+                                    (1 << (Python3Parser.STAR - 32)) |
+                                    (1 << (Python3Parser.OPEN_PAREN - 32)) |
+                                    (1 << (Python3Parser.OPEN_BRACK - 32)) |
+                                    (1 << (Python3Parser.ADD - 32)) |
+                                    (1 << (Python3Parser.MINUS - 32)))) !==
+                                0) ||
+                        (((_la - 66) & ~0x1f) == 0 &&
+                            ((1 << (_la - 66)) &
+                                ((1 << (Python3Parser.NOT_OP - 66)) |
+                                    (1 << (Python3Parser.OPEN_BRACE - 66)) |
+                                    (1 << (Python3Parser.AT - 66)))) !==
+                                0)
+                    );
+                    this.state = 665;
+                    this.match(Python3Parser.DEDENT);
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    test() {
+        let localctx = new TestContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 92, Python3Parser.RULE_test);
+        var _la = 0; // Token type
+        try {
+            this.state = 678;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.NOT:
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.STAR:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.ADD:
+                case Python3Parser.MINUS:
+                case Python3Parser.NOT_OP:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 669;
+                    this.or_test();
+                    this.state = 675;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.IF) {
+                        this.state = 670;
+                        this.match(Python3Parser.IF);
+                        this.state = 671;
+                        this.or_test();
+                        this.state = 672;
+                        this.match(Python3Parser.ELSE);
+                        this.state = 673;
+                        this.test();
+                    }
+
+                    break;
+                case Python3Parser.LAMBDA:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 677;
+                    this.lambdef();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    test_nocond() {
+        let localctx = new Test_nocondContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 94, Python3Parser.RULE_test_nocond);
+        try {
+            this.state = 682;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.NOT:
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.STAR:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.ADD:
+                case Python3Parser.MINUS:
+                case Python3Parser.NOT_OP:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 680;
+                    this.or_test();
+                    break;
+                case Python3Parser.LAMBDA:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 681;
+                    this.lambdef_nocond();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    lambdef() {
+        let localctx = new LambdefContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 96, Python3Parser.RULE_lambdef);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 684;
+            this.match(Python3Parser.LAMBDA);
+            this.state = 686;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (
+                ((_la - 35) & ~0x1f) == 0 &&
+                ((1 << (_la - 35)) &
+                    ((1 << (Python3Parser.NAME - 35)) |
+                        (1 << (Python3Parser.STAR - 35)) |
+                        (1 << (Python3Parser.POWER - 35)))) !==
+                    0
+            ) {
+                this.state = 685;
+                this.varargslist();
+            }
+
+            this.state = 688;
+            this.match(Python3Parser.COLON);
+            this.state = 689;
+            this.test();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    lambdef_nocond() {
+        let localctx = new Lambdef_nocondContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 98, Python3Parser.RULE_lambdef_nocond);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 691;
+            this.match(Python3Parser.LAMBDA);
+            this.state = 693;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (
+                ((_la - 35) & ~0x1f) == 0 &&
+                ((1 << (_la - 35)) &
+                    ((1 << (Python3Parser.NAME - 35)) |
+                        (1 << (Python3Parser.STAR - 35)) |
+                        (1 << (Python3Parser.POWER - 35)))) !==
+                    0
+            ) {
+                this.state = 692;
+                this.varargslist();
+            }
+
+            this.state = 695;
+            this.match(Python3Parser.COLON);
+            this.state = 696;
+            this.test_nocond();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    or_test() {
+        let localctx = new Or_testContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 100, Python3Parser.RULE_or_test);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 698;
+            this.and_test();
+            this.state = 703;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.OR) {
+                this.state = 699;
+                this.match(Python3Parser.OR);
+                this.state = 700;
+                this.and_test();
+                this.state = 705;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    and_test() {
+        let localctx = new And_testContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 102, Python3Parser.RULE_and_test);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 706;
+            this.not_test();
+            this.state = 711;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.AND) {
+                this.state = 707;
+                this.match(Python3Parser.AND);
+                this.state = 708;
+                this.not_test();
+                this.state = 713;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    not_test() {
+        let localctx = new Not_testContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 104, Python3Parser.RULE_not_test);
+        try {
+            this.state = 717;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.NOT:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 714;
+                    this.match(Python3Parser.NOT);
+                    this.state = 715;
+                    this.not_test();
+                    break;
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.STAR:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.ADD:
+                case Python3Parser.MINUS:
+                case Python3Parser.NOT_OP:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 716;
+                    this.comparison();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    comparison() {
+        let localctx = new ComparisonContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 106, Python3Parser.RULE_comparison);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 719;
+            this.star_expr();
+            this.state = 725;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (
+                ((_la & ~0x1f) == 0 &&
+                    ((1 << _la) &
+                        ((1 << Python3Parser.IN) |
+                            (1 << Python3Parser.NOT) |
+                            (1 << Python3Parser.IS))) !==
+                        0) ||
+                (((_la - 69) & ~0x1f) == 0 &&
+                    ((1 << (_la - 69)) &
+                        ((1 << (Python3Parser.LESS_THAN - 69)) |
+                            (1 << (Python3Parser.GREATER_THAN - 69)) |
+                            (1 << (Python3Parser.EQUALS - 69)) |
+                            (1 << (Python3Parser.GT_EQ - 69)) |
+                            (1 << (Python3Parser.LT_EQ - 69)) |
+                            (1 << (Python3Parser.NOT_EQ_1 - 69)) |
+                            (1 << (Python3Parser.NOT_EQ_2 - 69)))) !==
+                        0)
+            ) {
+                this.state = 720;
+                this.comp_op();
+                this.state = 721;
+                this.star_expr();
+                this.state = 727;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    comp_op() {
+        let localctx = new Comp_opContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 108, Python3Parser.RULE_comp_op);
+        try {
+            this.state = 741;
+            this._errHandler.sync(this);
+            var la_ = this._interp.adaptivePredict(this._input, 93, this._ctx);
+            switch (la_) {
+                case 1:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 728;
+                    this.match(Python3Parser.LESS_THAN);
+                    break;
+
+                case 2:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 729;
+                    this.match(Python3Parser.GREATER_THAN);
+                    break;
+
+                case 3:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 730;
+                    this.match(Python3Parser.EQUALS);
+                    break;
+
+                case 4:
+                    this.enterOuterAlt(localctx, 4);
+                    this.state = 731;
+                    this.match(Python3Parser.GT_EQ);
+                    break;
+
+                case 5:
+                    this.enterOuterAlt(localctx, 5);
+                    this.state = 732;
+                    this.match(Python3Parser.LT_EQ);
+                    break;
+
+                case 6:
+                    this.enterOuterAlt(localctx, 6);
+                    this.state = 733;
+                    this.match(Python3Parser.NOT_EQ_1);
+                    break;
+
+                case 7:
+                    this.enterOuterAlt(localctx, 7);
+                    this.state = 734;
+                    this.match(Python3Parser.NOT_EQ_2);
+                    break;
+
+                case 8:
+                    this.enterOuterAlt(localctx, 8);
+                    this.state = 735;
+                    this.match(Python3Parser.IN);
+                    break;
+
+                case 9:
+                    this.enterOuterAlt(localctx, 9);
+                    this.state = 736;
+                    this.match(Python3Parser.NOT);
+                    this.state = 737;
+                    this.match(Python3Parser.IN);
+                    break;
+
+                case 10:
+                    this.enterOuterAlt(localctx, 10);
+                    this.state = 738;
+                    this.match(Python3Parser.IS);
+                    break;
+
+                case 11:
+                    this.enterOuterAlt(localctx, 11);
+                    this.state = 739;
+                    this.match(Python3Parser.IS);
+                    this.state = 740;
+                    this.match(Python3Parser.NOT);
+                    break;
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    star_expr() {
+        let localctx = new Star_exprContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 110, Python3Parser.RULE_star_expr);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 744;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.STAR) {
+                this.state = 743;
+                this.match(Python3Parser.STAR);
+            }
+
+            this.state = 746;
+            this.expr();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    expr() {
+        let localctx = new ExprContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 112, Python3Parser.RULE_expr);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 748;
+            this.xor_expr();
+            this.state = 753;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.OR_OP) {
+                this.state = 749;
+                this.match(Python3Parser.OR_OP);
+                this.state = 750;
+                this.xor_expr();
+                this.state = 755;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    xor_expr() {
+        let localctx = new Xor_exprContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 114, Python3Parser.RULE_xor_expr);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 756;
+            this.and_expr();
+            this.state = 761;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.XOR) {
+                this.state = 757;
+                this.match(Python3Parser.XOR);
+                this.state = 758;
+                this.and_expr();
+                this.state = 763;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    and_expr() {
+        let localctx = new And_exprContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 116, Python3Parser.RULE_and_expr);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 764;
+            this.shift_expr();
+            this.state = 769;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.AND_OP) {
+                this.state = 765;
+                this.match(Python3Parser.AND_OP);
+                this.state = 766;
+                this.shift_expr();
+                this.state = 771;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    shift_expr() {
+        let localctx = new Shift_exprContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 118, Python3Parser.RULE_shift_expr);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 772;
+            this.arith_expr();
+            this.state = 779;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (
+                _la === Python3Parser.LEFT_SHIFT ||
+                _la === Python3Parser.RIGHT_SHIFT
+            ) {
+                this.state = 777;
+                this._errHandler.sync(this);
+                switch (this._input.LA(1)) {
+                    case Python3Parser.LEFT_SHIFT:
+                        this.state = 773;
+                        this.match(Python3Parser.LEFT_SHIFT);
+                        this.state = 774;
+                        this.arith_expr();
+                        break;
+                    case Python3Parser.RIGHT_SHIFT:
+                        this.state = 775;
+                        this.match(Python3Parser.RIGHT_SHIFT);
+                        this.state = 776;
+                        this.arith_expr();
+                        break;
+                    default:
+                        throw new antlr4.error.NoViableAltException(this);
+                }
+                this.state = 781;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    arith_expr() {
+        let localctx = new Arith_exprContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 120, Python3Parser.RULE_arith_expr);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 782;
+            this.term();
+            this.state = 789;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (_la === Python3Parser.ADD || _la === Python3Parser.MINUS) {
+                this.state = 787;
+                this._errHandler.sync(this);
+                switch (this._input.LA(1)) {
+                    case Python3Parser.ADD:
+                        this.state = 783;
+                        this.match(Python3Parser.ADD);
+                        this.state = 784;
+                        this.term();
+                        break;
+                    case Python3Parser.MINUS:
+                        this.state = 785;
+                        this.match(Python3Parser.MINUS);
+                        this.state = 786;
+                        this.term();
+                        break;
+                    default:
+                        throw new antlr4.error.NoViableAltException(this);
+                }
+                this.state = 791;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    term() {
+        let localctx = new TermContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 122, Python3Parser.RULE_term);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 792;
+            this.factor();
+            this.state = 805;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (
+                ((_la - 46) & ~0x1f) == 0 &&
+                ((1 << (_la - 46)) &
+                    ((1 << (Python3Parser.STAR - 46)) |
+                        (1 << (Python3Parser.DIV - 46)) |
+                        (1 << (Python3Parser.MOD - 46)) |
+                        (1 << (Python3Parser.IDIV - 46)) |
+                        (1 << (Python3Parser.AT - 46)))) !==
+                    0
+            ) {
+                this.state = 803;
+                this._errHandler.sync(this);
+                switch (this._input.LA(1)) {
+                    case Python3Parser.STAR:
+                        this.state = 793;
+                        this.match(Python3Parser.STAR);
+                        this.state = 794;
+                        this.factor();
+                        break;
+                    case Python3Parser.DIV:
+                        this.state = 795;
+                        this.match(Python3Parser.DIV);
+                        this.state = 796;
+                        this.factor();
+                        break;
+                    case Python3Parser.MOD:
+                        this.state = 797;
+                        this.match(Python3Parser.MOD);
+                        this.state = 798;
+                        this.factor();
+                        break;
+                    case Python3Parser.IDIV:
+                        this.state = 799;
+                        this.match(Python3Parser.IDIV);
+                        this.state = 800;
+                        this.factor();
+                        break;
+                    case Python3Parser.AT:
+                        this.state = 801;
+                        this.match(Python3Parser.AT);
+                        this.state = 802;
+                        this.factor();
+                        break;
+                    default:
+                        throw new antlr4.error.NoViableAltException(this);
+                }
+                this.state = 807;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    factor() {
+        let localctx = new FactorContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 124, Python3Parser.RULE_factor);
+        try {
+            this.state = 815;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.ADD:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 808;
+                    this.match(Python3Parser.ADD);
+                    this.state = 809;
+                    this.factor();
+                    break;
+                case Python3Parser.MINUS:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 810;
+                    this.match(Python3Parser.MINUS);
+                    this.state = 811;
+                    this.factor();
+                    break;
+                case Python3Parser.NOT_OP:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 812;
+                    this.match(Python3Parser.NOT_OP);
+                    this.state = 813;
+                    this.factor();
+                    break;
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 4);
+                    this.state = 814;
+                    this.power();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    power() {
+        let localctx = new PowerContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 126, Python3Parser.RULE_power);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 817;
+            this.atom();
+            this.state = 821;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            while (
+                ((_la - 44) & ~0x1f) == 0 &&
+                ((1 << (_la - 44)) &
+                    ((1 << (Python3Parser.DOT - 44)) |
+                        (1 << (Python3Parser.OPEN_PAREN - 44)) |
+                        (1 << (Python3Parser.OPEN_BRACK - 44)))) !==
+                    0
+            ) {
+                this.state = 818;
+                this.trailer();
+                this.state = 823;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+            }
+            this.state = 826;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.POWER) {
+                this.state = 824;
+                this.match(Python3Parser.POWER);
+                this.state = 825;
+                this.factor();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    atom() {
+        let localctx = new AtomContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 128, Python3Parser.RULE_atom);
+        var _la = 0; // Token type
+        try {
+            this.state = 855;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.OPEN_PAREN:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 828;
+                    this.match(Python3Parser.OPEN_PAREN);
+                    this.state = 831;
+                    this._errHandler.sync(this);
+                    switch (this._input.LA(1)) {
+                        case Python3Parser.YIELD:
+                            this.state = 829;
+                            this.yield_expr();
+                            break;
+                        case Python3Parser.LAMBDA:
+                        case Python3Parser.NOT:
+                        case Python3Parser.NONE:
+                        case Python3Parser.TRUE:
+                        case Python3Parser.FALSE:
+                        case Python3Parser.NAME:
+                        case Python3Parser.STRING_LITERAL:
+                        case Python3Parser.BYTES_LITERAL:
+                        case Python3Parser.DECIMAL_INTEGER:
+                        case Python3Parser.OCT_INTEGER:
+                        case Python3Parser.HEX_INTEGER:
+                        case Python3Parser.BIN_INTEGER:
+                        case Python3Parser.FLOAT_NUMBER:
+                        case Python3Parser.IMAG_NUMBER:
+                        case Python3Parser.ELLIPSIS:
+                        case Python3Parser.STAR:
+                        case Python3Parser.OPEN_PAREN:
+                        case Python3Parser.OPEN_BRACK:
+                        case Python3Parser.ADD:
+                        case Python3Parser.MINUS:
+                        case Python3Parser.NOT_OP:
+                        case Python3Parser.OPEN_BRACE:
+                            this.state = 830;
+                            this.testlist_comp();
+                            break;
+                        case Python3Parser.CLOSE_PAREN:
+                            break;
+                        default:
+                            break;
+                    }
+                    this.state = 833;
+                    this.match(Python3Parser.CLOSE_PAREN);
+                    break;
+                case Python3Parser.OPEN_BRACK:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 834;
+                    this.match(Python3Parser.OPEN_BRACK);
+                    this.state = 836;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (
+                        (((_la - 20) & ~0x1f) == 0 &&
+                            ((1 << (_la - 20)) &
+                                ((1 << (Python3Parser.LAMBDA - 20)) |
+                                    (1 << (Python3Parser.NOT - 20)) |
+                                    (1 << (Python3Parser.NONE - 20)) |
+                                    (1 << (Python3Parser.TRUE - 20)) |
+                                    (1 << (Python3Parser.FALSE - 20)) |
+                                    (1 << (Python3Parser.NAME - 20)) |
+                                    (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                                    (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                                    (1 <<
+                                        (Python3Parser.DECIMAL_INTEGER - 20)) |
+                                    (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                                    (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                                    (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                                    (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                                    (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                                    (1 << (Python3Parser.ELLIPSIS - 20)) |
+                                    (1 << (Python3Parser.STAR - 20)) |
+                                    (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                                0) ||
+                        (((_la - 54) & ~0x1f) == 0 &&
+                            ((1 << (_la - 54)) &
+                                ((1 << (Python3Parser.OPEN_BRACK - 54)) |
+                                    (1 << (Python3Parser.ADD - 54)) |
+                                    (1 << (Python3Parser.MINUS - 54)) |
+                                    (1 << (Python3Parser.NOT_OP - 54)) |
+                                    (1 << (Python3Parser.OPEN_BRACE - 54)))) !==
+                                0)
+                    ) {
+                        this.state = 835;
+                        this.testlist_comp();
+                    }
+
+                    this.state = 838;
+                    this.match(Python3Parser.CLOSE_BRACK);
+                    break;
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 839;
+                    this.match(Python3Parser.OPEN_BRACE);
+                    this.state = 841;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (
+                        (((_la - 20) & ~0x1f) == 0 &&
+                            ((1 << (_la - 20)) &
+                                ((1 << (Python3Parser.LAMBDA - 20)) |
+                                    (1 << (Python3Parser.NOT - 20)) |
+                                    (1 << (Python3Parser.NONE - 20)) |
+                                    (1 << (Python3Parser.TRUE - 20)) |
+                                    (1 << (Python3Parser.FALSE - 20)) |
+                                    (1 << (Python3Parser.NAME - 20)) |
+                                    (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                                    (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                                    (1 <<
+                                        (Python3Parser.DECIMAL_INTEGER - 20)) |
+                                    (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                                    (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                                    (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                                    (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                                    (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                                    (1 << (Python3Parser.ELLIPSIS - 20)) |
+                                    (1 << (Python3Parser.STAR - 20)) |
+                                    (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                                0) ||
+                        (((_la - 54) & ~0x1f) == 0 &&
+                            ((1 << (_la - 54)) &
+                                ((1 << (Python3Parser.OPEN_BRACK - 54)) |
+                                    (1 << (Python3Parser.ADD - 54)) |
+                                    (1 << (Python3Parser.MINUS - 54)) |
+                                    (1 << (Python3Parser.NOT_OP - 54)) |
+                                    (1 << (Python3Parser.OPEN_BRACE - 54)))) !==
+                                0)
+                    ) {
+                        this.state = 840;
+                        this.dictorsetmaker();
+                    }
+
+                    this.state = 843;
+                    this.match(Python3Parser.CLOSE_BRACE);
+                    break;
+                case Python3Parser.NAME:
+                    this.enterOuterAlt(localctx, 4);
+                    this.state = 844;
+                    this.match(Python3Parser.NAME);
+                    break;
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                    this.enterOuterAlt(localctx, 5);
+                    this.state = 845;
+                    this.number();
+                    break;
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                    this.enterOuterAlt(localctx, 6);
+                    this.state = 847;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    do {
+                        this.state = 846;
+                        this.str();
+                        this.state = 849;
+                        this._errHandler.sync(this);
+                        _la = this._input.LA(1);
+                    } while (
+                        _la === Python3Parser.STRING_LITERAL ||
+                        _la === Python3Parser.BYTES_LITERAL
+                    );
+                    break;
+                case Python3Parser.ELLIPSIS:
+                    this.enterOuterAlt(localctx, 7);
+                    this.state = 851;
+                    this.match(Python3Parser.ELLIPSIS);
+                    break;
+                case Python3Parser.NONE:
+                    this.enterOuterAlt(localctx, 8);
+                    this.state = 852;
+                    this.match(Python3Parser.NONE);
+                    break;
+                case Python3Parser.TRUE:
+                    this.enterOuterAlt(localctx, 9);
+                    this.state = 853;
+                    this.match(Python3Parser.TRUE);
+                    break;
+                case Python3Parser.FALSE:
+                    this.enterOuterAlt(localctx, 10);
+                    this.state = 854;
+                    this.match(Python3Parser.FALSE);
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    testlist_comp() {
+        let localctx = new Testlist_compContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 130, Python3Parser.RULE_testlist_comp);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 857;
+            this.test();
+            this.state = 869;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.FOR:
+                    this.state = 858;
+                    this.comp_for();
+                    break;
+                case Python3Parser.CLOSE_PAREN:
+                case Python3Parser.COMMA:
+                case Python3Parser.CLOSE_BRACK:
+                    this.state = 863;
+                    this._errHandler.sync(this);
+                    var _alt = this._interp.adaptivePredict(
+                        this._input,
+                        112,
+                        this._ctx
+                    );
+                    while (
+                        _alt != 2 &&
+                        _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                    ) {
+                        if (_alt === 1) {
+                            this.state = 859;
+                            this.match(Python3Parser.COMMA);
+                            this.state = 860;
+                            this.test();
+                        }
+                        this.state = 865;
+                        this._errHandler.sync(this);
+                        _alt = this._interp.adaptivePredict(
+                            this._input,
+                            112,
+                            this._ctx
+                        );
+                    }
+
+                    this.state = 867;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.COMMA) {
+                        this.state = 866;
+                        this.match(Python3Parser.COMMA);
+                    }
+
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    trailer() {
+        let localctx = new TrailerContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 132, Python3Parser.RULE_trailer);
+        var _la = 0; // Token type
+        try {
+            this.state = 882;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.OPEN_PAREN:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 871;
+                    this.match(Python3Parser.OPEN_PAREN);
+                    this.state = 873;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (
+                        (((_la - 20) & ~0x1f) == 0 &&
+                            ((1 << (_la - 20)) &
+                                ((1 << (Python3Parser.LAMBDA - 20)) |
+                                    (1 << (Python3Parser.NOT - 20)) |
+                                    (1 << (Python3Parser.NONE - 20)) |
+                                    (1 << (Python3Parser.TRUE - 20)) |
+                                    (1 << (Python3Parser.FALSE - 20)) |
+                                    (1 << (Python3Parser.NAME - 20)) |
+                                    (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                                    (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                                    (1 <<
+                                        (Python3Parser.DECIMAL_INTEGER - 20)) |
+                                    (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                                    (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                                    (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                                    (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                                    (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                                    (1 << (Python3Parser.ELLIPSIS - 20)) |
+                                    (1 << (Python3Parser.STAR - 20)) |
+                                    (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                                0) ||
+                        (((_la - 52) & ~0x1f) == 0 &&
+                            ((1 << (_la - 52)) &
+                                ((1 << (Python3Parser.POWER - 52)) |
+                                    (1 << (Python3Parser.OPEN_BRACK - 52)) |
+                                    (1 << (Python3Parser.ADD - 52)) |
+                                    (1 << (Python3Parser.MINUS - 52)) |
+                                    (1 << (Python3Parser.NOT_OP - 52)) |
+                                    (1 << (Python3Parser.OPEN_BRACE - 52)))) !==
+                                0)
+                    ) {
+                        this.state = 872;
+                        this.arglist();
+                    }
+
+                    this.state = 875;
+                    this.match(Python3Parser.CLOSE_PAREN);
+                    break;
+                case Python3Parser.OPEN_BRACK:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 876;
+                    this.match(Python3Parser.OPEN_BRACK);
+                    this.state = 877;
+                    this.subscriptlist();
+                    this.state = 878;
+                    this.match(Python3Parser.CLOSE_BRACK);
+                    break;
+                case Python3Parser.DOT:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 880;
+                    this.match(Python3Parser.DOT);
+                    this.state = 881;
+                    this.match(Python3Parser.NAME);
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    subscriptlist() {
+        let localctx = new SubscriptlistContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 134, Python3Parser.RULE_subscriptlist);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 884;
+            this.subscript();
+            this.state = 889;
+            this._errHandler.sync(this);
+            var _alt = this._interp.adaptivePredict(
+                this._input,
+                117,
+                this._ctx
+            );
+            while (_alt != 2 && _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+                if (_alt === 1) {
+                    this.state = 885;
+                    this.match(Python3Parser.COMMA);
+                    this.state = 886;
+                    this.subscript();
+                }
+                this.state = 891;
+                this._errHandler.sync(this);
+                _alt = this._interp.adaptivePredict(
+                    this._input,
+                    117,
+                    this._ctx
+                );
+            }
+
+            this.state = 893;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.COMMA) {
+                this.state = 892;
+                this.match(Python3Parser.COMMA);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    subscript() {
+        let localctx = new SubscriptContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 136, Python3Parser.RULE_subscript);
+        var _la = 0; // Token type
+        try {
+            this.state = 906;
+            this._errHandler.sync(this);
+            var la_ = this._interp.adaptivePredict(this._input, 122, this._ctx);
+            switch (la_) {
+                case 1:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 895;
+                    this.test();
+                    break;
+
+                case 2:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 897;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (
+                        (((_la - 20) & ~0x1f) == 0 &&
+                            ((1 << (_la - 20)) &
+                                ((1 << (Python3Parser.LAMBDA - 20)) |
+                                    (1 << (Python3Parser.NOT - 20)) |
+                                    (1 << (Python3Parser.NONE - 20)) |
+                                    (1 << (Python3Parser.TRUE - 20)) |
+                                    (1 << (Python3Parser.FALSE - 20)) |
+                                    (1 << (Python3Parser.NAME - 20)) |
+                                    (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                                    (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                                    (1 <<
+                                        (Python3Parser.DECIMAL_INTEGER - 20)) |
+                                    (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                                    (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                                    (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                                    (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                                    (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                                    (1 << (Python3Parser.ELLIPSIS - 20)) |
+                                    (1 << (Python3Parser.STAR - 20)) |
+                                    (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                                0) ||
+                        (((_la - 54) & ~0x1f) == 0 &&
+                            ((1 << (_la - 54)) &
+                                ((1 << (Python3Parser.OPEN_BRACK - 54)) |
+                                    (1 << (Python3Parser.ADD - 54)) |
+                                    (1 << (Python3Parser.MINUS - 54)) |
+                                    (1 << (Python3Parser.NOT_OP - 54)) |
+                                    (1 << (Python3Parser.OPEN_BRACE - 54)))) !==
+                                0)
+                    ) {
+                        this.state = 896;
+                        this.test();
+                    }
+
+                    this.state = 899;
+                    this.match(Python3Parser.COLON);
+                    this.state = 901;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (
+                        (((_la - 20) & ~0x1f) == 0 &&
+                            ((1 << (_la - 20)) &
+                                ((1 << (Python3Parser.LAMBDA - 20)) |
+                                    (1 << (Python3Parser.NOT - 20)) |
+                                    (1 << (Python3Parser.NONE - 20)) |
+                                    (1 << (Python3Parser.TRUE - 20)) |
+                                    (1 << (Python3Parser.FALSE - 20)) |
+                                    (1 << (Python3Parser.NAME - 20)) |
+                                    (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                                    (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                                    (1 <<
+                                        (Python3Parser.DECIMAL_INTEGER - 20)) |
+                                    (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                                    (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                                    (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                                    (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                                    (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                                    (1 << (Python3Parser.ELLIPSIS - 20)) |
+                                    (1 << (Python3Parser.STAR - 20)) |
+                                    (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                                0) ||
+                        (((_la - 54) & ~0x1f) == 0 &&
+                            ((1 << (_la - 54)) &
+                                ((1 << (Python3Parser.OPEN_BRACK - 54)) |
+                                    (1 << (Python3Parser.ADD - 54)) |
+                                    (1 << (Python3Parser.MINUS - 54)) |
+                                    (1 << (Python3Parser.NOT_OP - 54)) |
+                                    (1 << (Python3Parser.OPEN_BRACE - 54)))) !==
+                                0)
+                    ) {
+                        this.state = 900;
+                        this.test();
+                    }
+
+                    this.state = 904;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.COLON) {
+                        this.state = 903;
+                        this.sliceop();
+                    }
+
+                    break;
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    sliceop() {
+        let localctx = new SliceopContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 138, Python3Parser.RULE_sliceop);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 908;
+            this.match(Python3Parser.COLON);
+            this.state = 910;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (
+                (((_la - 20) & ~0x1f) == 0 &&
+                    ((1 << (_la - 20)) &
+                        ((1 << (Python3Parser.LAMBDA - 20)) |
+                            (1 << (Python3Parser.NOT - 20)) |
+                            (1 << (Python3Parser.NONE - 20)) |
+                            (1 << (Python3Parser.TRUE - 20)) |
+                            (1 << (Python3Parser.FALSE - 20)) |
+                            (1 << (Python3Parser.NAME - 20)) |
+                            (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                            (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                            (1 << (Python3Parser.DECIMAL_INTEGER - 20)) |
+                            (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                            (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                            (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                            (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                            (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                            (1 << (Python3Parser.ELLIPSIS - 20)) |
+                            (1 << (Python3Parser.STAR - 20)) |
+                            (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                        0) ||
+                (((_la - 54) & ~0x1f) == 0 &&
+                    ((1 << (_la - 54)) &
+                        ((1 << (Python3Parser.OPEN_BRACK - 54)) |
+                            (1 << (Python3Parser.ADD - 54)) |
+                            (1 << (Python3Parser.MINUS - 54)) |
+                            (1 << (Python3Parser.NOT_OP - 54)) |
+                            (1 << (Python3Parser.OPEN_BRACE - 54)))) !==
+                        0)
+            ) {
+                this.state = 909;
+                this.test();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    exprlist() {
+        let localctx = new ExprlistContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 140, Python3Parser.RULE_exprlist);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 912;
+            this.star_expr();
+            this.state = 917;
+            this._errHandler.sync(this);
+            var _alt = this._interp.adaptivePredict(
+                this._input,
+                124,
+                this._ctx
+            );
+            while (_alt != 2 && _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+                if (_alt === 1) {
+                    this.state = 913;
+                    this.match(Python3Parser.COMMA);
+                    this.state = 914;
+                    this.star_expr();
+                }
+                this.state = 919;
+                this._errHandler.sync(this);
+                _alt = this._interp.adaptivePredict(
+                    this._input,
+                    124,
+                    this._ctx
+                );
+            }
+
+            this.state = 921;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.COMMA) {
+                this.state = 920;
+                this.match(Python3Parser.COMMA);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    testlist() {
+        let localctx = new TestlistContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 142, Python3Parser.RULE_testlist);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 923;
+            this.test();
+            this.state = 928;
+            this._errHandler.sync(this);
+            var _alt = this._interp.adaptivePredict(
+                this._input,
+                126,
+                this._ctx
+            );
+            while (_alt != 2 && _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+                if (_alt === 1) {
+                    this.state = 924;
+                    this.match(Python3Parser.COMMA);
+                    this.state = 925;
+                    this.test();
+                }
+                this.state = 930;
+                this._errHandler.sync(this);
+                _alt = this._interp.adaptivePredict(
+                    this._input,
+                    126,
+                    this._ctx
+                );
+            }
+
+            this.state = 932;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.COMMA) {
+                this.state = 931;
+                this.match(Python3Parser.COMMA);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    dictorsetmaker() {
+        let localctx = new DictorsetmakerContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 144, Python3Parser.RULE_dictorsetmaker);
+        var _la = 0; // Token type
+        try {
+            this.state = 967;
+            this._errHandler.sync(this);
+            var la_ = this._interp.adaptivePredict(this._input, 134, this._ctx);
+            switch (la_) {
+                case 1:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 934;
+                    this.test();
+                    this.state = 935;
+                    this.match(Python3Parser.COLON);
+                    this.state = 936;
+                    this.test();
+                    this.state = 951;
+                    this._errHandler.sync(this);
+                    switch (this._input.LA(1)) {
+                        case Python3Parser.FOR:
+                            this.state = 937;
+                            this.comp_for();
+                            break;
+                        case Python3Parser.COMMA:
+                        case Python3Parser.CLOSE_BRACE:
+                            this.state = 945;
+                            this._errHandler.sync(this);
+                            var _alt = this._interp.adaptivePredict(
+                                this._input,
+                                128,
+                                this._ctx
+                            );
+                            while (
+                                _alt != 2 &&
+                                _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                            ) {
+                                if (_alt === 1) {
+                                    this.state = 938;
+                                    this.match(Python3Parser.COMMA);
+                                    this.state = 939;
+                                    this.test();
+                                    this.state = 940;
+                                    this.match(Python3Parser.COLON);
+                                    this.state = 941;
+                                    this.test();
+                                }
+                                this.state = 947;
+                                this._errHandler.sync(this);
+                                _alt = this._interp.adaptivePredict(
+                                    this._input,
+                                    128,
+                                    this._ctx
+                                );
+                            }
+
+                            this.state = 949;
+                            this._errHandler.sync(this);
+                            _la = this._input.LA(1);
+                            if (_la === Python3Parser.COMMA) {
+                                this.state = 948;
+                                this.match(Python3Parser.COMMA);
+                            }
+
+                            break;
+                        default:
+                            throw new antlr4.error.NoViableAltException(this);
+                    }
+                    break;
+
+                case 2:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 953;
+                    this.test();
+                    this.state = 965;
+                    this._errHandler.sync(this);
+                    switch (this._input.LA(1)) {
+                        case Python3Parser.FOR:
+                            this.state = 954;
+                            this.comp_for();
+                            break;
+                        case Python3Parser.COMMA:
+                        case Python3Parser.CLOSE_BRACE:
+                            this.state = 959;
+                            this._errHandler.sync(this);
+                            var _alt = this._interp.adaptivePredict(
+                                this._input,
+                                131,
+                                this._ctx
+                            );
+                            while (
+                                _alt != 2 &&
+                                _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                            ) {
+                                if (_alt === 1) {
+                                    this.state = 955;
+                                    this.match(Python3Parser.COMMA);
+                                    this.state = 956;
+                                    this.test();
+                                }
+                                this.state = 961;
+                                this._errHandler.sync(this);
+                                _alt = this._interp.adaptivePredict(
+                                    this._input,
+                                    131,
+                                    this._ctx
+                                );
+                            }
+
+                            this.state = 963;
+                            this._errHandler.sync(this);
+                            _la = this._input.LA(1);
+                            if (_la === Python3Parser.COMMA) {
+                                this.state = 962;
+                                this.match(Python3Parser.COMMA);
+                            }
+
+                            break;
+                        default:
+                            throw new antlr4.error.NoViableAltException(this);
+                    }
+                    break;
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    classdef() {
+        let localctx = new ClassdefContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 146, Python3Parser.RULE_classdef);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 969;
+            this.match(Python3Parser.CLASS);
+            this.state = 970;
+            this.match(Python3Parser.NAME);
+            this.state = 976;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.OPEN_PAREN) {
+                this.state = 971;
+                this.match(Python3Parser.OPEN_PAREN);
+                this.state = 973;
+                this._errHandler.sync(this);
+                _la = this._input.LA(1);
+                if (
+                    (((_la - 20) & ~0x1f) == 0 &&
+                        ((1 << (_la - 20)) &
+                            ((1 << (Python3Parser.LAMBDA - 20)) |
+                                (1 << (Python3Parser.NOT - 20)) |
+                                (1 << (Python3Parser.NONE - 20)) |
+                                (1 << (Python3Parser.TRUE - 20)) |
+                                (1 << (Python3Parser.FALSE - 20)) |
+                                (1 << (Python3Parser.NAME - 20)) |
+                                (1 << (Python3Parser.STRING_LITERAL - 20)) |
+                                (1 << (Python3Parser.BYTES_LITERAL - 20)) |
+                                (1 << (Python3Parser.DECIMAL_INTEGER - 20)) |
+                                (1 << (Python3Parser.OCT_INTEGER - 20)) |
+                                (1 << (Python3Parser.HEX_INTEGER - 20)) |
+                                (1 << (Python3Parser.BIN_INTEGER - 20)) |
+                                (1 << (Python3Parser.FLOAT_NUMBER - 20)) |
+                                (1 << (Python3Parser.IMAG_NUMBER - 20)) |
+                                (1 << (Python3Parser.ELLIPSIS - 20)) |
+                                (1 << (Python3Parser.STAR - 20)) |
+                                (1 << (Python3Parser.OPEN_PAREN - 20)))) !==
+                            0) ||
+                    (((_la - 52) & ~0x1f) == 0 &&
+                        ((1 << (_la - 52)) &
+                            ((1 << (Python3Parser.POWER - 52)) |
+                                (1 << (Python3Parser.OPEN_BRACK - 52)) |
+                                (1 << (Python3Parser.ADD - 52)) |
+                                (1 << (Python3Parser.MINUS - 52)) |
+                                (1 << (Python3Parser.NOT_OP - 52)) |
+                                (1 << (Python3Parser.OPEN_BRACE - 52)))) !==
+                            0)
+                ) {
+                    this.state = 972;
+                    this.arglist();
+                }
+
+                this.state = 975;
+                this.match(Python3Parser.CLOSE_PAREN);
+            }
+
+            this.state = 978;
+            this.match(Python3Parser.COLON);
+            this.state = 979;
+            this.suite();
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    arglist() {
+        let localctx = new ArglistContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 148, Python3Parser.RULE_arglist);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 986;
+            this._errHandler.sync(this);
+            var _alt = this._interp.adaptivePredict(
+                this._input,
+                137,
+                this._ctx
+            );
+            while (_alt != 2 && _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+                if (_alt === 1) {
+                    this.state = 981;
+                    this.argument();
+                    this.state = 982;
+                    this.match(Python3Parser.COMMA);
+                }
+                this.state = 988;
+                this._errHandler.sync(this);
+                _alt = this._interp.adaptivePredict(
+                    this._input,
+                    137,
+                    this._ctx
+                );
+            }
+
+            this.state = 1009;
+            this._errHandler.sync(this);
+            var la_ = this._interp.adaptivePredict(this._input, 141, this._ctx);
+            switch (la_) {
+                case 1:
+                    this.state = 989;
+                    this.argument();
+                    this.state = 991;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.COMMA) {
+                        this.state = 990;
+                        this.match(Python3Parser.COMMA);
+                    }
+
+                    break;
+
+                case 2:
+                    this.state = 993;
+                    this.match(Python3Parser.STAR);
+                    this.state = 994;
+                    this.test();
+                    this.state = 999;
+                    this._errHandler.sync(this);
+                    var _alt = this._interp.adaptivePredict(
+                        this._input,
+                        139,
+                        this._ctx
+                    );
+                    while (
+                        _alt != 2 &&
+                        _alt != antlr4.atn.ATN.INVALID_ALT_NUMBER
+                    ) {
+                        if (_alt === 1) {
+                            this.state = 995;
+                            this.match(Python3Parser.COMMA);
+                            this.state = 996;
+                            this.argument();
+                        }
+                        this.state = 1001;
+                        this._errHandler.sync(this);
+                        _alt = this._interp.adaptivePredict(
+                            this._input,
+                            139,
+                            this._ctx
+                        );
+                    }
+
+                    this.state = 1005;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.COMMA) {
+                        this.state = 1002;
+                        this.match(Python3Parser.COMMA);
+                        this.state = 1003;
+                        this.match(Python3Parser.POWER);
+                        this.state = 1004;
+                        this.test();
+                    }
+
+                    break;
+
+                case 3:
+                    this.state = 1007;
+                    this.match(Python3Parser.POWER);
+                    this.state = 1008;
+                    this.test();
+                    break;
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    argument() {
+        let localctx = new ArgumentContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 150, Python3Parser.RULE_argument);
+        var _la = 0; // Token type
+        try {
+            this.state = 1019;
+            this._errHandler.sync(this);
+            var la_ = this._interp.adaptivePredict(this._input, 143, this._ctx);
+            switch (la_) {
+                case 1:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 1011;
+                    this.test();
+                    this.state = 1013;
+                    this._errHandler.sync(this);
+                    _la = this._input.LA(1);
+                    if (_la === Python3Parser.FOR) {
+                        this.state = 1012;
+                        this.comp_for();
+                    }
+
+                    break;
+
+                case 2:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 1015;
+                    this.test();
+                    this.state = 1016;
+                    this.match(Python3Parser.ASSIGN);
+                    this.state = 1017;
+                    this.test();
+                    break;
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    comp_iter() {
+        let localctx = new Comp_iterContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 152, Python3Parser.RULE_comp_iter);
+        try {
+            this.state = 1023;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.FOR:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 1021;
+                    this.comp_for();
+                    break;
+                case Python3Parser.IF:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 1022;
+                    this.comp_if();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    comp_for() {
+        let localctx = new Comp_forContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 154, Python3Parser.RULE_comp_for);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 1025;
+            this.match(Python3Parser.FOR);
+            this.state = 1026;
+            this.exprlist();
+            this.state = 1027;
+            this.match(Python3Parser.IN);
+            this.state = 1028;
+            this.or_test();
+            this.state = 1030;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.IF || _la === Python3Parser.FOR) {
+                this.state = 1029;
+                this.comp_iter();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    comp_if() {
+        let localctx = new Comp_ifContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 156, Python3Parser.RULE_comp_if);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 1032;
+            this.match(Python3Parser.IF);
+            this.state = 1033;
+            this.test_nocond();
+            this.state = 1035;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (_la === Python3Parser.IF || _la === Python3Parser.FOR) {
+                this.state = 1034;
+                this.comp_iter();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    yield_expr() {
+        let localctx = new Yield_exprContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 158, Python3Parser.RULE_yield_expr);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 1037;
+            this.match(Python3Parser.YIELD);
+            this.state = 1039;
+            this._errHandler.sync(this);
+            _la = this._input.LA(1);
+            if (
+                (((_la - 4) & ~0x1f) == 0 &&
+                    ((1 << (_la - 4)) &
+                        ((1 << (Python3Parser.FROM - 4)) |
+                            (1 << (Python3Parser.LAMBDA - 4)) |
+                            (1 << (Python3Parser.NOT - 4)) |
+                            (1 << (Python3Parser.NONE - 4)) |
+                            (1 << (Python3Parser.TRUE - 4)) |
+                            (1 << (Python3Parser.FALSE - 4)) |
+                            (1 << (Python3Parser.NAME - 4)))) !==
+                        0) ||
+                (((_la - 36) & ~0x1f) == 0 &&
+                    ((1 << (_la - 36)) &
+                        ((1 << (Python3Parser.STRING_LITERAL - 36)) |
+                            (1 << (Python3Parser.BYTES_LITERAL - 36)) |
+                            (1 << (Python3Parser.DECIMAL_INTEGER - 36)) |
+                            (1 << (Python3Parser.OCT_INTEGER - 36)) |
+                            (1 << (Python3Parser.HEX_INTEGER - 36)) |
+                            (1 << (Python3Parser.BIN_INTEGER - 36)) |
+                            (1 << (Python3Parser.FLOAT_NUMBER - 36)) |
+                            (1 << (Python3Parser.IMAG_NUMBER - 36)) |
+                            (1 << (Python3Parser.ELLIPSIS - 36)) |
+                            (1 << (Python3Parser.STAR - 36)) |
+                            (1 << (Python3Parser.OPEN_PAREN - 36)) |
+                            (1 << (Python3Parser.OPEN_BRACK - 36)) |
+                            (1 << (Python3Parser.ADD - 36)) |
+                            (1 << (Python3Parser.MINUS - 36)) |
+                            (1 << (Python3Parser.NOT_OP - 36)) |
+                            (1 << (Python3Parser.OPEN_BRACE - 36)))) !==
+                        0)
+            ) {
+                this.state = 1038;
+                this.yield_arg();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    yield_arg() {
+        let localctx = new Yield_argContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 160, Python3Parser.RULE_yield_arg);
+        try {
+            this.state = 1044;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.FROM:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 1041;
+                    this.match(Python3Parser.FROM);
+                    this.state = 1042;
+                    this.test();
+                    break;
+                case Python3Parser.LAMBDA:
+                case Python3Parser.NOT:
+                case Python3Parser.NONE:
+                case Python3Parser.TRUE:
+                case Python3Parser.FALSE:
+                case Python3Parser.NAME:
+                case Python3Parser.STRING_LITERAL:
+                case Python3Parser.BYTES_LITERAL:
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                case Python3Parser.FLOAT_NUMBER:
+                case Python3Parser.IMAG_NUMBER:
+                case Python3Parser.ELLIPSIS:
+                case Python3Parser.STAR:
+                case Python3Parser.OPEN_PAREN:
+                case Python3Parser.OPEN_BRACK:
+                case Python3Parser.ADD:
+                case Python3Parser.MINUS:
+                case Python3Parser.NOT_OP:
+                case Python3Parser.OPEN_BRACE:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 1043;
+                    this.testlist();
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    str() {
+        let localctx = new StrContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 162, Python3Parser.RULE_str);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 1046;
+            _la = this._input.LA(1);
+            if (
+                !(
+                    _la === Python3Parser.STRING_LITERAL ||
+                    _la === Python3Parser.BYTES_LITERAL
+                )
+            ) {
+                this._errHandler.recoverInline(this);
+            } else {
+                this._errHandler.reportMatch(this);
+                this.consume();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    number() {
+        let localctx = new NumberContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 164, Python3Parser.RULE_number);
+        try {
+            this.state = 1051;
+            this._errHandler.sync(this);
+            switch (this._input.LA(1)) {
+                case Python3Parser.DECIMAL_INTEGER:
+                case Python3Parser.OCT_INTEGER:
+                case Python3Parser.HEX_INTEGER:
+                case Python3Parser.BIN_INTEGER:
+                    this.enterOuterAlt(localctx, 1);
+                    this.state = 1048;
+                    this.integer();
+                    break;
+                case Python3Parser.FLOAT_NUMBER:
+                    this.enterOuterAlt(localctx, 2);
+                    this.state = 1049;
+                    this.match(Python3Parser.FLOAT_NUMBER);
+                    break;
+                case Python3Parser.IMAG_NUMBER:
+                    this.enterOuterAlt(localctx, 3);
+                    this.state = 1050;
+                    this.match(Python3Parser.IMAG_NUMBER);
+                    break;
+                default:
+                    throw new antlr4.error.NoViableAltException(this);
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
+
+    integer() {
+        let localctx = new IntegerContext(this, this._ctx, this.state);
+        this.enterRule(localctx, 166, Python3Parser.RULE_integer);
+        var _la = 0; // Token type
+        try {
+            this.enterOuterAlt(localctx, 1);
+            this.state = 1053;
+            _la = this._input.LA(1);
+            if (
+                !(
+                    ((_la - 38) & ~0x1f) == 0 &&
+                    ((1 << (_la - 38)) &
+                        ((1 << (Python3Parser.DECIMAL_INTEGER - 38)) |
+                            (1 << (Python3Parser.OCT_INTEGER - 38)) |
+                            (1 << (Python3Parser.HEX_INTEGER - 38)) |
+                            (1 << (Python3Parser.BIN_INTEGER - 38)))) !==
+                        0
+                )
+            ) {
+                this._errHandler.recoverInline(this);
+            } else {
+                this._errHandler.reportMatch(this);
+                this.consume();
+            }
+        } catch (re) {
+            if (re instanceof antlr4.error.RecognitionException) {
+                localctx.exception = re;
+                this._errHandler.reportError(this, re);
+                this._errHandler.recover(this, re);
+            } else {
+                throw re;
+            }
+        } finally {
+            this.exitRule();
+        }
+        return localctx;
+    }
 }
 
 Python3Parser.EOF = antlr4.Token.EOF;
@@ -5466,12 +6202,11 @@ Python3Parser.RULE_number = 82;
 Python3Parser.RULE_integer = 83;
 
 class Single_inputContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5479,50 +6214,45 @@ class Single_inputContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_single_input;
     }
 
-	NEWLINE() {
-	    return this.getToken(Python3Parser.NEWLINE, 0);
-	};
+    NEWLINE() {
+        return this.getToken(Python3Parser.NEWLINE, 0);
+    }
 
-	simple_stmt() {
-	    return this.getTypedRuleContext(Simple_stmtContext,0);
-	};
+    simple_stmt() {
+        return this.getTypedRuleContext(Simple_stmtContext, 0);
+    }
 
-	compound_stmt() {
-	    return this.getTypedRuleContext(Compound_stmtContext,0);
-	};
+    compound_stmt() {
+        return this.getTypedRuleContext(Compound_stmtContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterSingle_input(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterSingle_input(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitSingle_input(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitSingle_input(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitSingle_input(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitSingle_input(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class File_inputContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5530,65 +6260,59 @@ class File_inputContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_file_input;
     }
 
-	EOF() {
-	    return this.getToken(Python3Parser.EOF, 0);
-	};
+    EOF() {
+        return this.getToken(Python3Parser.EOF, 0);
+    }
 
-	NEWLINE = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.NEWLINE);
-	    } else {
-	        return this.getToken(Python3Parser.NEWLINE, i);
-	    }
-	};
+    NEWLINE = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.NEWLINE);
+        } else {
+            return this.getToken(Python3Parser.NEWLINE, i);
+        }
+    };
 
+    stmt = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(StmtContext);
+        } else {
+            return this.getTypedRuleContext(StmtContext, i);
+        }
+    };
 
-	stmt = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(StmtContext);
-	    } else {
-	        return this.getTypedRuleContext(StmtContext,i);
-	    }
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterFile_input(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterFile_input(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitFile_input(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitFile_input(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitFile_input(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitFile_input(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Eval_inputContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5596,58 +6320,52 @@ class Eval_inputContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_eval_input;
     }
 
-	testlist() {
-	    return this.getTypedRuleContext(TestlistContext,0);
-	};
+    testlist() {
+        return this.getTypedRuleContext(TestlistContext, 0);
+    }
 
-	EOF() {
-	    return this.getToken(Python3Parser.EOF, 0);
-	};
+    EOF() {
+        return this.getToken(Python3Parser.EOF, 0);
+    }
 
-	NEWLINE = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.NEWLINE);
-	    } else {
-	        return this.getToken(Python3Parser.NEWLINE, i);
-	    }
-	};
+    NEWLINE = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.NEWLINE);
+        } else {
+            return this.getToken(Python3Parser.NEWLINE, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterEval_input(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterEval_input(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitEval_input(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitEval_input(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitEval_input(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitEval_input(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class DecoratorContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5655,62 +6373,57 @@ class DecoratorContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_decorator;
     }
 
-	AT() {
-	    return this.getToken(Python3Parser.AT, 0);
-	};
+    AT() {
+        return this.getToken(Python3Parser.AT, 0);
+    }
 
-	dotted_name() {
-	    return this.getTypedRuleContext(Dotted_nameContext,0);
-	};
+    dotted_name() {
+        return this.getTypedRuleContext(Dotted_nameContext, 0);
+    }
 
-	NEWLINE() {
-	    return this.getToken(Python3Parser.NEWLINE, 0);
-	};
+    NEWLINE() {
+        return this.getToken(Python3Parser.NEWLINE, 0);
+    }
 
-	OPEN_PAREN() {
-	    return this.getToken(Python3Parser.OPEN_PAREN, 0);
-	};
+    OPEN_PAREN() {
+        return this.getToken(Python3Parser.OPEN_PAREN, 0);
+    }
 
-	CLOSE_PAREN() {
-	    return this.getToken(Python3Parser.CLOSE_PAREN, 0);
-	};
+    CLOSE_PAREN() {
+        return this.getToken(Python3Parser.CLOSE_PAREN, 0);
+    }
 
-	arglist() {
-	    return this.getTypedRuleContext(ArglistContext,0);
-	};
+    arglist() {
+        return this.getTypedRuleContext(ArglistContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterDecorator(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterDecorator(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitDecorator(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitDecorator(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitDecorator(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitDecorator(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class DecoratorsContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5718,49 +6431,44 @@ class DecoratorsContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_decorators;
     }
 
-	decorator = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(DecoratorContext);
-	    } else {
-	        return this.getTypedRuleContext(DecoratorContext,i);
-	    }
-	};
+    decorator = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(DecoratorContext);
+        } else {
+            return this.getTypedRuleContext(DecoratorContext, i);
+        }
+    };
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterDecorators(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterDecorators(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitDecorators(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitDecorators(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitDecorators(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitDecorators(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class DecoratedContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5768,50 +6476,45 @@ class DecoratedContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_decorated;
     }
 
-	decorators() {
-	    return this.getTypedRuleContext(DecoratorsContext,0);
-	};
+    decorators() {
+        return this.getTypedRuleContext(DecoratorsContext, 0);
+    }
 
-	classdef() {
-	    return this.getTypedRuleContext(ClassdefContext,0);
-	};
+    classdef() {
+        return this.getTypedRuleContext(ClassdefContext, 0);
+    }
 
-	funcdef() {
-	    return this.getTypedRuleContext(FuncdefContext,0);
-	};
+    funcdef() {
+        return this.getTypedRuleContext(FuncdefContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterDecorated(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterDecorated(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitDecorated(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitDecorated(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitDecorated(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitDecorated(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class FuncdefContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5819,66 +6522,61 @@ class FuncdefContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_funcdef;
     }
 
-	DEF() {
-	    return this.getToken(Python3Parser.DEF, 0);
-	};
+    DEF() {
+        return this.getToken(Python3Parser.DEF, 0);
+    }
 
-	NAME() {
-	    return this.getToken(Python3Parser.NAME, 0);
-	};
+    NAME() {
+        return this.getToken(Python3Parser.NAME, 0);
+    }
 
-	parameters() {
-	    return this.getTypedRuleContext(ParametersContext,0);
-	};
+    parameters() {
+        return this.getTypedRuleContext(ParametersContext, 0);
+    }
 
-	COLON() {
-	    return this.getToken(Python3Parser.COLON, 0);
-	};
+    COLON() {
+        return this.getToken(Python3Parser.COLON, 0);
+    }
 
-	suite() {
-	    return this.getTypedRuleContext(SuiteContext,0);
-	};
+    suite() {
+        return this.getTypedRuleContext(SuiteContext, 0);
+    }
 
-	ARROW() {
-	    return this.getToken(Python3Parser.ARROW, 0);
-	};
+    ARROW() {
+        return this.getToken(Python3Parser.ARROW, 0);
+    }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterFuncdef(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterFuncdef(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitFuncdef(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitFuncdef(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitFuncdef(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitFuncdef(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class ParametersContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5886,50 +6584,45 @@ class ParametersContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_parameters;
     }
 
-	OPEN_PAREN() {
-	    return this.getToken(Python3Parser.OPEN_PAREN, 0);
-	};
+    OPEN_PAREN() {
+        return this.getToken(Python3Parser.OPEN_PAREN, 0);
+    }
 
-	CLOSE_PAREN() {
-	    return this.getToken(Python3Parser.CLOSE_PAREN, 0);
-	};
+    CLOSE_PAREN() {
+        return this.getToken(Python3Parser.CLOSE_PAREN, 0);
+    }
 
-	typedargslist() {
-	    return this.getTypedRuleContext(TypedargslistContext,0);
-	};
+    typedargslist() {
+        return this.getTypedRuleContext(TypedargslistContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterParameters(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterParameters(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitParameters(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitParameters(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitParameters(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitParameters(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class TypedargslistContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -5937,92 +6630,85 @@ class TypedargslistContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_typedargslist;
     }
 
-	tfpdef = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TfpdefContext);
-	    } else {
-	        return this.getTypedRuleContext(TfpdefContext,i);
-	    }
-	};
+    tfpdef = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TfpdefContext);
+        } else {
+            return this.getTypedRuleContext(TfpdefContext, i);
+        }
+    };
 
-	ASSIGN = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.ASSIGN);
-	    } else {
-	        return this.getToken(Python3Parser.ASSIGN, i);
-	    }
-	};
+    ASSIGN = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.ASSIGN);
+        } else {
+            return this.getToken(Python3Parser.ASSIGN, i);
+        }
+    };
 
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    STAR() {
+        return this.getToken(Python3Parser.STAR, 0);
+    }
 
+    POWER() {
+        return this.getToken(Python3Parser.POWER, 0);
+    }
 
-	STAR() {
-	    return this.getToken(Python3Parser.STAR, 0);
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTypedargslist(this);
+        }
+    }
 
-	POWER() {
-	    return this.getToken(Python3Parser.POWER, 0);
-	};
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTypedargslist(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTypedargslist(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTypedargslist(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTypedargslist(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTypedargslist(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class TfpdefContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6030,50 +6716,45 @@ class TfpdefContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_tfpdef;
     }
 
-	NAME() {
-	    return this.getToken(Python3Parser.NAME, 0);
-	};
+    NAME() {
+        return this.getToken(Python3Parser.NAME, 0);
+    }
 
-	COLON() {
-	    return this.getToken(Python3Parser.COLON, 0);
-	};
+    COLON() {
+        return this.getToken(Python3Parser.COLON, 0);
+    }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTfpdef(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTfpdef(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTfpdef(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTfpdef(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTfpdef(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTfpdef(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class VarargslistContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6081,92 +6762,85 @@ class VarargslistContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_varargslist;
     }
 
-	vfpdef = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(VfpdefContext);
-	    } else {
-	        return this.getTypedRuleContext(VfpdefContext,i);
-	    }
-	};
+    vfpdef = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(VfpdefContext);
+        } else {
+            return this.getTypedRuleContext(VfpdefContext, i);
+        }
+    };
 
-	ASSIGN = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.ASSIGN);
-	    } else {
-	        return this.getToken(Python3Parser.ASSIGN, i);
-	    }
-	};
+    ASSIGN = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.ASSIGN);
+        } else {
+            return this.getToken(Python3Parser.ASSIGN, i);
+        }
+    };
 
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    STAR() {
+        return this.getToken(Python3Parser.STAR, 0);
+    }
 
+    POWER() {
+        return this.getToken(Python3Parser.POWER, 0);
+    }
 
-	STAR() {
-	    return this.getToken(Python3Parser.STAR, 0);
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterVarargslist(this);
+        }
+    }
 
-	POWER() {
-	    return this.getToken(Python3Parser.POWER, 0);
-	};
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitVarargslist(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterVarargslist(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitVarargslist(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitVarargslist(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitVarargslist(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class VfpdefContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6174,42 +6848,37 @@ class VfpdefContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_vfpdef;
     }
 
-	NAME() {
-	    return this.getToken(Python3Parser.NAME, 0);
-	};
+    NAME() {
+        return this.getToken(Python3Parser.NAME, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterVfpdef(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterVfpdef(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitVfpdef(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitVfpdef(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitVfpdef(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitVfpdef(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class StmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6217,46 +6886,41 @@ class StmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_stmt;
     }
 
-	simple_stmt() {
-	    return this.getTypedRuleContext(Simple_stmtContext,0);
-	};
+    simple_stmt() {
+        return this.getTypedRuleContext(Simple_stmtContext, 0);
+    }
 
-	compound_stmt() {
-	    return this.getTypedRuleContext(Compound_stmtContext,0);
-	};
+    compound_stmt() {
+        return this.getTypedRuleContext(Compound_stmtContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterStmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterStmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitStmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitStmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitStmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitStmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Simple_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6264,65 +6928,59 @@ class Simple_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_simple_stmt;
     }
 
-	small_stmt = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Small_stmtContext);
-	    } else {
-	        return this.getTypedRuleContext(Small_stmtContext,i);
-	    }
-	};
+    small_stmt = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Small_stmtContext);
+        } else {
+            return this.getTypedRuleContext(Small_stmtContext, i);
+        }
+    };
 
-	NEWLINE() {
-	    return this.getToken(Python3Parser.NEWLINE, 0);
-	};
+    NEWLINE() {
+        return this.getToken(Python3Parser.NEWLINE, 0);
+    }
 
-	SEMI_COLON = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.SEMI_COLON);
-	    } else {
-	        return this.getToken(Python3Parser.SEMI_COLON, i);
-	    }
-	};
+    SEMI_COLON = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.SEMI_COLON);
+        } else {
+            return this.getToken(Python3Parser.SEMI_COLON, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterSimple_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterSimple_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitSimple_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitSimple_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitSimple_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitSimple_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Small_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6330,70 +6988,65 @@ class Small_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_small_stmt;
     }
 
-	expr_stmt() {
-	    return this.getTypedRuleContext(Expr_stmtContext,0);
-	};
+    expr_stmt() {
+        return this.getTypedRuleContext(Expr_stmtContext, 0);
+    }
 
-	del_stmt() {
-	    return this.getTypedRuleContext(Del_stmtContext,0);
-	};
+    del_stmt() {
+        return this.getTypedRuleContext(Del_stmtContext, 0);
+    }
 
-	pass_stmt() {
-	    return this.getTypedRuleContext(Pass_stmtContext,0);
-	};
+    pass_stmt() {
+        return this.getTypedRuleContext(Pass_stmtContext, 0);
+    }
 
-	flow_stmt() {
-	    return this.getTypedRuleContext(Flow_stmtContext,0);
-	};
+    flow_stmt() {
+        return this.getTypedRuleContext(Flow_stmtContext, 0);
+    }
 
-	import_stmt() {
-	    return this.getTypedRuleContext(Import_stmtContext,0);
-	};
+    import_stmt() {
+        return this.getTypedRuleContext(Import_stmtContext, 0);
+    }
 
-	global_stmt() {
-	    return this.getTypedRuleContext(Global_stmtContext,0);
-	};
+    global_stmt() {
+        return this.getTypedRuleContext(Global_stmtContext, 0);
+    }
 
-	nonlocal_stmt() {
-	    return this.getTypedRuleContext(Nonlocal_stmtContext,0);
-	};
+    nonlocal_stmt() {
+        return this.getTypedRuleContext(Nonlocal_stmtContext, 0);
+    }
 
-	assert_stmt() {
-	    return this.getTypedRuleContext(Assert_stmtContext,0);
-	};
+    assert_stmt() {
+        return this.getTypedRuleContext(Assert_stmtContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterSmall_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterSmall_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitSmall_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitSmall_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitSmall_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitSmall_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Expr_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6401,80 +7054,74 @@ class Expr_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_expr_stmt;
     }
 
-	testlist_star_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Testlist_star_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(Testlist_star_exprContext,i);
-	    }
-	};
+    testlist_star_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Testlist_star_exprContext);
+        } else {
+            return this.getTypedRuleContext(Testlist_star_exprContext, i);
+        }
+    };
 
-	augassign() {
-	    return this.getTypedRuleContext(AugassignContext,0);
-	};
+    augassign() {
+        return this.getTypedRuleContext(AugassignContext, 0);
+    }
 
-	yield_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Yield_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(Yield_exprContext,i);
-	    }
-	};
+    yield_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Yield_exprContext);
+        } else {
+            return this.getTypedRuleContext(Yield_exprContext, i);
+        }
+    };
 
-	testlist() {
-	    return this.getTypedRuleContext(TestlistContext,0);
-	};
+    testlist() {
+        return this.getTypedRuleContext(TestlistContext, 0);
+    }
 
-	ASSIGN = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.ASSIGN);
-	    } else {
-	        return this.getToken(Python3Parser.ASSIGN, i);
-	    }
-	};
+    ASSIGN = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.ASSIGN);
+        } else {
+            return this.getToken(Python3Parser.ASSIGN, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterExpr_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterExpr_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitExpr_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitExpr_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitExpr_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitExpr_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Testlist_star_exprContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6482,72 +7129,66 @@ class Testlist_star_exprContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_testlist_star_expr;
     }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	star_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Star_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(Star_exprContext,i);
-	    }
-	};
+    star_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Star_exprContext);
+        } else {
+            return this.getTypedRuleContext(Star_exprContext, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTestlist_star_expr(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTestlist_star_expr(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTestlist_star_expr(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTestlist_star_expr(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTestlist_star_expr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTestlist_star_expr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class AugassignContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6555,90 +7196,85 @@ class AugassignContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_augassign;
     }
 
-	ADD_ASSIGN() {
-	    return this.getToken(Python3Parser.ADD_ASSIGN, 0);
-	};
+    ADD_ASSIGN() {
+        return this.getToken(Python3Parser.ADD_ASSIGN, 0);
+    }
 
-	SUB_ASSIGN() {
-	    return this.getToken(Python3Parser.SUB_ASSIGN, 0);
-	};
+    SUB_ASSIGN() {
+        return this.getToken(Python3Parser.SUB_ASSIGN, 0);
+    }
 
-	MULT_ASSIGN() {
-	    return this.getToken(Python3Parser.MULT_ASSIGN, 0);
-	};
+    MULT_ASSIGN() {
+        return this.getToken(Python3Parser.MULT_ASSIGN, 0);
+    }
 
-	AT_ASSIGN() {
-	    return this.getToken(Python3Parser.AT_ASSIGN, 0);
-	};
+    AT_ASSIGN() {
+        return this.getToken(Python3Parser.AT_ASSIGN, 0);
+    }
 
-	DIV_ASSIGN() {
-	    return this.getToken(Python3Parser.DIV_ASSIGN, 0);
-	};
+    DIV_ASSIGN() {
+        return this.getToken(Python3Parser.DIV_ASSIGN, 0);
+    }
 
-	MOD_ASSIGN() {
-	    return this.getToken(Python3Parser.MOD_ASSIGN, 0);
-	};
+    MOD_ASSIGN() {
+        return this.getToken(Python3Parser.MOD_ASSIGN, 0);
+    }
 
-	AND_ASSIGN() {
-	    return this.getToken(Python3Parser.AND_ASSIGN, 0);
-	};
+    AND_ASSIGN() {
+        return this.getToken(Python3Parser.AND_ASSIGN, 0);
+    }
 
-	OR_ASSIGN() {
-	    return this.getToken(Python3Parser.OR_ASSIGN, 0);
-	};
+    OR_ASSIGN() {
+        return this.getToken(Python3Parser.OR_ASSIGN, 0);
+    }
 
-	XOR_ASSIGN() {
-	    return this.getToken(Python3Parser.XOR_ASSIGN, 0);
-	};
+    XOR_ASSIGN() {
+        return this.getToken(Python3Parser.XOR_ASSIGN, 0);
+    }
 
-	LEFT_SHIFT_ASSIGN() {
-	    return this.getToken(Python3Parser.LEFT_SHIFT_ASSIGN, 0);
-	};
+    LEFT_SHIFT_ASSIGN() {
+        return this.getToken(Python3Parser.LEFT_SHIFT_ASSIGN, 0);
+    }
 
-	RIGHT_SHIFT_ASSIGN() {
-	    return this.getToken(Python3Parser.RIGHT_SHIFT_ASSIGN, 0);
-	};
+    RIGHT_SHIFT_ASSIGN() {
+        return this.getToken(Python3Parser.RIGHT_SHIFT_ASSIGN, 0);
+    }
 
-	POWER_ASSIGN() {
-	    return this.getToken(Python3Parser.POWER_ASSIGN, 0);
-	};
+    POWER_ASSIGN() {
+        return this.getToken(Python3Parser.POWER_ASSIGN, 0);
+    }
 
-	IDIV_ASSIGN() {
-	    return this.getToken(Python3Parser.IDIV_ASSIGN, 0);
-	};
+    IDIV_ASSIGN() {
+        return this.getToken(Python3Parser.IDIV_ASSIGN, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterAugassign(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterAugassign(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitAugassign(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitAugassign(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitAugassign(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitAugassign(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Del_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6646,46 +7282,41 @@ class Del_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_del_stmt;
     }
 
-	DEL() {
-	    return this.getToken(Python3Parser.DEL, 0);
-	};
+    DEL() {
+        return this.getToken(Python3Parser.DEL, 0);
+    }
 
-	exprlist() {
-	    return this.getTypedRuleContext(ExprlistContext,0);
-	};
+    exprlist() {
+        return this.getTypedRuleContext(ExprlistContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterDel_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterDel_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitDel_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitDel_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitDel_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitDel_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Pass_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6693,42 +7324,37 @@ class Pass_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_pass_stmt;
     }
 
-	PASS() {
-	    return this.getToken(Python3Parser.PASS, 0);
-	};
+    PASS() {
+        return this.getToken(Python3Parser.PASS, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterPass_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterPass_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitPass_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitPass_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitPass_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitPass_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Flow_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6736,58 +7362,53 @@ class Flow_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_flow_stmt;
     }
 
-	break_stmt() {
-	    return this.getTypedRuleContext(Break_stmtContext,0);
-	};
+    break_stmt() {
+        return this.getTypedRuleContext(Break_stmtContext, 0);
+    }
 
-	continue_stmt() {
-	    return this.getTypedRuleContext(Continue_stmtContext,0);
-	};
+    continue_stmt() {
+        return this.getTypedRuleContext(Continue_stmtContext, 0);
+    }
 
-	return_stmt() {
-	    return this.getTypedRuleContext(Return_stmtContext,0);
-	};
+    return_stmt() {
+        return this.getTypedRuleContext(Return_stmtContext, 0);
+    }
 
-	raise_stmt() {
-	    return this.getTypedRuleContext(Raise_stmtContext,0);
-	};
+    raise_stmt() {
+        return this.getTypedRuleContext(Raise_stmtContext, 0);
+    }
 
-	yield_stmt() {
-	    return this.getTypedRuleContext(Yield_stmtContext,0);
-	};
+    yield_stmt() {
+        return this.getTypedRuleContext(Yield_stmtContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterFlow_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterFlow_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitFlow_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitFlow_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitFlow_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitFlow_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Break_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6795,42 +7416,37 @@ class Break_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_break_stmt;
     }
 
-	BREAK() {
-	    return this.getToken(Python3Parser.BREAK, 0);
-	};
+    BREAK() {
+        return this.getToken(Python3Parser.BREAK, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterBreak_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterBreak_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitBreak_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitBreak_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitBreak_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitBreak_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Continue_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6838,42 +7454,37 @@ class Continue_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_continue_stmt;
     }
 
-	CONTINUE() {
-	    return this.getToken(Python3Parser.CONTINUE, 0);
-	};
+    CONTINUE() {
+        return this.getToken(Python3Parser.CONTINUE, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterContinue_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterContinue_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitContinue_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitContinue_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitContinue_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitContinue_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Return_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6881,46 +7492,41 @@ class Return_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_return_stmt;
     }
 
-	RETURN() {
-	    return this.getToken(Python3Parser.RETURN, 0);
-	};
+    RETURN() {
+        return this.getToken(Python3Parser.RETURN, 0);
+    }
 
-	testlist() {
-	    return this.getTypedRuleContext(TestlistContext,0);
-	};
+    testlist() {
+        return this.getTypedRuleContext(TestlistContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterReturn_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterReturn_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitReturn_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitReturn_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitReturn_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitReturn_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Yield_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6928,42 +7534,37 @@ class Yield_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_yield_stmt;
     }
 
-	yield_expr() {
-	    return this.getTypedRuleContext(Yield_exprContext,0);
-	};
+    yield_expr() {
+        return this.getTypedRuleContext(Yield_exprContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterYield_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterYield_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitYield_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitYield_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitYield_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitYield_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Raise_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -6971,57 +7572,52 @@ class Raise_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_raise_stmt;
     }
 
-	RAISE() {
-	    return this.getToken(Python3Parser.RAISE, 0);
-	};
+    RAISE() {
+        return this.getToken(Python3Parser.RAISE, 0);
+    }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	FROM() {
-	    return this.getToken(Python3Parser.FROM, 0);
-	};
+    FROM() {
+        return this.getToken(Python3Parser.FROM, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterRaise_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterRaise_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitRaise_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitRaise_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitRaise_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitRaise_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Import_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7029,46 +7625,41 @@ class Import_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_import_stmt;
     }
 
-	import_name() {
-	    return this.getTypedRuleContext(Import_nameContext,0);
-	};
+    import_name() {
+        return this.getTypedRuleContext(Import_nameContext, 0);
+    }
 
-	import_from() {
-	    return this.getTypedRuleContext(Import_fromContext,0);
-	};
+    import_from() {
+        return this.getTypedRuleContext(Import_fromContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterImport_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterImport_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitImport_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitImport_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitImport_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitImport_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Import_nameContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7076,46 +7667,41 @@ class Import_nameContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_import_name;
     }
 
-	IMPORT() {
-	    return this.getToken(Python3Parser.IMPORT, 0);
-	};
+    IMPORT() {
+        return this.getToken(Python3Parser.IMPORT, 0);
+    }
 
-	dotted_as_names() {
-	    return this.getTypedRuleContext(Dotted_as_namesContext,0);
-	};
+    dotted_as_names() {
+        return this.getTypedRuleContext(Dotted_as_namesContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterImport_name(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterImport_name(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitImport_name(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitImport_name(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitImport_name(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitImport_name(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Import_fromContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7123,90 +7709,83 @@ class Import_fromContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_import_from;
     }
 
-	FROM() {
-	    return this.getToken(Python3Parser.FROM, 0);
-	};
+    FROM() {
+        return this.getToken(Python3Parser.FROM, 0);
+    }
 
-	IMPORT() {
-	    return this.getToken(Python3Parser.IMPORT, 0);
-	};
+    IMPORT() {
+        return this.getToken(Python3Parser.IMPORT, 0);
+    }
 
-	dotted_name() {
-	    return this.getTypedRuleContext(Dotted_nameContext,0);
-	};
+    dotted_name() {
+        return this.getTypedRuleContext(Dotted_nameContext, 0);
+    }
 
-	STAR() {
-	    return this.getToken(Python3Parser.STAR, 0);
-	};
+    STAR() {
+        return this.getToken(Python3Parser.STAR, 0);
+    }
 
-	OPEN_PAREN() {
-	    return this.getToken(Python3Parser.OPEN_PAREN, 0);
-	};
+    OPEN_PAREN() {
+        return this.getToken(Python3Parser.OPEN_PAREN, 0);
+    }
 
-	import_as_names() {
-	    return this.getTypedRuleContext(Import_as_namesContext,0);
-	};
+    import_as_names() {
+        return this.getTypedRuleContext(Import_as_namesContext, 0);
+    }
 
-	CLOSE_PAREN() {
-	    return this.getToken(Python3Parser.CLOSE_PAREN, 0);
-	};
+    CLOSE_PAREN() {
+        return this.getToken(Python3Parser.CLOSE_PAREN, 0);
+    }
 
-	DOT = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.DOT);
-	    } else {
-	        return this.getToken(Python3Parser.DOT, i);
-	    }
-	};
+    DOT = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.DOT);
+        } else {
+            return this.getToken(Python3Parser.DOT, i);
+        }
+    };
 
+    ELLIPSIS = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.ELLIPSIS);
+        } else {
+            return this.getToken(Python3Parser.ELLIPSIS, i);
+        }
+    };
 
-	ELLIPSIS = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.ELLIPSIS);
-	    } else {
-	        return this.getToken(Python3Parser.ELLIPSIS, i);
-	    }
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterImport_from(this);
+        }
+    }
 
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitImport_from(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterImport_from(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitImport_from(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitImport_from(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitImport_from(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Import_as_nameContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7214,54 +7793,48 @@ class Import_as_nameContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_import_as_name;
     }
 
-	NAME = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.NAME);
-	    } else {
-	        return this.getToken(Python3Parser.NAME, i);
-	    }
-	};
+    NAME = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.NAME);
+        } else {
+            return this.getToken(Python3Parser.NAME, i);
+        }
+    };
 
+    AS() {
+        return this.getToken(Python3Parser.AS, 0);
+    }
 
-	AS() {
-	    return this.getToken(Python3Parser.AS, 0);
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterImport_as_name(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterImport_as_name(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitImport_as_name(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitImport_as_name(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitImport_as_name(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitImport_as_name(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Dotted_as_nameContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7269,50 +7842,45 @@ class Dotted_as_nameContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_dotted_as_name;
     }
 
-	dotted_name() {
-	    return this.getTypedRuleContext(Dotted_nameContext,0);
-	};
+    dotted_name() {
+        return this.getTypedRuleContext(Dotted_nameContext, 0);
+    }
 
-	AS() {
-	    return this.getToken(Python3Parser.AS, 0);
-	};
+    AS() {
+        return this.getToken(Python3Parser.AS, 0);
+    }
 
-	NAME() {
-	    return this.getToken(Python3Parser.NAME, 0);
-	};
+    NAME() {
+        return this.getToken(Python3Parser.NAME, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterDotted_as_name(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterDotted_as_name(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitDotted_as_name(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitDotted_as_name(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitDotted_as_name(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitDotted_as_name(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Import_as_namesContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7320,61 +7888,55 @@ class Import_as_namesContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_import_as_names;
     }
 
-	import_as_name = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Import_as_nameContext);
-	    } else {
-	        return this.getTypedRuleContext(Import_as_nameContext,i);
-	    }
-	};
+    import_as_name = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Import_as_nameContext);
+        } else {
+            return this.getTypedRuleContext(Import_as_nameContext, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterImport_as_names(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterImport_as_names(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitImport_as_names(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitImport_as_names(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitImport_as_names(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitImport_as_names(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Dotted_as_namesContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7382,61 +7944,55 @@ class Dotted_as_namesContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_dotted_as_names;
     }
 
-	dotted_as_name = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Dotted_as_nameContext);
-	    } else {
-	        return this.getTypedRuleContext(Dotted_as_nameContext,i);
-	    }
-	};
+    dotted_as_name = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Dotted_as_nameContext);
+        } else {
+            return this.getTypedRuleContext(Dotted_as_nameContext, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterDotted_as_names(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterDotted_as_names(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitDotted_as_names(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitDotted_as_names(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitDotted_as_names(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitDotted_as_names(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Dotted_nameContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7444,62 +8000,55 @@ class Dotted_nameContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_dotted_name;
     }
 
-	NAME = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.NAME);
-	    } else {
-	        return this.getToken(Python3Parser.NAME, i);
-	    }
-	};
+    NAME = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.NAME);
+        } else {
+            return this.getToken(Python3Parser.NAME, i);
+        }
+    };
 
+    DOT = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.DOT);
+        } else {
+            return this.getToken(Python3Parser.DOT, i);
+        }
+    };
 
-	DOT = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.DOT);
-	    } else {
-	        return this.getToken(Python3Parser.DOT, i);
-	    }
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterDotted_name(this);
+        }
+    }
 
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitDotted_name(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterDotted_name(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitDotted_name(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitDotted_name(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitDotted_name(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Global_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7507,66 +8056,59 @@ class Global_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_global_stmt;
     }
 
-	GLOBAL() {
-	    return this.getToken(Python3Parser.GLOBAL, 0);
-	};
+    GLOBAL() {
+        return this.getToken(Python3Parser.GLOBAL, 0);
+    }
 
-	NAME = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.NAME);
-	    } else {
-	        return this.getToken(Python3Parser.NAME, i);
-	    }
-	};
+    NAME = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.NAME);
+        } else {
+            return this.getToken(Python3Parser.NAME, i);
+        }
+    };
 
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterGlobal_stmt(this);
+        }
+    }
 
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitGlobal_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterGlobal_stmt(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitGlobal_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitGlobal_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitGlobal_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Nonlocal_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7574,66 +8116,59 @@ class Nonlocal_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_nonlocal_stmt;
     }
 
-	NONLOCAL() {
-	    return this.getToken(Python3Parser.NONLOCAL, 0);
-	};
+    NONLOCAL() {
+        return this.getToken(Python3Parser.NONLOCAL, 0);
+    }
 
-	NAME = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.NAME);
-	    } else {
-	        return this.getToken(Python3Parser.NAME, i);
-	    }
-	};
+    NAME = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.NAME);
+        } else {
+            return this.getToken(Python3Parser.NAME, i);
+        }
+    };
 
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterNonlocal_stmt(this);
+        }
+    }
 
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitNonlocal_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterNonlocal_stmt(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitNonlocal_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitNonlocal_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitNonlocal_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Assert_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7641,57 +8176,52 @@ class Assert_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_assert_stmt;
     }
 
-	ASSERT() {
-	    return this.getToken(Python3Parser.ASSERT, 0);
-	};
+    ASSERT() {
+        return this.getToken(Python3Parser.ASSERT, 0);
+    }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	COMMA() {
-	    return this.getToken(Python3Parser.COMMA, 0);
-	};
+    COMMA() {
+        return this.getToken(Python3Parser.COMMA, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterAssert_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterAssert_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitAssert_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitAssert_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitAssert_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitAssert_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Compound_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7699,70 +8229,65 @@ class Compound_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_compound_stmt;
     }
 
-	if_stmt() {
-	    return this.getTypedRuleContext(If_stmtContext,0);
-	};
+    if_stmt() {
+        return this.getTypedRuleContext(If_stmtContext, 0);
+    }
 
-	while_stmt() {
-	    return this.getTypedRuleContext(While_stmtContext,0);
-	};
+    while_stmt() {
+        return this.getTypedRuleContext(While_stmtContext, 0);
+    }
 
-	for_stmt() {
-	    return this.getTypedRuleContext(For_stmtContext,0);
-	};
+    for_stmt() {
+        return this.getTypedRuleContext(For_stmtContext, 0);
+    }
 
-	try_stmt() {
-	    return this.getTypedRuleContext(Try_stmtContext,0);
-	};
+    try_stmt() {
+        return this.getTypedRuleContext(Try_stmtContext, 0);
+    }
 
-	with_stmt() {
-	    return this.getTypedRuleContext(With_stmtContext,0);
-	};
+    with_stmt() {
+        return this.getTypedRuleContext(With_stmtContext, 0);
+    }
 
-	funcdef() {
-	    return this.getTypedRuleContext(FuncdefContext,0);
-	};
+    funcdef() {
+        return this.getTypedRuleContext(FuncdefContext, 0);
+    }
 
-	classdef() {
-	    return this.getTypedRuleContext(ClassdefContext,0);
-	};
+    classdef() {
+        return this.getTypedRuleContext(ClassdefContext, 0);
+    }
 
-	decorated() {
-	    return this.getTypedRuleContext(DecoratedContext,0);
-	};
+    decorated() {
+        return this.getTypedRuleContext(DecoratedContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterCompound_stmt(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterCompound_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitCompound_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitCompound_stmt(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitCompound_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitCompound_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class If_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7770,92 +8295,85 @@ class If_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_if_stmt;
     }
 
-	IF() {
-	    return this.getToken(Python3Parser.IF, 0);
-	};
+    IF() {
+        return this.getToken(Python3Parser.IF, 0);
+    }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	COLON = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COLON);
-	    } else {
-	        return this.getToken(Python3Parser.COLON, i);
-	    }
-	};
+    COLON = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COLON);
+        } else {
+            return this.getToken(Python3Parser.COLON, i);
+        }
+    };
 
+    suite = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(SuiteContext);
+        } else {
+            return this.getTypedRuleContext(SuiteContext, i);
+        }
+    };
 
-	suite = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(SuiteContext);
-	    } else {
-	        return this.getTypedRuleContext(SuiteContext,i);
-	    }
-	};
+    ELIF = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.ELIF);
+        } else {
+            return this.getToken(Python3Parser.ELIF, i);
+        }
+    };
 
-	ELIF = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.ELIF);
-	    } else {
-	        return this.getToken(Python3Parser.ELIF, i);
-	    }
-	};
+    ELSE() {
+        return this.getToken(Python3Parser.ELSE, 0);
+    }
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterIf_stmt(this);
+        }
+    }
 
-	ELSE() {
-	    return this.getToken(Python3Parser.ELSE, 0);
-	};
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitIf_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterIf_stmt(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitIf_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitIf_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitIf_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class While_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7863,73 +8381,67 @@ class While_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_while_stmt;
     }
 
-	WHILE() {
-	    return this.getToken(Python3Parser.WHILE, 0);
-	};
+    WHILE() {
+        return this.getToken(Python3Parser.WHILE, 0);
+    }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	COLON = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COLON);
-	    } else {
-	        return this.getToken(Python3Parser.COLON, i);
-	    }
-	};
+    COLON = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COLON);
+        } else {
+            return this.getToken(Python3Parser.COLON, i);
+        }
+    };
 
+    suite = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(SuiteContext);
+        } else {
+            return this.getTypedRuleContext(SuiteContext, i);
+        }
+    };
 
-	suite = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(SuiteContext);
-	    } else {
-	        return this.getTypedRuleContext(SuiteContext,i);
-	    }
-	};
+    ELSE() {
+        return this.getToken(Python3Parser.ELSE, 0);
+    }
 
-	ELSE() {
-	    return this.getToken(Python3Parser.ELSE, 0);
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterWhile_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterWhile_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitWhile_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitWhile_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitWhile_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitWhile_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class For_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -7937,81 +8449,75 @@ class For_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_for_stmt;
     }
 
-	FOR() {
-	    return this.getToken(Python3Parser.FOR, 0);
-	};
+    FOR() {
+        return this.getToken(Python3Parser.FOR, 0);
+    }
 
-	exprlist() {
-	    return this.getTypedRuleContext(ExprlistContext,0);
-	};
+    exprlist() {
+        return this.getTypedRuleContext(ExprlistContext, 0);
+    }
 
-	IN() {
-	    return this.getToken(Python3Parser.IN, 0);
-	};
+    IN() {
+        return this.getToken(Python3Parser.IN, 0);
+    }
 
-	testlist() {
-	    return this.getTypedRuleContext(TestlistContext,0);
-	};
+    testlist() {
+        return this.getTypedRuleContext(TestlistContext, 0);
+    }
 
-	COLON = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COLON);
-	    } else {
-	        return this.getToken(Python3Parser.COLON, i);
-	    }
-	};
+    COLON = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COLON);
+        } else {
+            return this.getToken(Python3Parser.COLON, i);
+        }
+    };
 
+    suite = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(SuiteContext);
+        } else {
+            return this.getTypedRuleContext(SuiteContext, i);
+        }
+    };
 
-	suite = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(SuiteContext);
-	    } else {
-	        return this.getTypedRuleContext(SuiteContext,i);
-	    }
-	};
+    ELSE() {
+        return this.getToken(Python3Parser.ELSE, 0);
+    }
 
-	ELSE() {
-	    return this.getToken(Python3Parser.ELSE, 0);
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterFor_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterFor_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitFor_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitFor_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitFor_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitFor_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Try_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8019,84 +8525,78 @@ class Try_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_try_stmt;
     }
 
-	TRY() {
-	    return this.getToken(Python3Parser.TRY, 0);
-	};
+    TRY() {
+        return this.getToken(Python3Parser.TRY, 0);
+    }
 
-	COLON = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COLON);
-	    } else {
-	        return this.getToken(Python3Parser.COLON, i);
-	    }
-	};
+    COLON = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COLON);
+        } else {
+            return this.getToken(Python3Parser.COLON, i);
+        }
+    };
 
+    suite = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(SuiteContext);
+        } else {
+            return this.getTypedRuleContext(SuiteContext, i);
+        }
+    };
 
-	suite = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(SuiteContext);
-	    } else {
-	        return this.getTypedRuleContext(SuiteContext,i);
-	    }
-	};
+    FINALLY() {
+        return this.getToken(Python3Parser.FINALLY, 0);
+    }
 
-	FINALLY() {
-	    return this.getToken(Python3Parser.FINALLY, 0);
-	};
+    except_clause = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Except_clauseContext);
+        } else {
+            return this.getTypedRuleContext(Except_clauseContext, i);
+        }
+    };
 
-	except_clause = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Except_clauseContext);
-	    } else {
-	        return this.getTypedRuleContext(Except_clauseContext,i);
-	    }
-	};
+    ELSE() {
+        return this.getToken(Python3Parser.ELSE, 0);
+    }
 
-	ELSE() {
-	    return this.getToken(Python3Parser.ELSE, 0);
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTry_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTry_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTry_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTry_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTry_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTry_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class With_stmtContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8104,73 +8604,67 @@ class With_stmtContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_with_stmt;
     }
 
-	WITH() {
-	    return this.getToken(Python3Parser.WITH, 0);
-	};
+    WITH() {
+        return this.getToken(Python3Parser.WITH, 0);
+    }
 
-	with_item = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(With_itemContext);
-	    } else {
-	        return this.getTypedRuleContext(With_itemContext,i);
-	    }
-	};
+    with_item = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(With_itemContext);
+        } else {
+            return this.getTypedRuleContext(With_itemContext, i);
+        }
+    };
 
-	COLON() {
-	    return this.getToken(Python3Parser.COLON, 0);
-	};
+    COLON() {
+        return this.getToken(Python3Parser.COLON, 0);
+    }
 
-	suite() {
-	    return this.getTypedRuleContext(SuiteContext,0);
-	};
+    suite() {
+        return this.getTypedRuleContext(SuiteContext, 0);
+    }
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterWith_stmt(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterWith_stmt(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitWith_stmt(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitWith_stmt(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitWith_stmt(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitWith_stmt(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class With_itemContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8178,50 +8672,45 @@ class With_itemContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_with_item;
     }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	AS() {
-	    return this.getToken(Python3Parser.AS, 0);
-	};
+    AS() {
+        return this.getToken(Python3Parser.AS, 0);
+    }
 
-	expr() {
-	    return this.getTypedRuleContext(ExprContext,0);
-	};
+    expr() {
+        return this.getTypedRuleContext(ExprContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterWith_item(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterWith_item(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitWith_item(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitWith_item(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitWith_item(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitWith_item(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Except_clauseContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8229,54 +8718,49 @@ class Except_clauseContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_except_clause;
     }
 
-	EXCEPT() {
-	    return this.getToken(Python3Parser.EXCEPT, 0);
-	};
+    EXCEPT() {
+        return this.getToken(Python3Parser.EXCEPT, 0);
+    }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	AS() {
-	    return this.getToken(Python3Parser.AS, 0);
-	};
+    AS() {
+        return this.getToken(Python3Parser.AS, 0);
+    }
 
-	NAME() {
-	    return this.getToken(Python3Parser.NAME, 0);
-	};
+    NAME() {
+        return this.getToken(Python3Parser.NAME, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterExcept_clause(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterExcept_clause(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitExcept_clause(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitExcept_clause(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitExcept_clause(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitExcept_clause(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class SuiteContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8284,65 +8768,60 @@ class SuiteContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_suite;
     }
 
-	simple_stmt() {
-	    return this.getTypedRuleContext(Simple_stmtContext,0);
-	};
+    simple_stmt() {
+        return this.getTypedRuleContext(Simple_stmtContext, 0);
+    }
 
-	NEWLINE() {
-	    return this.getToken(Python3Parser.NEWLINE, 0);
-	};
+    NEWLINE() {
+        return this.getToken(Python3Parser.NEWLINE, 0);
+    }
 
-	INDENT() {
-	    return this.getToken(Python3Parser.INDENT, 0);
-	};
+    INDENT() {
+        return this.getToken(Python3Parser.INDENT, 0);
+    }
 
-	DEDENT() {
-	    return this.getToken(Python3Parser.DEDENT, 0);
-	};
+    DEDENT() {
+        return this.getToken(Python3Parser.DEDENT, 0);
+    }
 
-	stmt = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(StmtContext);
-	    } else {
-	        return this.getTypedRuleContext(StmtContext,i);
-	    }
-	};
+    stmt = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(StmtContext);
+        } else {
+            return this.getTypedRuleContext(StmtContext, i);
+        }
+    };
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterSuite(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterSuite(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitSuite(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitSuite(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitSuite(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitSuite(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class TestContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8350,65 +8829,60 @@ class TestContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_test;
     }
 
-	or_test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Or_testContext);
-	    } else {
-	        return this.getTypedRuleContext(Or_testContext,i);
-	    }
-	};
+    or_test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Or_testContext);
+        } else {
+            return this.getTypedRuleContext(Or_testContext, i);
+        }
+    };
 
-	IF() {
-	    return this.getToken(Python3Parser.IF, 0);
-	};
+    IF() {
+        return this.getToken(Python3Parser.IF, 0);
+    }
 
-	ELSE() {
-	    return this.getToken(Python3Parser.ELSE, 0);
-	};
+    ELSE() {
+        return this.getToken(Python3Parser.ELSE, 0);
+    }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	lambdef() {
-	    return this.getTypedRuleContext(LambdefContext,0);
-	};
+    lambdef() {
+        return this.getTypedRuleContext(LambdefContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTest(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTest(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTest(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTest(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTest(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTest(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Test_nocondContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8416,46 +8890,41 @@ class Test_nocondContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_test_nocond;
     }
 
-	or_test() {
-	    return this.getTypedRuleContext(Or_testContext,0);
-	};
+    or_test() {
+        return this.getTypedRuleContext(Or_testContext, 0);
+    }
 
-	lambdef_nocond() {
-	    return this.getTypedRuleContext(Lambdef_nocondContext,0);
-	};
+    lambdef_nocond() {
+        return this.getTypedRuleContext(Lambdef_nocondContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTest_nocond(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTest_nocond(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTest_nocond(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTest_nocond(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTest_nocond(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTest_nocond(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class LambdefContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8463,54 +8932,49 @@ class LambdefContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_lambdef;
     }
 
-	LAMBDA() {
-	    return this.getToken(Python3Parser.LAMBDA, 0);
-	};
+    LAMBDA() {
+        return this.getToken(Python3Parser.LAMBDA, 0);
+    }
 
-	COLON() {
-	    return this.getToken(Python3Parser.COLON, 0);
-	};
+    COLON() {
+        return this.getToken(Python3Parser.COLON, 0);
+    }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	varargslist() {
-	    return this.getTypedRuleContext(VarargslistContext,0);
-	};
+    varargslist() {
+        return this.getTypedRuleContext(VarargslistContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterLambdef(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterLambdef(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitLambdef(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitLambdef(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitLambdef(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitLambdef(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Lambdef_nocondContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8518,54 +8982,49 @@ class Lambdef_nocondContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_lambdef_nocond;
     }
 
-	LAMBDA() {
-	    return this.getToken(Python3Parser.LAMBDA, 0);
-	};
+    LAMBDA() {
+        return this.getToken(Python3Parser.LAMBDA, 0);
+    }
 
-	COLON() {
-	    return this.getToken(Python3Parser.COLON, 0);
-	};
+    COLON() {
+        return this.getToken(Python3Parser.COLON, 0);
+    }
 
-	test_nocond() {
-	    return this.getTypedRuleContext(Test_nocondContext,0);
-	};
+    test_nocond() {
+        return this.getTypedRuleContext(Test_nocondContext, 0);
+    }
 
-	varargslist() {
-	    return this.getTypedRuleContext(VarargslistContext,0);
-	};
+    varargslist() {
+        return this.getTypedRuleContext(VarargslistContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterLambdef_nocond(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterLambdef_nocond(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitLambdef_nocond(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitLambdef_nocond(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitLambdef_nocond(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitLambdef_nocond(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Or_testContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8573,61 +9032,55 @@ class Or_testContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_or_test;
     }
 
-	and_test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(And_testContext);
-	    } else {
-	        return this.getTypedRuleContext(And_testContext,i);
-	    }
-	};
+    and_test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(And_testContext);
+        } else {
+            return this.getTypedRuleContext(And_testContext, i);
+        }
+    };
 
-	OR = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.OR);
-	    } else {
-	        return this.getToken(Python3Parser.OR, i);
-	    }
-	};
+    OR = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.OR);
+        } else {
+            return this.getToken(Python3Parser.OR, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterOr_test(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterOr_test(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitOr_test(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitOr_test(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitOr_test(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitOr_test(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class And_testContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8635,61 +9088,55 @@ class And_testContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_and_test;
     }
 
-	not_test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Not_testContext);
-	    } else {
-	        return this.getTypedRuleContext(Not_testContext,i);
-	    }
-	};
+    not_test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Not_testContext);
+        } else {
+            return this.getTypedRuleContext(Not_testContext, i);
+        }
+    };
 
-	AND = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.AND);
-	    } else {
-	        return this.getToken(Python3Parser.AND, i);
-	    }
-	};
+    AND = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.AND);
+        } else {
+            return this.getToken(Python3Parser.AND, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterAnd_test(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterAnd_test(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitAnd_test(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitAnd_test(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitAnd_test(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitAnd_test(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Not_testContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8697,50 +9144,45 @@ class Not_testContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_not_test;
     }
 
-	NOT() {
-	    return this.getToken(Python3Parser.NOT, 0);
-	};
+    NOT() {
+        return this.getToken(Python3Parser.NOT, 0);
+    }
 
-	not_test() {
-	    return this.getTypedRuleContext(Not_testContext,0);
-	};
+    not_test() {
+        return this.getTypedRuleContext(Not_testContext, 0);
+    }
 
-	comparison() {
-	    return this.getTypedRuleContext(ComparisonContext,0);
-	};
+    comparison() {
+        return this.getTypedRuleContext(ComparisonContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterNot_test(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterNot_test(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitNot_test(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitNot_test(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitNot_test(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitNot_test(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class ComparisonContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8748,60 +9190,55 @@ class ComparisonContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_comparison;
     }
 
-	star_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Star_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(Star_exprContext,i);
-	    }
-	};
+    star_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Star_exprContext);
+        } else {
+            return this.getTypedRuleContext(Star_exprContext, i);
+        }
+    };
 
-	comp_op = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Comp_opContext);
-	    } else {
-	        return this.getTypedRuleContext(Comp_opContext,i);
-	    }
-	};
+    comp_op = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Comp_opContext);
+        } else {
+            return this.getTypedRuleContext(Comp_opContext, i);
+        }
+    };
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterComparison(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterComparison(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitComparison(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitComparison(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitComparison(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitComparison(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Comp_opContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8809,78 +9246,73 @@ class Comp_opContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_comp_op;
     }
 
-	LESS_THAN() {
-	    return this.getToken(Python3Parser.LESS_THAN, 0);
-	};
+    LESS_THAN() {
+        return this.getToken(Python3Parser.LESS_THAN, 0);
+    }
 
-	GREATER_THAN() {
-	    return this.getToken(Python3Parser.GREATER_THAN, 0);
-	};
+    GREATER_THAN() {
+        return this.getToken(Python3Parser.GREATER_THAN, 0);
+    }
 
-	EQUALS() {
-	    return this.getToken(Python3Parser.EQUALS, 0);
-	};
+    EQUALS() {
+        return this.getToken(Python3Parser.EQUALS, 0);
+    }
 
-	GT_EQ() {
-	    return this.getToken(Python3Parser.GT_EQ, 0);
-	};
+    GT_EQ() {
+        return this.getToken(Python3Parser.GT_EQ, 0);
+    }
 
-	LT_EQ() {
-	    return this.getToken(Python3Parser.LT_EQ, 0);
-	};
+    LT_EQ() {
+        return this.getToken(Python3Parser.LT_EQ, 0);
+    }
 
-	NOT_EQ_1() {
-	    return this.getToken(Python3Parser.NOT_EQ_1, 0);
-	};
+    NOT_EQ_1() {
+        return this.getToken(Python3Parser.NOT_EQ_1, 0);
+    }
 
-	NOT_EQ_2() {
-	    return this.getToken(Python3Parser.NOT_EQ_2, 0);
-	};
+    NOT_EQ_2() {
+        return this.getToken(Python3Parser.NOT_EQ_2, 0);
+    }
 
-	IN() {
-	    return this.getToken(Python3Parser.IN, 0);
-	};
+    IN() {
+        return this.getToken(Python3Parser.IN, 0);
+    }
 
-	NOT() {
-	    return this.getToken(Python3Parser.NOT, 0);
-	};
+    NOT() {
+        return this.getToken(Python3Parser.NOT, 0);
+    }
 
-	IS() {
-	    return this.getToken(Python3Parser.IS, 0);
-	};
+    IS() {
+        return this.getToken(Python3Parser.IS, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterComp_op(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterComp_op(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitComp_op(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitComp_op(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitComp_op(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitComp_op(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Star_exprContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8888,46 +9320,41 @@ class Star_exprContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_star_expr;
     }
 
-	expr() {
-	    return this.getTypedRuleContext(ExprContext,0);
-	};
+    expr() {
+        return this.getTypedRuleContext(ExprContext, 0);
+    }
 
-	STAR() {
-	    return this.getToken(Python3Parser.STAR, 0);
-	};
+    STAR() {
+        return this.getToken(Python3Parser.STAR, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterStar_expr(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterStar_expr(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitStar_expr(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitStar_expr(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitStar_expr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitStar_expr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class ExprContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8935,61 +9362,55 @@ class ExprContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_expr;
     }
 
-	xor_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Xor_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(Xor_exprContext,i);
-	    }
-	};
+    xor_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Xor_exprContext);
+        } else {
+            return this.getTypedRuleContext(Xor_exprContext, i);
+        }
+    };
 
-	OR_OP = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.OR_OP);
-	    } else {
-	        return this.getToken(Python3Parser.OR_OP, i);
-	    }
-	};
+    OR_OP = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.OR_OP);
+        } else {
+            return this.getToken(Python3Parser.OR_OP, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterExpr(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterExpr(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitExpr(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitExpr(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitExpr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitExpr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Xor_exprContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -8997,61 +9418,55 @@ class Xor_exprContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_xor_expr;
     }
 
-	and_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(And_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(And_exprContext,i);
-	    }
-	};
+    and_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(And_exprContext);
+        } else {
+            return this.getTypedRuleContext(And_exprContext, i);
+        }
+    };
 
-	XOR = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.XOR);
-	    } else {
-	        return this.getToken(Python3Parser.XOR, i);
-	    }
-	};
+    XOR = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.XOR);
+        } else {
+            return this.getToken(Python3Parser.XOR, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterXor_expr(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterXor_expr(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitXor_expr(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitXor_expr(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitXor_expr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitXor_expr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class And_exprContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9059,61 +9474,55 @@ class And_exprContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_and_expr;
     }
 
-	shift_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Shift_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(Shift_exprContext,i);
-	    }
-	};
+    shift_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Shift_exprContext);
+        } else {
+            return this.getTypedRuleContext(Shift_exprContext, i);
+        }
+    };
 
-	AND_OP = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.AND_OP);
-	    } else {
-	        return this.getToken(Python3Parser.AND_OP, i);
-	    }
-	};
+    AND_OP = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.AND_OP);
+        } else {
+            return this.getToken(Python3Parser.AND_OP, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterAnd_expr(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterAnd_expr(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitAnd_expr(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitAnd_expr(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitAnd_expr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitAnd_expr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Shift_exprContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9121,73 +9530,66 @@ class Shift_exprContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_shift_expr;
     }
 
-	arith_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Arith_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(Arith_exprContext,i);
-	    }
-	};
+    arith_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Arith_exprContext);
+        } else {
+            return this.getTypedRuleContext(Arith_exprContext, i);
+        }
+    };
 
-	LEFT_SHIFT = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.LEFT_SHIFT);
-	    } else {
-	        return this.getToken(Python3Parser.LEFT_SHIFT, i);
-	    }
-	};
+    LEFT_SHIFT = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.LEFT_SHIFT);
+        } else {
+            return this.getToken(Python3Parser.LEFT_SHIFT, i);
+        }
+    };
 
+    RIGHT_SHIFT = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.RIGHT_SHIFT);
+        } else {
+            return this.getToken(Python3Parser.RIGHT_SHIFT, i);
+        }
+    };
 
-	RIGHT_SHIFT = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.RIGHT_SHIFT);
-	    } else {
-	        return this.getToken(Python3Parser.RIGHT_SHIFT, i);
-	    }
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterShift_expr(this);
+        }
+    }
 
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitShift_expr(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterShift_expr(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitShift_expr(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitShift_expr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitShift_expr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Arith_exprContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9195,73 +9597,66 @@ class Arith_exprContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_arith_expr;
     }
 
-	term = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TermContext);
-	    } else {
-	        return this.getTypedRuleContext(TermContext,i);
-	    }
-	};
+    term = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TermContext);
+        } else {
+            return this.getTypedRuleContext(TermContext, i);
+        }
+    };
 
-	ADD = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.ADD);
-	    } else {
-	        return this.getToken(Python3Parser.ADD, i);
-	    }
-	};
+    ADD = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.ADD);
+        } else {
+            return this.getToken(Python3Parser.ADD, i);
+        }
+    };
 
+    MINUS = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.MINUS);
+        } else {
+            return this.getToken(Python3Parser.MINUS, i);
+        }
+    };
 
-	MINUS = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.MINUS);
-	    } else {
-	        return this.getToken(Python3Parser.MINUS, i);
-	    }
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterArith_expr(this);
+        }
+    }
 
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitArith_expr(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterArith_expr(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitArith_expr(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitArith_expr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitArith_expr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class TermContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9269,109 +9664,99 @@ class TermContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_term;
     }
 
-	factor = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(FactorContext);
-	    } else {
-	        return this.getTypedRuleContext(FactorContext,i);
-	    }
-	};
+    factor = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(FactorContext);
+        } else {
+            return this.getTypedRuleContext(FactorContext, i);
+        }
+    };
 
-	STAR = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.STAR);
-	    } else {
-	        return this.getToken(Python3Parser.STAR, i);
-	    }
-	};
+    STAR = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.STAR);
+        } else {
+            return this.getToken(Python3Parser.STAR, i);
+        }
+    };
 
+    DIV = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.DIV);
+        } else {
+            return this.getToken(Python3Parser.DIV, i);
+        }
+    };
 
-	DIV = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.DIV);
-	    } else {
-	        return this.getToken(Python3Parser.DIV, i);
-	    }
-	};
+    MOD = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.MOD);
+        } else {
+            return this.getToken(Python3Parser.MOD, i);
+        }
+    };
 
+    IDIV = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.IDIV);
+        } else {
+            return this.getToken(Python3Parser.IDIV, i);
+        }
+    };
 
-	MOD = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.MOD);
-	    } else {
-	        return this.getToken(Python3Parser.MOD, i);
-	    }
-	};
+    AT = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.AT);
+        } else {
+            return this.getToken(Python3Parser.AT, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTerm(this);
+        }
+    }
 
-	IDIV = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.IDIV);
-	    } else {
-	        return this.getToken(Python3Parser.IDIV, i);
-	    }
-	};
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTerm(this);
+        }
+    }
 
-
-	AT = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.AT);
-	    } else {
-	        return this.getToken(Python3Parser.AT, i);
-	    }
-	};
-
-
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTerm(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTerm(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTerm(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTerm(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class FactorContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9379,58 +9764,53 @@ class FactorContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_factor;
     }
 
-	ADD() {
-	    return this.getToken(Python3Parser.ADD, 0);
-	};
+    ADD() {
+        return this.getToken(Python3Parser.ADD, 0);
+    }
 
-	factor() {
-	    return this.getTypedRuleContext(FactorContext,0);
-	};
+    factor() {
+        return this.getTypedRuleContext(FactorContext, 0);
+    }
 
-	MINUS() {
-	    return this.getToken(Python3Parser.MINUS, 0);
-	};
+    MINUS() {
+        return this.getToken(Python3Parser.MINUS, 0);
+    }
 
-	NOT_OP() {
-	    return this.getToken(Python3Parser.NOT_OP, 0);
-	};
+    NOT_OP() {
+        return this.getToken(Python3Parser.NOT_OP, 0);
+    }
 
-	power() {
-	    return this.getTypedRuleContext(PowerContext,0);
-	};
+    power() {
+        return this.getTypedRuleContext(PowerContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterFactor(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterFactor(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitFactor(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitFactor(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitFactor(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitFactor(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class PowerContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9438,61 +9818,56 @@ class PowerContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_power;
     }
 
-	atom() {
-	    return this.getTypedRuleContext(AtomContext,0);
-	};
+    atom() {
+        return this.getTypedRuleContext(AtomContext, 0);
+    }
 
-	trailer = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TrailerContext);
-	    } else {
-	        return this.getTypedRuleContext(TrailerContext,i);
-	    }
-	};
+    trailer = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TrailerContext);
+        } else {
+            return this.getTypedRuleContext(TrailerContext, i);
+        }
+    };
 
-	POWER() {
-	    return this.getToken(Python3Parser.POWER, 0);
-	};
+    POWER() {
+        return this.getToken(Python3Parser.POWER, 0);
+    }
 
-	factor() {
-	    return this.getTypedRuleContext(FactorContext,0);
-	};
+    factor() {
+        return this.getTypedRuleContext(FactorContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterPower(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterPower(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitPower(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitPower(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitPower(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitPower(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class AtomContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9500,109 +9875,104 @@ class AtomContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_atom;
     }
 
-	OPEN_PAREN() {
-	    return this.getToken(Python3Parser.OPEN_PAREN, 0);
-	};
+    OPEN_PAREN() {
+        return this.getToken(Python3Parser.OPEN_PAREN, 0);
+    }
 
-	CLOSE_PAREN() {
-	    return this.getToken(Python3Parser.CLOSE_PAREN, 0);
-	};
+    CLOSE_PAREN() {
+        return this.getToken(Python3Parser.CLOSE_PAREN, 0);
+    }
 
-	yield_expr() {
-	    return this.getTypedRuleContext(Yield_exprContext,0);
-	};
+    yield_expr() {
+        return this.getTypedRuleContext(Yield_exprContext, 0);
+    }
 
-	testlist_comp() {
-	    return this.getTypedRuleContext(Testlist_compContext,0);
-	};
+    testlist_comp() {
+        return this.getTypedRuleContext(Testlist_compContext, 0);
+    }
 
-	OPEN_BRACK() {
-	    return this.getToken(Python3Parser.OPEN_BRACK, 0);
-	};
+    OPEN_BRACK() {
+        return this.getToken(Python3Parser.OPEN_BRACK, 0);
+    }
 
-	CLOSE_BRACK() {
-	    return this.getToken(Python3Parser.CLOSE_BRACK, 0);
-	};
+    CLOSE_BRACK() {
+        return this.getToken(Python3Parser.CLOSE_BRACK, 0);
+    }
 
-	OPEN_BRACE() {
-	    return this.getToken(Python3Parser.OPEN_BRACE, 0);
-	};
+    OPEN_BRACE() {
+        return this.getToken(Python3Parser.OPEN_BRACE, 0);
+    }
 
-	CLOSE_BRACE() {
-	    return this.getToken(Python3Parser.CLOSE_BRACE, 0);
-	};
+    CLOSE_BRACE() {
+        return this.getToken(Python3Parser.CLOSE_BRACE, 0);
+    }
 
-	dictorsetmaker() {
-	    return this.getTypedRuleContext(DictorsetmakerContext,0);
-	};
+    dictorsetmaker() {
+        return this.getTypedRuleContext(DictorsetmakerContext, 0);
+    }
 
-	NAME() {
-	    return this.getToken(Python3Parser.NAME, 0);
-	};
+    NAME() {
+        return this.getToken(Python3Parser.NAME, 0);
+    }
 
-	number() {
-	    return this.getTypedRuleContext(NumberContext,0);
-	};
+    number() {
+        return this.getTypedRuleContext(NumberContext, 0);
+    }
 
-	str = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(StrContext);
-	    } else {
-	        return this.getTypedRuleContext(StrContext,i);
-	    }
-	};
+    str = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(StrContext);
+        } else {
+            return this.getTypedRuleContext(StrContext, i);
+        }
+    };
 
-	ELLIPSIS() {
-	    return this.getToken(Python3Parser.ELLIPSIS, 0);
-	};
+    ELLIPSIS() {
+        return this.getToken(Python3Parser.ELLIPSIS, 0);
+    }
 
-	NONE() {
-	    return this.getToken(Python3Parser.NONE, 0);
-	};
+    NONE() {
+        return this.getToken(Python3Parser.NONE, 0);
+    }
 
-	TRUE() {
-	    return this.getToken(Python3Parser.TRUE, 0);
-	};
+    TRUE() {
+        return this.getToken(Python3Parser.TRUE, 0);
+    }
 
-	FALSE() {
-	    return this.getToken(Python3Parser.FALSE, 0);
-	};
+    FALSE() {
+        return this.getToken(Python3Parser.FALSE, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterAtom(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterAtom(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitAtom(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitAtom(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitAtom(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitAtom(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Testlist_compContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9610,65 +9980,59 @@ class Testlist_compContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_testlist_comp;
     }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	comp_for() {
-	    return this.getTypedRuleContext(Comp_forContext,0);
-	};
+    comp_for() {
+        return this.getTypedRuleContext(Comp_forContext, 0);
+    }
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTestlist_comp(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTestlist_comp(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTestlist_comp(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTestlist_comp(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTestlist_comp(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTestlist_comp(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class TrailerContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9676,70 +10040,65 @@ class TrailerContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_trailer;
     }
 
-	OPEN_PAREN() {
-	    return this.getToken(Python3Parser.OPEN_PAREN, 0);
-	};
+    OPEN_PAREN() {
+        return this.getToken(Python3Parser.OPEN_PAREN, 0);
+    }
 
-	CLOSE_PAREN() {
-	    return this.getToken(Python3Parser.CLOSE_PAREN, 0);
-	};
+    CLOSE_PAREN() {
+        return this.getToken(Python3Parser.CLOSE_PAREN, 0);
+    }
 
-	arglist() {
-	    return this.getTypedRuleContext(ArglistContext,0);
-	};
+    arglist() {
+        return this.getTypedRuleContext(ArglistContext, 0);
+    }
 
-	OPEN_BRACK() {
-	    return this.getToken(Python3Parser.OPEN_BRACK, 0);
-	};
+    OPEN_BRACK() {
+        return this.getToken(Python3Parser.OPEN_BRACK, 0);
+    }
 
-	subscriptlist() {
-	    return this.getTypedRuleContext(SubscriptlistContext,0);
-	};
+    subscriptlist() {
+        return this.getTypedRuleContext(SubscriptlistContext, 0);
+    }
 
-	CLOSE_BRACK() {
-	    return this.getToken(Python3Parser.CLOSE_BRACK, 0);
-	};
+    CLOSE_BRACK() {
+        return this.getToken(Python3Parser.CLOSE_BRACK, 0);
+    }
 
-	DOT() {
-	    return this.getToken(Python3Parser.DOT, 0);
-	};
+    DOT() {
+        return this.getToken(Python3Parser.DOT, 0);
+    }
 
-	NAME() {
-	    return this.getToken(Python3Parser.NAME, 0);
-	};
+    NAME() {
+        return this.getToken(Python3Parser.NAME, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTrailer(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTrailer(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTrailer(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTrailer(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTrailer(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTrailer(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class SubscriptlistContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9747,61 +10106,55 @@ class SubscriptlistContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_subscriptlist;
     }
 
-	subscript = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(SubscriptContext);
-	    } else {
-	        return this.getTypedRuleContext(SubscriptContext,i);
-	    }
-	};
+    subscript = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(SubscriptContext);
+        } else {
+            return this.getTypedRuleContext(SubscriptContext, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterSubscriptlist(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterSubscriptlist(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitSubscriptlist(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitSubscriptlist(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitSubscriptlist(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitSubscriptlist(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class SubscriptContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9809,57 +10162,52 @@ class SubscriptContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_subscript;
     }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	COLON() {
-	    return this.getToken(Python3Parser.COLON, 0);
-	};
+    COLON() {
+        return this.getToken(Python3Parser.COLON, 0);
+    }
 
-	sliceop() {
-	    return this.getTypedRuleContext(SliceopContext,0);
-	};
+    sliceop() {
+        return this.getTypedRuleContext(SliceopContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterSubscript(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterSubscript(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitSubscript(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitSubscript(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitSubscript(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitSubscript(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class SliceopContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9867,46 +10215,41 @@ class SliceopContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_sliceop;
     }
 
-	COLON() {
-	    return this.getToken(Python3Parser.COLON, 0);
-	};
+    COLON() {
+        return this.getToken(Python3Parser.COLON, 0);
+    }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterSliceop(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterSliceop(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitSliceop(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitSliceop(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitSliceop(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitSliceop(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class ExprlistContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9914,61 +10257,55 @@ class ExprlistContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_exprlist;
     }
 
-	star_expr = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(Star_exprContext);
-	    } else {
-	        return this.getTypedRuleContext(Star_exprContext,i);
-	    }
-	};
+    star_expr = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(Star_exprContext);
+        } else {
+            return this.getTypedRuleContext(Star_exprContext, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterExprlist(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterExprlist(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitExprlist(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitExprlist(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitExprlist(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitExprlist(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class TestlistContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -9976,61 +10313,55 @@ class TestlistContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_testlist;
     }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterTestlist(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterTestlist(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitTestlist(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitTestlist(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitTestlist(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitTestlist(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class DictorsetmakerContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10038,77 +10369,70 @@ class DictorsetmakerContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_dictorsetmaker;
     }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	COLON = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COLON);
-	    } else {
-	        return this.getToken(Python3Parser.COLON, i);
-	    }
-	};
+    COLON = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COLON);
+        } else {
+            return this.getToken(Python3Parser.COLON, i);
+        }
+    };
 
+    comp_for() {
+        return this.getTypedRuleContext(Comp_forContext, 0);
+    }
 
-	comp_for() {
-	    return this.getTypedRuleContext(Comp_forContext,0);
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterDictorsetmaker(this);
+        }
+    }
 
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitDictorsetmaker(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterDictorsetmaker(this);
-		}
-	}
-
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitDictorsetmaker(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitDictorsetmaker(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitDictorsetmaker(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class ClassdefContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10116,66 +10440,61 @@ class ClassdefContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_classdef;
     }
 
-	CLASS() {
-	    return this.getToken(Python3Parser.CLASS, 0);
-	};
+    CLASS() {
+        return this.getToken(Python3Parser.CLASS, 0);
+    }
 
-	NAME() {
-	    return this.getToken(Python3Parser.NAME, 0);
-	};
+    NAME() {
+        return this.getToken(Python3Parser.NAME, 0);
+    }
 
-	COLON() {
-	    return this.getToken(Python3Parser.COLON, 0);
-	};
+    COLON() {
+        return this.getToken(Python3Parser.COLON, 0);
+    }
 
-	suite() {
-	    return this.getTypedRuleContext(SuiteContext,0);
-	};
+    suite() {
+        return this.getTypedRuleContext(SuiteContext, 0);
+    }
 
-	OPEN_PAREN() {
-	    return this.getToken(Python3Parser.OPEN_PAREN, 0);
-	};
+    OPEN_PAREN() {
+        return this.getToken(Python3Parser.OPEN_PAREN, 0);
+    }
 
-	CLOSE_PAREN() {
-	    return this.getToken(Python3Parser.CLOSE_PAREN, 0);
-	};
+    CLOSE_PAREN() {
+        return this.getToken(Python3Parser.CLOSE_PAREN, 0);
+    }
 
-	arglist() {
-	    return this.getTypedRuleContext(ArglistContext,0);
-	};
+    arglist() {
+        return this.getTypedRuleContext(ArglistContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterClassdef(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterClassdef(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitClassdef(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitClassdef(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitClassdef(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitClassdef(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class ArglistContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10183,80 +10502,74 @@ class ArglistContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_arglist;
     }
 
-	argument = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(ArgumentContext);
-	    } else {
-	        return this.getTypedRuleContext(ArgumentContext,i);
-	    }
-	};
+    argument = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(ArgumentContext);
+        } else {
+            return this.getTypedRuleContext(ArgumentContext, i);
+        }
+    };
 
-	STAR() {
-	    return this.getToken(Python3Parser.STAR, 0);
-	};
+    STAR() {
+        return this.getToken(Python3Parser.STAR, 0);
+    }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	POWER() {
-	    return this.getToken(Python3Parser.POWER, 0);
-	};
+    POWER() {
+        return this.getToken(Python3Parser.POWER, 0);
+    }
 
-	COMMA = function(i) {
-		if(i===undefined) {
-			i = null;
-		}
-	    if(i===null) {
-	        return this.getTokens(Python3Parser.COMMA);
-	    } else {
-	        return this.getToken(Python3Parser.COMMA, i);
-	    }
-	};
+    COMMA = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTokens(Python3Parser.COMMA);
+        } else {
+            return this.getToken(Python3Parser.COMMA, i);
+        }
+    };
 
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterArglist(this);
+        }
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterArglist(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitArglist(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitArglist(this);
-		}
-	}
-
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitArglist(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitArglist(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class ArgumentContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10264,57 +10577,52 @@ class ArgumentContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_argument;
     }
 
-	test = function(i) {
-	    if(i===undefined) {
-	        i = null;
-	    }
-	    if(i===null) {
-	        return this.getTypedRuleContexts(TestContext);
-	    } else {
-	        return this.getTypedRuleContext(TestContext,i);
-	    }
-	};
+    test = function (i) {
+        if (i === undefined) {
+            i = null;
+        }
+        if (i === null) {
+            return this.getTypedRuleContexts(TestContext);
+        } else {
+            return this.getTypedRuleContext(TestContext, i);
+        }
+    };
 
-	comp_for() {
-	    return this.getTypedRuleContext(Comp_forContext,0);
-	};
+    comp_for() {
+        return this.getTypedRuleContext(Comp_forContext, 0);
+    }
 
-	ASSIGN() {
-	    return this.getToken(Python3Parser.ASSIGN, 0);
-	};
+    ASSIGN() {
+        return this.getToken(Python3Parser.ASSIGN, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterArgument(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterArgument(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitArgument(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitArgument(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitArgument(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitArgument(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Comp_iterContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10322,46 +10630,41 @@ class Comp_iterContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_comp_iter;
     }
 
-	comp_for() {
-	    return this.getTypedRuleContext(Comp_forContext,0);
-	};
+    comp_for() {
+        return this.getTypedRuleContext(Comp_forContext, 0);
+    }
 
-	comp_if() {
-	    return this.getTypedRuleContext(Comp_ifContext,0);
-	};
+    comp_if() {
+        return this.getTypedRuleContext(Comp_ifContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterComp_iter(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterComp_iter(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitComp_iter(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitComp_iter(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitComp_iter(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitComp_iter(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Comp_forContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10369,58 +10672,53 @@ class Comp_forContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_comp_for;
     }
 
-	FOR() {
-	    return this.getToken(Python3Parser.FOR, 0);
-	};
+    FOR() {
+        return this.getToken(Python3Parser.FOR, 0);
+    }
 
-	exprlist() {
-	    return this.getTypedRuleContext(ExprlistContext,0);
-	};
+    exprlist() {
+        return this.getTypedRuleContext(ExprlistContext, 0);
+    }
 
-	IN() {
-	    return this.getToken(Python3Parser.IN, 0);
-	};
+    IN() {
+        return this.getToken(Python3Parser.IN, 0);
+    }
 
-	or_test() {
-	    return this.getTypedRuleContext(Or_testContext,0);
-	};
+    or_test() {
+        return this.getTypedRuleContext(Or_testContext, 0);
+    }
 
-	comp_iter() {
-	    return this.getTypedRuleContext(Comp_iterContext,0);
-	};
+    comp_iter() {
+        return this.getTypedRuleContext(Comp_iterContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterComp_for(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterComp_for(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitComp_for(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitComp_for(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitComp_for(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitComp_for(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Comp_ifContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10428,50 +10726,45 @@ class Comp_ifContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_comp_if;
     }
 
-	IF() {
-	    return this.getToken(Python3Parser.IF, 0);
-	};
+    IF() {
+        return this.getToken(Python3Parser.IF, 0);
+    }
 
-	test_nocond() {
-	    return this.getTypedRuleContext(Test_nocondContext,0);
-	};
+    test_nocond() {
+        return this.getTypedRuleContext(Test_nocondContext, 0);
+    }
 
-	comp_iter() {
-	    return this.getTypedRuleContext(Comp_iterContext,0);
-	};
+    comp_iter() {
+        return this.getTypedRuleContext(Comp_iterContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterComp_if(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterComp_if(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitComp_if(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitComp_if(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitComp_if(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitComp_if(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Yield_exprContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10479,46 +10772,41 @@ class Yield_exprContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_yield_expr;
     }
 
-	YIELD() {
-	    return this.getToken(Python3Parser.YIELD, 0);
-	};
+    YIELD() {
+        return this.getToken(Python3Parser.YIELD, 0);
+    }
 
-	yield_arg() {
-	    return this.getTypedRuleContext(Yield_argContext,0);
-	};
+    yield_arg() {
+        return this.getTypedRuleContext(Yield_argContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterYield_expr(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterYield_expr(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitYield_expr(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitYield_expr(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitYield_expr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitYield_expr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class Yield_argContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10526,50 +10814,45 @@ class Yield_argContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_yield_arg;
     }
 
-	FROM() {
-	    return this.getToken(Python3Parser.FROM, 0);
-	};
+    FROM() {
+        return this.getToken(Python3Parser.FROM, 0);
+    }
 
-	test() {
-	    return this.getTypedRuleContext(TestContext,0);
-	};
+    test() {
+        return this.getTypedRuleContext(TestContext, 0);
+    }
 
-	testlist() {
-	    return this.getTypedRuleContext(TestlistContext,0);
-	};
+    testlist() {
+        return this.getTypedRuleContext(TestlistContext, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterYield_arg(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterYield_arg(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitYield_arg(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitYield_arg(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitYield_arg(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitYield_arg(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class StrContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10577,46 +10860,41 @@ class StrContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_str;
     }
 
-	STRING_LITERAL() {
-	    return this.getToken(Python3Parser.STRING_LITERAL, 0);
-	};
+    STRING_LITERAL() {
+        return this.getToken(Python3Parser.STRING_LITERAL, 0);
+    }
 
-	BYTES_LITERAL() {
-	    return this.getToken(Python3Parser.BYTES_LITERAL, 0);
-	};
+    BYTES_LITERAL() {
+        return this.getToken(Python3Parser.BYTES_LITERAL, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterStr(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterStr(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitStr(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitStr(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitStr(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitStr(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class NumberContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10624,50 +10902,45 @@ class NumberContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_number;
     }
 
-	integer() {
-	    return this.getTypedRuleContext(IntegerContext,0);
-	};
+    integer() {
+        return this.getTypedRuleContext(IntegerContext, 0);
+    }
 
-	FLOAT_NUMBER() {
-	    return this.getToken(Python3Parser.FLOAT_NUMBER, 0);
-	};
+    FLOAT_NUMBER() {
+        return this.getToken(Python3Parser.FLOAT_NUMBER, 0);
+    }
 
-	IMAG_NUMBER() {
-	    return this.getToken(Python3Parser.IMAG_NUMBER, 0);
-	};
+    IMAG_NUMBER() {
+        return this.getToken(Python3Parser.IMAG_NUMBER, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterNumber(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterNumber(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitNumber(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitNumber(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitNumber(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitNumber(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
 class IntegerContext extends antlr4.ParserRuleContext {
-
     constructor(parser, parent, invokingState) {
-        if(parent===undefined) {
+        if (parent === undefined) {
             parent = null;
         }
-        if(invokingState===undefined || invokingState===null) {
+        if (invokingState === undefined || invokingState === null) {
             invokingState = -1;
         }
         super(parent, invokingState);
@@ -10675,131 +10948,126 @@ class IntegerContext extends antlr4.ParserRuleContext {
         this.ruleIndex = Python3Parser.RULE_integer;
     }
 
-	DECIMAL_INTEGER() {
-	    return this.getToken(Python3Parser.DECIMAL_INTEGER, 0);
-	};
+    DECIMAL_INTEGER() {
+        return this.getToken(Python3Parser.DECIMAL_INTEGER, 0);
+    }
 
-	OCT_INTEGER() {
-	    return this.getToken(Python3Parser.OCT_INTEGER, 0);
-	};
+    OCT_INTEGER() {
+        return this.getToken(Python3Parser.OCT_INTEGER, 0);
+    }
 
-	HEX_INTEGER() {
-	    return this.getToken(Python3Parser.HEX_INTEGER, 0);
-	};
+    HEX_INTEGER() {
+        return this.getToken(Python3Parser.HEX_INTEGER, 0);
+    }
 
-	BIN_INTEGER() {
-	    return this.getToken(Python3Parser.BIN_INTEGER, 0);
-	};
+    BIN_INTEGER() {
+        return this.getToken(Python3Parser.BIN_INTEGER, 0);
+    }
 
-	enterRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.enterInteger(this);
-		}
-	}
+    enterRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.enterInteger(this);
+        }
+    }
 
-	exitRule(listener) {
-	    if(listener instanceof Python3Listener ) {
-	        listener.exitInteger(this);
-		}
-	}
+    exitRule(listener) {
+        if (listener instanceof Python3Listener) {
+            listener.exitInteger(this);
+        }
+    }
 
-	accept(visitor) {
-	    if ( visitor instanceof Python3Visitor ) {
-	        return visitor.visitInteger(this);
-	    } else {
-	        return visitor.visitChildren(this);
-	    }
-	}
-
-
+    accept(visitor) {
+        if (visitor instanceof Python3Visitor) {
+            return visitor.visitInteger(this);
+        } else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 
-
-
-
-Python3Parser.Single_inputContext = Single_inputContext; 
-Python3Parser.File_inputContext = File_inputContext; 
-Python3Parser.Eval_inputContext = Eval_inputContext; 
-Python3Parser.DecoratorContext = DecoratorContext; 
-Python3Parser.DecoratorsContext = DecoratorsContext; 
-Python3Parser.DecoratedContext = DecoratedContext; 
-Python3Parser.FuncdefContext = FuncdefContext; 
-Python3Parser.ParametersContext = ParametersContext; 
-Python3Parser.TypedargslistContext = TypedargslistContext; 
-Python3Parser.TfpdefContext = TfpdefContext; 
-Python3Parser.VarargslistContext = VarargslistContext; 
-Python3Parser.VfpdefContext = VfpdefContext; 
-Python3Parser.StmtContext = StmtContext; 
-Python3Parser.Simple_stmtContext = Simple_stmtContext; 
-Python3Parser.Small_stmtContext = Small_stmtContext; 
-Python3Parser.Expr_stmtContext = Expr_stmtContext; 
-Python3Parser.Testlist_star_exprContext = Testlist_star_exprContext; 
-Python3Parser.AugassignContext = AugassignContext; 
-Python3Parser.Del_stmtContext = Del_stmtContext; 
-Python3Parser.Pass_stmtContext = Pass_stmtContext; 
-Python3Parser.Flow_stmtContext = Flow_stmtContext; 
-Python3Parser.Break_stmtContext = Break_stmtContext; 
-Python3Parser.Continue_stmtContext = Continue_stmtContext; 
-Python3Parser.Return_stmtContext = Return_stmtContext; 
-Python3Parser.Yield_stmtContext = Yield_stmtContext; 
-Python3Parser.Raise_stmtContext = Raise_stmtContext; 
-Python3Parser.Import_stmtContext = Import_stmtContext; 
-Python3Parser.Import_nameContext = Import_nameContext; 
-Python3Parser.Import_fromContext = Import_fromContext; 
-Python3Parser.Import_as_nameContext = Import_as_nameContext; 
-Python3Parser.Dotted_as_nameContext = Dotted_as_nameContext; 
-Python3Parser.Import_as_namesContext = Import_as_namesContext; 
-Python3Parser.Dotted_as_namesContext = Dotted_as_namesContext; 
-Python3Parser.Dotted_nameContext = Dotted_nameContext; 
-Python3Parser.Global_stmtContext = Global_stmtContext; 
-Python3Parser.Nonlocal_stmtContext = Nonlocal_stmtContext; 
-Python3Parser.Assert_stmtContext = Assert_stmtContext; 
-Python3Parser.Compound_stmtContext = Compound_stmtContext; 
-Python3Parser.If_stmtContext = If_stmtContext; 
-Python3Parser.While_stmtContext = While_stmtContext; 
-Python3Parser.For_stmtContext = For_stmtContext; 
-Python3Parser.Try_stmtContext = Try_stmtContext; 
-Python3Parser.With_stmtContext = With_stmtContext; 
-Python3Parser.With_itemContext = With_itemContext; 
-Python3Parser.Except_clauseContext = Except_clauseContext; 
-Python3Parser.SuiteContext = SuiteContext; 
-Python3Parser.TestContext = TestContext; 
-Python3Parser.Test_nocondContext = Test_nocondContext; 
-Python3Parser.LambdefContext = LambdefContext; 
-Python3Parser.Lambdef_nocondContext = Lambdef_nocondContext; 
-Python3Parser.Or_testContext = Or_testContext; 
-Python3Parser.And_testContext = And_testContext; 
-Python3Parser.Not_testContext = Not_testContext; 
-Python3Parser.ComparisonContext = ComparisonContext; 
-Python3Parser.Comp_opContext = Comp_opContext; 
-Python3Parser.Star_exprContext = Star_exprContext; 
-Python3Parser.ExprContext = ExprContext; 
-Python3Parser.Xor_exprContext = Xor_exprContext; 
-Python3Parser.And_exprContext = And_exprContext; 
-Python3Parser.Shift_exprContext = Shift_exprContext; 
-Python3Parser.Arith_exprContext = Arith_exprContext; 
-Python3Parser.TermContext = TermContext; 
-Python3Parser.FactorContext = FactorContext; 
-Python3Parser.PowerContext = PowerContext; 
-Python3Parser.AtomContext = AtomContext; 
-Python3Parser.Testlist_compContext = Testlist_compContext; 
-Python3Parser.TrailerContext = TrailerContext; 
-Python3Parser.SubscriptlistContext = SubscriptlistContext; 
-Python3Parser.SubscriptContext = SubscriptContext; 
-Python3Parser.SliceopContext = SliceopContext; 
-Python3Parser.ExprlistContext = ExprlistContext; 
-Python3Parser.TestlistContext = TestlistContext; 
-Python3Parser.DictorsetmakerContext = DictorsetmakerContext; 
-Python3Parser.ClassdefContext = ClassdefContext; 
-Python3Parser.ArglistContext = ArglistContext; 
-Python3Parser.ArgumentContext = ArgumentContext; 
-Python3Parser.Comp_iterContext = Comp_iterContext; 
-Python3Parser.Comp_forContext = Comp_forContext; 
-Python3Parser.Comp_ifContext = Comp_ifContext; 
-Python3Parser.Yield_exprContext = Yield_exprContext; 
-Python3Parser.Yield_argContext = Yield_argContext; 
-Python3Parser.StrContext = StrContext; 
-Python3Parser.NumberContext = NumberContext; 
-Python3Parser.IntegerContext = IntegerContext; 
+Python3Parser.Single_inputContext = Single_inputContext;
+Python3Parser.File_inputContext = File_inputContext;
+Python3Parser.Eval_inputContext = Eval_inputContext;
+Python3Parser.DecoratorContext = DecoratorContext;
+Python3Parser.DecoratorsContext = DecoratorsContext;
+Python3Parser.DecoratedContext = DecoratedContext;
+Python3Parser.FuncdefContext = FuncdefContext;
+Python3Parser.ParametersContext = ParametersContext;
+Python3Parser.TypedargslistContext = TypedargslistContext;
+Python3Parser.TfpdefContext = TfpdefContext;
+Python3Parser.VarargslistContext = VarargslistContext;
+Python3Parser.VfpdefContext = VfpdefContext;
+Python3Parser.StmtContext = StmtContext;
+Python3Parser.Simple_stmtContext = Simple_stmtContext;
+Python3Parser.Small_stmtContext = Small_stmtContext;
+Python3Parser.Expr_stmtContext = Expr_stmtContext;
+Python3Parser.Testlist_star_exprContext = Testlist_star_exprContext;
+Python3Parser.AugassignContext = AugassignContext;
+Python3Parser.Del_stmtContext = Del_stmtContext;
+Python3Parser.Pass_stmtContext = Pass_stmtContext;
+Python3Parser.Flow_stmtContext = Flow_stmtContext;
+Python3Parser.Break_stmtContext = Break_stmtContext;
+Python3Parser.Continue_stmtContext = Continue_stmtContext;
+Python3Parser.Return_stmtContext = Return_stmtContext;
+Python3Parser.Yield_stmtContext = Yield_stmtContext;
+Python3Parser.Raise_stmtContext = Raise_stmtContext;
+Python3Parser.Import_stmtContext = Import_stmtContext;
+Python3Parser.Import_nameContext = Import_nameContext;
+Python3Parser.Import_fromContext = Import_fromContext;
+Python3Parser.Import_as_nameContext = Import_as_nameContext;
+Python3Parser.Dotted_as_nameContext = Dotted_as_nameContext;
+Python3Parser.Import_as_namesContext = Import_as_namesContext;
+Python3Parser.Dotted_as_namesContext = Dotted_as_namesContext;
+Python3Parser.Dotted_nameContext = Dotted_nameContext;
+Python3Parser.Global_stmtContext = Global_stmtContext;
+Python3Parser.Nonlocal_stmtContext = Nonlocal_stmtContext;
+Python3Parser.Assert_stmtContext = Assert_stmtContext;
+Python3Parser.Compound_stmtContext = Compound_stmtContext;
+Python3Parser.If_stmtContext = If_stmtContext;
+Python3Parser.While_stmtContext = While_stmtContext;
+Python3Parser.For_stmtContext = For_stmtContext;
+Python3Parser.Try_stmtContext = Try_stmtContext;
+Python3Parser.With_stmtContext = With_stmtContext;
+Python3Parser.With_itemContext = With_itemContext;
+Python3Parser.Except_clauseContext = Except_clauseContext;
+Python3Parser.SuiteContext = SuiteContext;
+Python3Parser.TestContext = TestContext;
+Python3Parser.Test_nocondContext = Test_nocondContext;
+Python3Parser.LambdefContext = LambdefContext;
+Python3Parser.Lambdef_nocondContext = Lambdef_nocondContext;
+Python3Parser.Or_testContext = Or_testContext;
+Python3Parser.And_testContext = And_testContext;
+Python3Parser.Not_testContext = Not_testContext;
+Python3Parser.ComparisonContext = ComparisonContext;
+Python3Parser.Comp_opContext = Comp_opContext;
+Python3Parser.Star_exprContext = Star_exprContext;
+Python3Parser.ExprContext = ExprContext;
+Python3Parser.Xor_exprContext = Xor_exprContext;
+Python3Parser.And_exprContext = And_exprContext;
+Python3Parser.Shift_exprContext = Shift_exprContext;
+Python3Parser.Arith_exprContext = Arith_exprContext;
+Python3Parser.TermContext = TermContext;
+Python3Parser.FactorContext = FactorContext;
+Python3Parser.PowerContext = PowerContext;
+Python3Parser.AtomContext = AtomContext;
+Python3Parser.Testlist_compContext = Testlist_compContext;
+Python3Parser.TrailerContext = TrailerContext;
+Python3Parser.SubscriptlistContext = SubscriptlistContext;
+Python3Parser.SubscriptContext = SubscriptContext;
+Python3Parser.SliceopContext = SliceopContext;
+Python3Parser.ExprlistContext = ExprlistContext;
+Python3Parser.TestlistContext = TestlistContext;
+Python3Parser.DictorsetmakerContext = DictorsetmakerContext;
+Python3Parser.ClassdefContext = ClassdefContext;
+Python3Parser.ArglistContext = ArglistContext;
+Python3Parser.ArgumentContext = ArgumentContext;
+Python3Parser.Comp_iterContext = Comp_iterContext;
+Python3Parser.Comp_forContext = Comp_forContext;
+Python3Parser.Comp_ifContext = Comp_ifContext;
+Python3Parser.Yield_exprContext = Yield_exprContext;
+Python3Parser.Yield_argContext = Yield_argContext;
+Python3Parser.StrContext = StrContext;
+Python3Parser.NumberContext = NumberContext;
+Python3Parser.IntegerContext = IntegerContext;
 
 module.exports = Python3Parser;
