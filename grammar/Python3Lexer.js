@@ -1168,6 +1168,11 @@ class Python3Lexer extends antlr4.Lexer {
             decisionsToDFA,
             new antlr4.PredictionContextCache()
         );
+        /*var token = this.getAllTokens();
+        var length = token.length;
+        for (var i = 0; i < length; i++) {
+            console.log(token[i].toString());
+        }*/
     }
 
     get atn() {
