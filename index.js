@@ -17,7 +17,7 @@ const tokens = new antlr4.CommonTokenStream(lexer);
 const parser = new PythonParser(tokens);
 
 parser.buildParseTrees = true;
-var tree = parser.single_input();
+var tree = parser.file_input();
 /*
 var visitor = new Visitor();
 console.log("Visitor:");

@@ -1163,7 +1163,6 @@ Python3Lexer.prototype.action = function (localctx, ruleIndex, actionIndex) {
 };
 
 Python3Lexer.prototype.NEWLINE_action = function (localctx, actionIndex) {
-    console.log("------------------------------");
     switch (actionIndex) {
         case 0:
             let newLine = this.text.replace(/[^\r\n]+/g, "");
@@ -1184,7 +1183,6 @@ Python3Lexer.prototype.NEWLINE_action = function (localctx, actionIndex) {
                 // dedents and line breaks.
                 this.skip();
             } else {
-                console.log("NEWLINE");
                 this.emitToken(
                     this.commonToken(Python3Parser.NEWLINE, newLine)
                 );
@@ -1199,7 +1197,6 @@ Python3Lexer.prototype.NEWLINE_action = function (localctx, actionIndex) {
                     this.skip();
                 } else if (indent > previous) {
                     this.indents.push(indent);
-                    console.log("INDENT");
                     this.emitToken(
                         this.commonToken(Python3Parser.INDENT, spaces)
                     );
@@ -1209,7 +1206,6 @@ Python3Lexer.prototype.NEWLINE_action = function (localctx, actionIndex) {
                         this.indents.length &&
                         this.indents[this.indents.length - 1] > indent
                     ) {
-                        console.log("DEDENT");
                         this.emitToken(this.createDedent());
                         this.indents.pop();
                     }
