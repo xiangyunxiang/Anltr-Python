@@ -912,6 +912,7 @@ class Visitor extends Python3Visitor {
         }
         if (trailer_list.length !== 0) {
             atom = { type: "Trailer", base: atom, trailer: trailer_list };
+            //Property return a dict, arglist and subscriptlist return a list
         }
         if (ctx.factor() !== null) {
             atom = {
@@ -953,16 +954,13 @@ class Visitor extends Python3Visitor {
             }
         } else if (ctx.OPEN_BRACK() !== null) {
             if (ctx.testlist_comp() !== null) {
-                return { type: "List", value: this.visit(ctx.testlist_comp()) };
+                return this.visit(ctx.testlist_comp());
             } else {
                 return { type: "List", value: null };
             }
         } else if (ctx.OPEN_BRACE() !== null) {
             if (ctx.dictorsetmaker() !== null) {
-                return {
-                    type: "Dict",
-                    value: this.visit(ctx.dictorsetmaker()),
-                };
+                return this.visit(ctx.dictorsetmaker());
             } else {
                 return { type: "Dict", value: null };
             }
@@ -974,7 +972,25 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#testlist_comp.
     visitTestlist_comp(ctx) {
         console.log("visitTestlist_comp");
-        return this.visitChildren(ctx);
+        if (ctx.comp_for() !== null) {
+            //[i for i in range(4)]
+            return {
+                type: "List",
+                element: this.visit(ctx.test(0)),
+                comp_for: this.visit(ctx.comp_for()),
+            };
+        } else {
+            //[1,2,3]
+            let element = [];
+            for (var i = 0; i < ctx.test().length; i++) {
+                element.push(this.visit(ctx.test(i)));
+            }
+            return {
+                type: "List",
+                element: element,
+                comp_for: null,
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#trailer.
@@ -1008,7 +1024,11 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#subscript.
     visitSubscript(ctx) {
         console.log("visitSubscript");
-        //TODO
+        if (ctx.COLON() !== null) {
+            //TODO
+        } else {
+            return this.visit(ctx.test(0));
+        }
         return this.visitChildren(ctx);
     }
 
@@ -1042,7 +1062,29 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#dictorsetmaker.
     visitDictorsetmaker(ctx) {
         console.log("visitDictorsetmaker");
-        //TODO
+        if (ctx.COLON() !== null) {
+            if (ctx.comp_for() !== null) {
+                //[i for i in range(4)]
+                return {
+                    type: "Set",
+                    element: this.visit(ctx.test(0)),
+                    comp_for: this.visit(ctx.comp_for()),
+                };
+            } else {
+                //[1,2,3]
+                let element = [];
+                for (var i = 0; i < ctx.test().length; i++) {
+                    element.push(this.visit(ctx.test(i)));
+                }
+                return {
+                    type: "Set",
+                    element: element,
+                    comp_for: null,
+                };
+            }
+        } else {
+            //TODO
+        }
         return this.visitChildren(ctx);
     }
 
@@ -1090,22 +1132,49 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#comp_iter.
     visitComp_iter(ctx) {
         console.log("visitComp_iter");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.comp_for() !== null) {
+            return this.visit(ctx.comp_for());
+        } else {
+            return this.visit(ctx.comp_if());
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#comp_for.
     visitComp_for(ctx) {
         console.log("visitComp_for");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.comp_iter() !== null) {
+            return {
+                type: "CompFor",
+                iter: this.visit(ctx.exprlist()),
+                iterated: this.visit(ctx.or_test()),
+                comp_iter: this.visit(ctx.comp_iter()),
+            };
+        } else {
+            return {
+                type: "CompFor",
+                iter: this.visit(ctx.exprlist()),
+                iterated: this.visit(ctx.or_test()),
+                comp_iter: null,
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#comp_if.
     visitComp_if(ctx) {
         console.log("visitComp_if");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.comp_iter() !== null) {
+            return {
+                type: "CompIf",
+                condition: this.visit(ctx.test_nocond()),
+                comp_iter: this.visit(ctx.comp_iter()),
+            };
+        } else {
+            return {
+                type: "CompIf",
+                condition: this.visit(ctx.test_nocond()),
+                comp_iter: null,
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#yield_expr.
