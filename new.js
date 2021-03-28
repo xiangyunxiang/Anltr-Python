@@ -1,25 +1,29 @@
 var a = {
-    arith_expr: [
-        "+",
-        { number: 32 },
+    type: "FileInput",
+    value: [
         {
-            term: [
-                "*",
-                {
-                    term: [
-                        "*",
-                        {
-                            power: [
-                                "Atom: Not Implemented!",
-                                [[null, null]],
-                                null,
-                            ],
-                        },
-                        { number: 43 },
-                    ],
+            type: "CompoundStatement",
+            value: {
+                type: "WhileStatement",
+                condition: {
+                    type: "BinaryExpression",
+                    operator: ">",
+                    left: { type: "Name", value: "a" },
+                    right: { type: "Integer", value: 0 },
                 },
-                { number: 98 },
-            ],
+                body: [
+                    {
+                        type: "SimpleStatement",
+                        value: [{ type: "Integer", value: 1 }],
+                    },
+                ],
+                else: [
+                    {
+                        type: "SimpleStatement",
+                        value: [{ type: "Integer", value: 2 }],
+                    },
+                ],
+            },
         },
     ],
 };

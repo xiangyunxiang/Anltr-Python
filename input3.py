@@ -1,1 +1,2 @@
-1 if True else 2
+while a > 0:
+    1
