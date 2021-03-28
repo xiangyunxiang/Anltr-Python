@@ -1,3 +1,1 @@
-if True:
-    1
-1
+1 if True else 2

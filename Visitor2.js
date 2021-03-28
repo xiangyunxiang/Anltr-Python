@@ -390,6 +390,13 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#atom.
     visitAtom(ctx) {
         console.log("visitAtom");
+        console.log(ctx.str().length);
+        let value = "";
+        if (ctx.str().length > 0) {
+            for (var i = 0; i < ctx.str().length; i++) {
+                value = value + this.visit(ctx.str(i)).string;
+            }
+        }
         return this.visitChildren(ctx);
     }
 
@@ -492,6 +499,18 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#str.
     visitStr(ctx) {
         console.log("visitStr");
+        let value = null;
+        if (ctx.STRING_LITERAL() !== null) {
+            value = ctx.STRING_LITERAL().getText();
+        } else if (ctx.BYTES_LITERAL() !== null) {
+            value = ctx.BYTES_LITERAL().getText();
+        }
+        if (value.startsWith('"')) {
+            value = value.replace(/^"+|"+$/g, "");
+        } else if (value.startsWith("'")) {
+            value = value.replace(/^'+|'+$/g, "");
+        }
+        return { string: value };
         return this.visitChildren(ctx);
     }
 
