@@ -2,28 +2,36 @@ var a = {
     type: "FileInput",
     value: [
         {
-            type: "CompoundStatement",
-            value: {
-                type: "WhileStatement",
-                condition: {
-                    type: "BinaryExpression",
-                    operator: ">",
+            type: "SimpleStatement",
+            value: [
+                {
+                    type: "Assignment",
                     left: { type: "Name", value: "a" },
-                    right: { type: "Integer", value: 0 },
+                    right: { type: "String", value: "1234" },
                 },
-                body: [
-                    {
-                        type: "SimpleStatement",
-                        value: [{ type: "Integer", value: 1 }],
-                    },
-                ],
-                else: [
-                    {
-                        type: "SimpleStatement",
-                        value: [{ type: "Integer", value: 2 }],
-                    },
-                ],
-            },
+            ],
+        },
+        {
+            type: "SimpleStatement",
+            value: [
+                {
+                    type: "Trailer",
+                    base: { type: "Name", value: "a" },
+                    trailer: [
+                        {
+                            type: "SubscriptList",
+                            value: [
+                                {
+                                    type: "SubscriptExpression",
+                                    start: null,
+                                    end: null,
+                                    sep: false,
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
         },
     ],
 };

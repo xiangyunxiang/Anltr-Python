@@ -302,15 +302,23 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#import_stmt.
     visitImport_stmt(ctx) {
         console.log("visitImport_stmt");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.import_name() !== null) {
+            return {
+                type: "ImportStatement",
+                body: this.visit(ctx.import_name()),
+            };
+        } else {
+            return {
+                type: "ImportStatement",
+                body: this.visit(ctx.import_from()),
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#import_name.
     visitImport_name(ctx) {
         console.log("visitImport_name");
-        //TODO
-        return this.visitChildren(ctx);
+        return this.visit(ctx.dotted_as_names());
     }
 
     // Visit a parse tree produced by Python3Parser#import_from.
@@ -1025,18 +1033,88 @@ class Visitor extends Python3Visitor {
     visitSubscript(ctx) {
         console.log("visitSubscript");
         if (ctx.COLON() !== null) {
-            //TODO
+            if (ctx.getChild(0).getText() === ":") {
+                if (ctx.test().length === 1) {
+                    if (ctx.sliceop() !== null) {
+                        return {
+                            type: "SubscriptExpression",
+                            start: null,
+                            end: this.visit(ctx.test(0)),
+                            sep: this.visit(ctx.sliceop()),
+                        };
+                    } else {
+                        return {
+                            type: "SubscriptExpression",
+                            start: null,
+                            end: this.visit(ctx.test(0)),
+                            sep: false,
+                        };
+                    }
+                } else {
+                    if (ctx.sliceop() !== null) {
+                        return {
+                            type: "SubscriptExpression",
+                            start: null,
+                            end: null,
+                            sep: this.visit(ctx.sliceop()),
+                        };
+                    } else {
+                        return {
+                            type: "SubscriptExpression",
+                            start: null,
+                            end: null,
+                            sep: false,
+                        };
+                    }
+                }
+            } else {
+                if (ctx.test().length === 2) {
+                    if (ctx.sliceop() !== null) {
+                        return {
+                            type: "SubscriptExpression",
+                            start: this.visit(ctx.test(0)),
+                            end: this.visit(ctx.test(1)),
+                            sep: this.visit(ctx.sliceop()),
+                        };
+                    } else {
+                        return {
+                            type: "SubscriptExpression",
+                            start: this.visit(ctx.test(0)),
+                            end: this.visit(ctx.test(1)),
+                            sep: false,
+                        };
+                    }
+                } else {
+                    if (ctx.sliceop() !== null) {
+                        return {
+                            type: "SubscriptExpression",
+                            start: this.visit(ctx.test(0)),
+                            end: null,
+                            sep: this.visit(ctx.sliceop()),
+                        };
+                    } else {
+                        return {
+                            type: "SubscriptExpression",
+                            start: this.visit(ctx.test(0)),
+                            end: null,
+                            sep: false,
+                        };
+                    }
+                }
+            }
         } else {
             return this.visit(ctx.test(0));
         }
-        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#sliceop.
     visitSliceop(ctx) {
         console.log("visitSliceop");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.test() !== null) {
+            return this.visit(ctx.test());
+        } else {
+            return false;
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#exprlist.
@@ -1083,7 +1161,14 @@ class Visitor extends Python3Visitor {
                 };
             }
         } else {
-            //TODO
+            if (ctx.comp_for() !== null) {
+                return {
+                    type: "Dict",
+                    body: {
+                        //this.visit(ctx.test(0)): this.visit(ctx.test(1)),
+                    },
+                };
+            } //TODO
         }
         return this.visitChildren(ctx);
     }
