@@ -31,8 +31,7 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#eval_input.
     visitEval_input(ctx) {
         console.log("visitEval_input");
-        //TODO
-        return this.visitChildren(ctx);
+        return { type: "EvalInput", value: this.visit(ctx.testlist()) };
     }
 
     // Visit a parse tree produced by Python3Parser#decorator.
@@ -84,7 +83,6 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#funcdef.
     visitFuncdef(ctx) {
         console.log("visitFuncdef");
-        //TODO: Support type declaration
         return {
             type: "FunctionDef",
             name: ctx.NAME().getText(),
@@ -106,29 +104,91 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#typedargslist.
     visitTypedargslist(ctx) {
         console.log("visitTypedargslist");
-        //TODO
-        return this.visitChildren(ctx);
+        // TODO: support *args, **kwargs
+        let length = ctx.getChildCount();
+        let returnlist = [];
+        let comma = [];
+        let current = -1;
+        if (ctx.STAR() === null && ctx.POWER() === null) {
+            for (var i = 0; i < length; i++) {
+                if (ctx.getChild(i).getText() === ",") {
+                    comma.push(i);
+                }
+            }
+            comma.push(length);
+            for (var i = 0; i < comma.length; i++) {
+                if (comma[i] - current === 2) {
+                    returnlist.push({
+                        type: "Parameter",
+                        name: this.visit(ctx.getChild(comma[i] - 1)),
+                        default: null,
+                    });
+                    current = current + 2;
+                    console.log(this.visit(ctx.getChild(comma[i] - 1)));
+                } else {
+                    returnlist.push({
+                        type: "Parameter",
+                        name: this.visit(ctx.getChild(comma[i] - 3)),
+                        default: this.visit(ctx.getChild(comma[i] - 1)),
+                    });
+                    current = current + 4;
+                }
+            }
+        } else {
+            throw "*args and **kwargs have not been implemented!";
+        }
+        return returnlist;
     }
 
     // Visit a parse tree produced by Python3Parser#tfpdef.
     visitTfpdef(ctx) {
         console.log("visitTfpdef");
-        //TODO
-        return this.visitChildren(ctx);
+        return ctx.NAME().getText();
     }
 
     // Visit a parse tree produced by Python3Parser#varargslist.
     visitVarargslist(ctx) {
         console.log("visitVarargslist");
-        //TODO
-        return this.visitChildren(ctx);
+        // TODO: support *args, **kwargs
+        let length = ctx.getChildCount();
+        let returnlist = [];
+        let comma = [];
+        let current = -1;
+        if (ctx.STAR() === null && ctx.POWER() === null) {
+            for (var i = 0; i < length; i++) {
+                if (ctx.getChild(i).getText() === ",") {
+                    comma.push(i);
+                }
+            }
+            comma.push(length);
+            for (var i = 0; i < comma.length; i++) {
+                if (comma[i] - current === 2) {
+                    returnlist.push({
+                        type: "VarArgument",
+                        name: this.visit(ctx.getChild(comma[i] - 1)),
+                        default: null,
+                    });
+                    current = current + 2;
+                    console.log(this.visit(ctx.getChild(comma[i] - 1)));
+                } else {
+                    returnlist.push({
+                        type: "VarArgument",
+                        name: this.visit(ctx.getChild(comma[i] - 3)),
+                        default: this.visit(ctx.getChild(comma[i] - 1)),
+                    });
+                    current = current + 4;
+                }
+            }
+        } else {
+            throw "*args and **kwargs have not been implemented!";
+        }
+        return returnlist;
     }
 
     // Visit a parse tree produced by Python3Parser#vfpdef.
     visitVfpdef(ctx) {
         console.log("visitVfpdef");
-        //TODO
-        return this.visitChildren(ctx);
+        return ctx.NAME().getText();
     }
 
     // Visit a parse tree produced by Python3Parser#stmt.
@@ -289,78 +349,110 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#yield_stmt.
     visitYield_stmt(ctx) {
         console.log("visitYield_stmt");
-        return { type: "YieldStatement", body: this.visit(ctx.yield_expr()) };
+        return this.visit(ctx.yield_expr());
     }
 
     // Visit a parse tree produced by Python3Parser#raise_stmt.
     visitRaise_stmt(ctx) {
         console.log("visitRaise_stmt");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.test() !== null) {
+            return { type: "RaiseStatement", info: this.visit(ctx.test(0)) };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#import_stmt.
     visitImport_stmt(ctx) {
         console.log("visitImport_stmt");
         if (ctx.import_name() !== null) {
-            return {
-                type: "ImportStatement",
-                body: this.visit(ctx.import_name()),
-            };
+            return this.visit(ctx.import_name());
         } else {
-            return {
-                type: "ImportStatement",
-                body: this.visit(ctx.import_from()),
-            };
+            return this.visit(ctx.import_from());
         }
     }
 
     // Visit a parse tree produced by Python3Parser#import_name.
     visitImport_name(ctx) {
         console.log("visitImport_name");
-        return this.visit(ctx.dotted_as_names());
+        return {
+            type: "ImportName",
+            imported: this.visit(ctx.dotted_as_names()),
+        };
     }
 
     // Visit a parse tree produced by Python3Parser#import_from.
     visitImport_from(ctx) {
         console.log("visitImport_from");
-        //TODO
-        return this.visitChildren(ctx);
+        return {
+            type: "FromImport",
+            file: this.visit(ctx.dotted_name()),
+            imported: this.visit(ctx.import_as_names()),
+        };
     }
 
     // Visit a parse tree produced by Python3Parser#import_as_name.
     visitImport_as_name(ctx) {
         console.log("visitImport_as_name");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.AS() !== null) {
+            return {
+                type: "Imported",
+                name: ctx.NAME(0).getText(),
+                alias: ctx.NAME(1).getText(),
+            };
+        } else {
+            return {
+                type: "Imported",
+                name: ctx.NAME(0).getText(),
+                alias: null,
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#dotted_as_name.
     visitDotted_as_name(ctx) {
         console.log("visitDotted_as_name");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.NAME() !== null) {
+            return {
+                type: "Imported",
+                name: this.visit(ctx.dotted_name()),
+                alias: ctx.NAME().getText(),
+            };
+        } else {
+            return {
+                type: "Imported",
+                name: this.visit(ctx.dotted_name()),
+                alias: null,
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#import_as_names.
     visitImport_as_names(ctx) {
         console.log("visitImport_as_names");
-        //TODO
-        return this.visitChildren(ctx);
+        let returnlist = [];
+        for (var i = 0; i < ctx.import_as_name().length; i++) {
+            returnlist.push(this.visit(ctx.import_as_name(i)));
+        }
+        return returnlist;
     }
 
     // Visit a parse tree produced by Python3Parser#dotted_as_names.
     visitDotted_as_names(ctx) {
         console.log("visitDotted_as_names");
-        //TODO
-        return this.visitChildren(ctx);
+        let returnlist = [];
+        for (var i = 0; i < ctx.dotted_as_name().length; i++) {
+            returnlist.push(this.visit(ctx.dotted_as_name(i)));
+        }
+        return returnlist;
     }
 
     // Visit a parse tree produced by Python3Parser#dotted_name.
     visitDotted_name(ctx) {
         console.log("visitDotted_name");
-        //TODO
-        return this.visitChildren(ctx);
+        let str = "";
+        for (var i = 0; i < ctx.getChildCount(); i++) {
+            str = str + ctx.getChild(i).getText();
+        }
+        return str;
     }
 
     // Visit a parse tree produced by Python3Parser#global_stmt.
@@ -386,8 +478,11 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#assert_stmt.
     visitAssert_stmt(ctx) {
         console.log("visitAssert_stmt");
-        //TODO
-        return this.visitChildren(ctx);
+        returnlist = [];
+        for (var i = 0; i < ctx.test().length; i++) {
+            returnlist.push(this.visit(ctx.test(i)));
+        }
+        return returnlist;
     }
 
     // Visit a parse tree produced by Python3Parser#compound_stmt.
@@ -477,29 +572,74 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#try_stmt.
     visitTry_stmt(ctx) {
         console.log("visitTry_stmt");
-        //TODO
-        return this.visitChildren(ctx);
+        let trybody = null;
+        let exceptbody = [];
+        let elsebody = null;
+        let finallybody = null;
+        for (var i = 0; i < ctx.getChildCount(); i++) {
+            if (ctx.getChild(i).getText() === ":") {
+                if (ctx.getChild(i - 1).getText() === "try") {
+                    trybody = this.visit(ctx.getChild(i + 1));
+                } else if (ctx.getChild(i - 1).getText() === "else") {
+                    elsebody = this.visit(ctx.getChild(i + 1));
+                } else if (ctx.getChild(i - 1).getText() === "finally") {
+                    finallybody = this.visit(ctx.getChild(i + 1));
+                } else {
+                    exceptbody.push({
+                        condition: this.visit(ctx.getChild(i - 1)),
+                        body: this.visit(ctx.getChild(i + 1)),
+                    });
+                }
+            }
+        }
+        return {
+            type: "TryStatement",
+            exceptlist: exceptbody,
+            else: elsebody,
+            finally: finallybody,
+        };
     }
 
     // Visit a parse tree produced by Python3Parser#with_stmt.
     visitWith_stmt(ctx) {
         console.log("visitWith_stmt");
-        //TODO
-        return this.visitChildren(ctx);
+        let withlist = [];
+        for (var i = 0; i < ctx.with_item().length; i++) {
+            withlist.push(this.visit(ctx.with_item(i)));
+        }
+        return {
+            type: "WithStatement",
+            items: withlist,
+            body: this.visit(ctx.suite()),
+        };
     }
 
     // Visit a parse tree produced by Python3Parser#with_item.
     visitWith_item(ctx) {
         console.log("visitWith_item");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.expr() !== null) {
+            return {
+                type: "WithItem",
+                test: this.visit(ctx.test()),
+                alias: this.visit(ctx.expr()),
+            };
+        } else {
+            return {
+                type: "WithItem",
+                test: this.visit(ctx.test()),
+                alias: null,
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#except_clause.
     visitExcept_clause(ctx) {
         console.log("visitExcept_clause");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.test() !== null) {
+            return { type: "Except", test: this.visit(ctx.test()) };
+        } else {
+            return { type: "Except", test: null };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#suite.
@@ -526,10 +666,10 @@ class Visitor extends Python3Visitor {
                 judge_true: this.visit(ctx.or_test(0)),
                 judge_false: this.visit(ctx.test()),
             };
-        } else if (ctx.or_test() !== null) {
-            return this.visit(ctx.or_test(0));
-        } else {
+        } else if (ctx.lambdef() !== null) {
             return this.visit(ctx.lambdef());
+        } else {
+            return this.visit(ctx.or_test(0));
         }
     }
 
@@ -546,15 +686,37 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#lambdef.
     visitLambdef(ctx) {
         console.log("visitLambdef");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.varargslist() !== null) {
+            return {
+                type: "LambdaDef",
+                arguments: this.visit(ctx.varargslist()),
+                body: this.visit(ctx.test()),
+            };
+        } else {
+            return {
+                type: "LambdaDef",
+                arguments: [],
+                body: this.visit(ctx.test()),
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#lambdef_nocond.
     visitLambdef_nocond(ctx) {
         console.log("visitLambdef_nocond");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.varargslist() !== null) {
+            return {
+                type: "LambdaDef",
+                arguments: this.visit(ctx.varargslist()),
+                body: this.visit(ctx.test_nocond()),
+            };
+        } else {
+            return {
+                type: "LambdaDef",
+                arguments: [],
+                body: this.visit(ctx.test_nocond()),
+            };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#or_test.
@@ -954,23 +1116,26 @@ class Visitor extends Python3Visitor {
             return { type: "String", value: value };
         } else if (ctx.OPEN_PAREN() !== null) {
             if (ctx.yield_expr() !== null) {
-                return { type: "Atom", value: this.visit(ctx.yield_expr()) };
+                return this.visit(ctx.yield_expr());
             } else if (ctx.testlist_comp() !== null) {
-                return { type: "Atom", value: this.visit(ctx.testlist_comp()) };
+                return {
+                    type: "Tuple",
+                    value: this.visit(ctx.testlist_comp()),
+                };
             } else {
-                return { type: "Atom", value: null };
+                return { type: "Tuple", value: null };
             }
         } else if (ctx.OPEN_BRACK() !== null) {
             if (ctx.testlist_comp() !== null) {
                 return this.visit(ctx.testlist_comp());
             } else {
-                return { type: "List", value: null };
+                return { type: "List", element: [], comp_for: null };
             }
         } else if (ctx.OPEN_BRACE() !== null) {
             if (ctx.dictorsetmaker() !== null) {
                 return this.visit(ctx.dictorsetmaker());
             } else {
-                return { type: "Dict", value: null };
+                return { type: "Dict", body: [] };
             }
         } else {
             return "Atom: Not Implemented!";
@@ -1140,7 +1305,7 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#dictorsetmaker.
     visitDictorsetmaker(ctx) {
         console.log("visitDictorsetmaker");
-        if (ctx.COLON() !== null) {
+        if (ctx.COLON() === null) {
             if (ctx.comp_for() !== null) {
                 //[i for i in range(4)]
                 return {
@@ -1162,15 +1327,32 @@ class Visitor extends Python3Visitor {
             }
         } else {
             if (ctx.comp_for() !== null) {
+                //[i for i in range(4)]
                 return {
                     type: "Dict",
-                    body: {
-                        //this.visit(ctx.test(0)): this.visit(ctx.test(1)),
-                    },
+                    body: [
+                        {
+                            key: this.visit(ctx.test(0)),
+                            value: {
+                                type: "List",
+                                element: this.visit(ctx.test(1)),
+                                comp_for: this.visit(ctx.comp_for()),
+                            },
+                        },
+                    ],
                 };
-            } //TODO
+            } else {
+                let kv = [];
+                let length = ctx.COLON().length;
+                for (var i = 0; i < length; i++) {
+                    kv.push({
+                        key: this.visit(ctx.test(2 * i)),
+                        value: this.visit(ctx.test(2 * i + 1)),
+                    });
+                }
+                return { type: "Dict", body: kv };
+            }
         }
-        return this.visitChildren(ctx);
     }
 
     // Visit a parse tree produced by Python3Parser#classdef.
@@ -1209,8 +1391,23 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#argument.
     visitArgument(ctx) {
         console.log("visitArgument");
-        //TODO: argument with comp_for
-        //if ()
+        if (ctx.getChildCount() === 3) {
+            return {
+                type: "Argument",
+                key: this.visit(ctx.test(0)),
+                value: this.visit(ctx.test(1)),
+            };
+        } else {
+            if (ctx.comp_for() !== null) {
+                // TODO: Support test comp_for argument
+            } else {
+                return {
+                    type: "Argument",
+                    key: null,
+                    value: this.visit(ctx.test(0)),
+                };
+            }
+        }
         return this.visitChildren(ctx);
     }
 
@@ -1265,15 +1462,21 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#yield_expr.
     visitYield_expr(ctx) {
         console.log("visitYield_expr");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.yield_arg() !== null) {
+            return { type: "YieldStatement", arg: this.visit(ctx.yield_arg()) };
+        } else {
+            return { type: "YieldStatement", arg: [] };
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#yield_arg.
     visitYield_arg(ctx) {
         console.log("visitYield_arg");
-        //TODO
-        return this.visitChildren(ctx);
+        if (ctx.FROM() !== null) {
+            return [this.visit(ctx.test())];
+        } else {
+            return this.visit(ctx.testlist());
+        }
     }
 
     // Visit a parse tree produced by Python3Parser#str.

@@ -2,36 +2,41 @@ var a = {
     type: "FileInput",
     value: [
         {
-            type: "SimpleStatement",
-            value: [
-                {
-                    type: "Assignment",
-                    left: { type: "Name", value: "a" },
-                    right: { type: "String", value: "1234" },
-                },
-            ],
-        },
-        {
-            type: "SimpleStatement",
-            value: [
-                {
-                    type: "Trailer",
-                    base: { type: "Name", value: "a" },
-                    trailer: [
-                        {
-                            type: "SubscriptList",
-                            value: [
-                                {
-                                    type: "SubscriptExpression",
-                                    start: null,
-                                    end: null,
-                                    sep: false,
-                                },
-                            ],
-                        },
-                    ],
-                },
-            ],
+            type: "CompoundStatement",
+            value: {
+                type: "TryStatement",
+                exceptlist: [
+                    {
+                        body: [
+                            {
+                                type: "SimpleStatement",
+                                value: [{ type: "Integer", value: 2 }],
+                            },
+                        ],
+                    },
+                    {
+                        condition: { type: "Except", test: null },
+                        body: [
+                            {
+                                type: "SimpleStatement",
+                                value: [{ type: "Integer", value: 6 }],
+                            },
+                        ],
+                    },
+                ],
+                else: [
+                    {
+                        type: "SimpleStatement",
+                        value: [{ type: "Integer", value: 3 }],
+                    },
+                ],
+                finally: [
+                    {
+                        type: "SimpleStatement",
+                        value: [{ type: "Integer", value: 4 }],
+                    },
+                ],
+            },
         },
     ],
 };
