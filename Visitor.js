@@ -1305,7 +1305,7 @@ class Visitor extends Python3Visitor {
     // Visit a parse tree produced by Python3Parser#dictorsetmaker.
     visitDictorsetmaker(ctx) {
         console.log("visitDictorsetmaker");
-        if (ctx.COLON() === null) {
+        if (ctx.COLON().length === 0) {
             if (ctx.comp_for() !== null) {
                 //[i for i in range(4)]
                 return {
