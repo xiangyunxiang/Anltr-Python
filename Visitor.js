@@ -1179,7 +1179,7 @@ class Visitor extends Python3Visitor {
         } else {
             return {
                 type: "Property",
-                value: this.visit(ctx.NAME().getText()),
+                value: ctx.NAME().getText(),
             };
         }
     }

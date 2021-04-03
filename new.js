@@ -4,49 +4,52 @@ var a = {
         {
             type: "CompoundStatement",
             value: {
-                type: "FunctionDef",
-                name: "f",
-                parameters: [{ type: "Parameter", name: "a", default: null }],
+                type: "ClassDefinition",
+                arglist: [],
                 body: [
                     {
-                        type: "SimpleStatement",
-                        value: [
-                            {
-                                type: "ReturnStatement",
-                                returned: [
-                                    {
-                                        type: "BinaryExpression",
-                                        operator: "+",
-                                        left: { type: "Name", value: "a" },
-                                        right: { type: "Integer", value: 1 },
-                                    },
-                                ],
-                            },
-                        ],
-                    },
-                ],
-            },
-        },
-        {
-            type: "SimpleStatement",
-            value: [
-                {
-                    type: "Trailer",
-                    base: { type: "Name", value: "f" },
-                    trailer: [
-                        {
-                            type: "ArgList",
-                            value: [
+                        type: "CompoundStatement",
+                        value: {
+                            type: "FunctionDef",
+                            name: "__init__",
+                            parameters: [
                                 {
-                                    type: "Argument",
-                                    key: { type: "Name", value: "a" },
-                                    value: { type: "Integer", value: 1 },
+                                    type: "Parameter",
+                                    name: "self",
+                                    default: null,
+                                },
+                            ],
+                            body: [
+                                {
+                                    type: "SimpleStatement",
+                                    value: [
+                                        {
+                                            type: "Assignment",
+                                            left: {
+                                                type: "Trailer",
+                                                base: {
+                                                    type: "Name",
+                                                    value: "self",
+                                                },
+                                                trailer: [
+                                                    {
+                                                        type: "Property",
+                                                        value: "b",
+                                                    },
+                                                ],
+                                            },
+                                            right: {
+                                                type: "Integer",
+                                                value: 1,
+                                            },
+                                        },
+                                    ],
                                 },
                             ],
                         },
-                    ],
-                },
-            ],
+                    },
+                ],
+            },
         },
     ],
 };
