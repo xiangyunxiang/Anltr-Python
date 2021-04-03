@@ -1378,7 +1378,7 @@ class Visitor extends Python3Visitor {
         console.log("visitArglist");
         let arglist = [];
         //TODO: implement *args and **kwargs
-        if (ctx.test() === null) {
+        if (ctx.test().length === 0) {
             for (var i = 0; i < ctx.argument().length; i++) {
                 arglist.push(this.visit(ctx.argument(i)));
             }
